@@ -26,7 +26,7 @@ const Navbar = ({ data }) => {
                 <ul className={`md:flex hidden text-xl`}>
                     {
                         data?.navLinks.map((item, index) => (
-                            <a key={index} href={item?.link} after={item.title} className={`nav after:bg-black after:text-center after:content-[attr(after)] after:text-white after:z-[10] after:absolute after:top-0 after:left-0 after:opacity-0 overflow-hidden hover:after:opacity-100 after:w-full after:h-full after:translate-y-[100%] hover:after:translate-y-[0] relative after:transition-all transition-all after:ease after:duration-1000 duration-1000 text-${data.textColor} hover:text-[#dfdfdf93] lg:px-8 md:px-4 border-r-2 capitalize last:border-r-0`}>
+                            <a key={index} href={item?.link} after={item.title} className={`nav after:text-center after:uppercase after:content-[attr(after)] after:text-[#F74C04] after:z-[10] after:absolute after:top-0 after:left-0 after:opacity-0 overflow-hidden hover:after:opacity-100 after:w-full after:h-full after:translate-y-[100%] hover:after:translate-y-[0] relative after:transition-all transition-all after:ease after:duration-500 duration-500 text-${data.textColor} lg:px-8 md:px-4 border-r-2 capitalize last:border-r-0`}>
                                 <li>{item.title}</li>
                             </a>
                         ))
