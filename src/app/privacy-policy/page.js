@@ -111,7 +111,7 @@ const PrivacyPolicy = () => {
           </div>
         ))}
         {data.cookies.map((item, index) => (
-          <div>
+          <div key={index}>
             <p className="font-[600] mt-4 leading-5">{item.heading}{": "}
               <span className="md:text-lg text-2xl font-[400] leading-6">{item.text}</span></p>
           </div>

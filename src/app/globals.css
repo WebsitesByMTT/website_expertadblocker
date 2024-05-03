@@ -60,14 +60,18 @@ body {
     font-size: 45%;
   }
 }
-.nav:hover  li {
+
+.nav:hover li {
   transform: translateY(-100%);
-  transition: all ease 2s;
+
 }
-.nav li{
+
+.nav li {
   transform: translateY(0);
+  transition: all ease 0.5s;
 }
+
 .nav::after {
-  content: var(--after-content); 
+  content: var(--after-content);
   color: white;
 }

@@ -13,6 +13,7 @@ export default function Home() {
     section1: {
       heading: "Block Ads not your privacy",
       text: "Expert Adblocker is the ultimate extension that not only blocks all the annoying ads from your browser but also protects your privacy. So, download this ad blocker in Chrome now and enjoy an ad-free experience.",
+      bgColor: "black",
       navbar: {
         navLinks: [
           {

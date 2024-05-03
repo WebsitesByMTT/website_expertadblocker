@@ -39,7 +39,7 @@ const Section2 = ({ data }) => {
                 >
                     {duplicatedItems.map((slide, index) => (
                         <div key={index} className="flex-shrink-0" style={{ width: `${160 / initialItems.length}%`, maxWidth: "150px" }}>
-                            <Image src={slide.src} height={200} width={200} />
+                            <Image src={slide.src} height={200} width={200} alt={slide.alt} />
                         </div>
                     ))}
                 </motion.div>
