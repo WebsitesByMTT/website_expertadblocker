@@ -18,16 +18,56 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  overflow-x: hidden;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+.star:hover svg path {
+  fill: #F1C02A;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+}
+.nav:hover  li {
+  transform: translateY(-100%);
+  transition: all ease 2s;
+}
+.nav li{
+  transform: translateY(0);
+}
+.nav::after {
+  content: var(--after-content); 
+  color: white;
 }
