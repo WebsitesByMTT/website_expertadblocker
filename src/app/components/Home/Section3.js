@@ -18,59 +18,58 @@ const Section3 = ({ data }) => {
         return () => clearInterval(intervalId);
     }, []);
     return (
-            <div className="flex flex-col  bg-[#F1C02A] pt-20 rounded-tl-[6.5rem] rounded-tr-[6.5rem] justify-between">
-                <h2 className='text-white text-[4rem] font-[700] leading-tight capitalize text-center'>{data?.subHeading}</h2>
-                <h3 className='text-[#F02828] text-[4rem] font-[700] leading-tight uppercase text-center'>{data?.heading}</h3>
-                <div className="md:w-[80%] lg:w-[50%] min-h-[45vh] md:min-h-[0hv] w-[90%] gap-5 m-auto my-[3rem] rounded-[6rem] flex-col md:flex-row p-16 md:p-0 md:pr-5 bg-[#F02828] flex overflow-hidden">
-                    <div className="w-[60%] md:bg-white md:w-[40%] p-2 md:rounded-[6rem] overflow-hidden flex justify-between">
-                        <motion.img
-                            src={icons[currentIndex].src}
-                            alt={icons[currentIndex].alt}
-                            key={`img-${currentIndex}`}
-                            initial={{ opacity: 0, y: ["100%"] }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.3 }}
-                            className='md:m-auto md:w-[100%] w-[40%] bg-white p-5 rounded-[100%]'
-
-                        />
-                    </div>
-                    <motion.div
-                        key={`div-${currentIndex}`}
-                        initial={{ opacity: 0, x: ["100%"] }}
-                        animate={{ opacity: 1, x: 0 }}
+        <div className={`flex flex-col bg-${data.bgColor} justify-between`}>
+            <h2 className='text-white text-[4rem] font-[700] leading-tight capitalize text-center'>{data?.subHeading}</h2>
+            <h3 className={`text-${data.headingColor} text-[4rem] font-[700] leading-tight uppercase text-center`}>{data?.heading}</h3>
+            <div className={`md:w-[80%] lg:w-[50%] min-h-[45vh] md:min-h-[0hv] w-[90%] gap-5 m-auto my-[3rem] rounded-[6rem] flex-col md:flex-row p-16 md:p-0 md:pr-5 bg-${data.featurebgColor} flex overflow-hidden`}>
+                <div className="w-[60%] md:bg-white md:w-[40%] p-2 md:rounded-[6rem] overflow-hidden flex justify-between">
+                    <motion.img
+                        src={icons[currentIndex].src}
+                        alt={icons[currentIndex].alt}
+                        key={`img-${currentIndex}`}
+                        initial={{ opacity: 0, y: ["100%"] }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.3 }}
-                        className='flex flex-col justify-center md:w-[50%] w-[90%] md:m-auto text-black'
+                        className='md:m-auto md:w-[100%] w-[40%] bg-white p-5 rounded-[100%]'
 
-                    >
-                        <h3 className='text-[2.5rem] font-bold leading-tight capitalize'>{data.features[currentIndex].heading}</h3>
-                        <p className="text-[1.8rem] md:text-xl font-light leading-10 md:leading-6 tracking-wide">{data.features[currentIndex].text}</p>
-                    </motion.div>
-                </div >
-                <div className="w-[95%] gap-2 md:gap-0 mx-auto my-[4rem] flex flex-wrap justify-center items-stretch">
-                    {data.subFeatures.map((item, index) => (
-                        <div key={index} className='border-[1px] md:w-[25%] p-4 last:rounded-tr-3xl lg:last:rounded-br-3xl lg:rounded-none lg:first:rounded-tl-3xl first:rounded-bl-3xl md:min-w-[300px] rounded-3xl'>
-                            <div className={`md:hover:scale-[1.2] duration-200 w-full p-4  flex h-[100%] flex-col md:hover:bg-black md:hover:border-black rounded-3xl`} key={index}>
-                                <h3 className='text-[3.2rem] md:text-[2rem] font-[600] py-4 capitalize'>{item.heading}</h3>
-                                <p className="text-2xl md:text-xl font-light leading-6 tracking-wide mb-5">{item.text}</p>
-                            </div>
-                        </div>
-                    ))}
+                    />
                 </div>
-                <div className="my-[4rem] flex flex-col gap-5">
-                    <h3 className='text-[4.5rem] font-[700] py-4 text-[#F02828] text-center'>{data.subtext}</h3>
-                    <div className='flex gap-5 justify-center items-center'>
-                        <svg className="w-[5%] min-w-[50px]" width="100%" height="100%" viewBox="0 0 164 163" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g filter="url(#filter0_d_217_964)">
-                                <mask id="mask0_217_964" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="20" y="16" width="124" height="124">
-                                    <path d="M20.4854 77.5003C20.4854 43.5346 48.02 16 81.9857 16C115.951 16 143.486 43.5346 143.486 77.5003C143.486 111.466 115.951 139.001 81.9857 139.001C48.02 139.001 20.4854 111.466 20.4854 77.5003Z" fill="#F1F1F1" />
-                                </mask>
-                                <g mask="url(#mask0_217_964)">
-                                    <path d="M30.2532 16.0001V91.4746H57.7745L81.9863 49.542H143.486V16.0001H30.2532ZM30.2532 16.0001V91.4746H57.7745L81.9863 49.542H143.486V16.0001H30.2532Z" fill="#DB4437" />
-                                    <path d="M20.4854 139H79.0235L106.197 111.826V91.4818L57.7735 91.474L20.4854 27.5214V139ZM20.4854 139H79.0235L106.197 111.826V91.4818L57.7735 91.474L20.4854 27.5214V139Z" fill="#0F9D58" />
-                                    <path d="M81.9851 49.5414L106.197 91.4739L79.031 139.001H143.485V49.5414H81.9851ZM81.9851 49.5414L106.197 91.4739L79.031 139.001H143.485V49.5414H81.9851Z" fill="#FFCD40" />
-                                    <path d="M81.9842 49.5413C97.4255 49.5413 109.942 62.0594 109.942 77.4994C109.942 92.9406 97.4255 105.459 81.9842 105.459C66.543 105.459 54.0262 92.9406 54.0262 77.4994C54.0262 62.0594 66.543 49.5413 81.9842 49.5413Z" fill="#F1F1F1" />
-                                    <path d="M81.9845 55.1333C94.3372 55.1333 104.351 65.147 104.351 77.4998C104.351 89.8525 94.3372 99.8662 81.9845 99.8662C69.6317 99.8662 59.618 89.8525 59.618 77.4998C59.618 65.147 69.6317 55.1333 81.9845 55.1333Z" fill="#4285F4" />
-                                </g>
+                <motion.div
+                    key={`div-${currentIndex}`}
+                    initial={{ opacity: 0, x: ["100%"] }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className={`flex flex-col justify-center md:w-[50%] w-[90%] md:m-auto text-${data.featureTextColor}`}
+
+                >
+                    <h3 className='text-[2.5rem] font-bold leading-tight capitalize'>{data.features[currentIndex].heading}</h3>
+                    <p className="text-[1.8rem] md:text-xl font-light leading-10 md:leading-6 tracking-wide">{data.features[currentIndex].text}</p>
+                </motion.div>
+            </div >
+            <div className={`w-[95%] gap-2 md:gap-0 mx-auto my-[4rem] flex flex-wrap justify-center items-stretch text-${data.subFeaturesColor} `}>
+                {data.subFeatures.map((item, index) => (
+                    <div key={index} className={`border-[1px] border-${data.subFeaturesColor} md:w-[25%] p-4 last:rounded-tr-3xl lg:last:rounded-br-3xl lg:rounded-none lg:first:rounded-tl-3xl first:rounded-bl-3xl md:min-w-[300px] rounded-3xl`}>
+                        <div className={`md:hover:scale-[1.2] duration-200 w-full p-4  flex h-[100%] flex-col md:hover:bg-${data.subHoverBgFeaturesColor} md:hover:border-black rounded-3xl`} key={index}>
+                            <h3 className='text-[3.2rem] md:text-[2rem] font-[600] py-4 capitalize'>{item.heading}</h3>
+                            <p className="text-2xl md:text-xl font-light leading-6 tracking-wide mb-5">{item.text}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            <div className="my-[4rem] flex flex-col gap-5">
+                <h3 className={`text-[4.5rem] font-[700] py-4 text-${data.subTextColor} text-center`}>{data.subtext}</h3>
+                <div className='flex gap-5 justify-center items-center'>
+                    <svg className="w-[5%] min-w-[50px]" width="100%" height="100%" viewBox="0 0 164 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_217_964)">
+                            <mask id="mask0_217_964" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="20" y="16" width="124" height="124">
+                                <path d="M20.4854 77.5003C20.4854 43.5346 48.02 16 81.9857 16C115.951 16 143.486 43.5346 143.486 77.5003C143.486 111.466 115.951 139.001 81.9857 139.001C48.02 139.001 20.4854 111.466 20.4854 77.5003Z" fill="#F1F1F1" />
+                            </mask>
+                            <g mask="url(#mask0_217_964)">
+                                <path d="M30.2532 16.0001V91.4746H57.7745L81.9863 49.542H143.486V16.0001H30.2532ZM30.2532 16.0001V91.4746H57.7745L81.9863 49.542H143.486V16.0001H30.2532Z" fill="#DB4437" />
+                                <path d="M20.4854 139H79.0235L106.197 111.826V91.4818L57.7735 91.474L20.4854 27.5214V139ZM20.4854 139H79.0235L106.197 111.826V91.4818L57.7735 91.474L20.4854 27.5214V139Z" fill="#0F9D58" />
+                                <path d="M81.9851 49.5414L106.197 91.4739L79.031 139.001H143.485V49.5414H81.9851ZM81.9851 49.5414L106.197 91.4739L79.031 139.001H143.485V49.5414H81.9851Z" fill="#FFCD40" />
+                                <path d="M81.9842 49.5413C97.4255 49.5413 109.942 62.0594 109.942 77.4994C109.942 92.9406 97.4255 105.459 81.9842 105.459C66.543 105.459 54.0262 92.9406 54.0262 77.4994C54.0262 62.0594 66.543 49.5413 81.9842 49.5413Z" fill="#F1F1F1" />
+                                <path d="M81.9845 55.1333C94.3372 55.1333 104.351 65.147 104.351 77.4998C104.351 89.8525 94.3372 99.8662 81.9845 99.8662C69.6317 99.8662 59.618 89.8525 59.618 77.4998C59.618 65.147 69.6317 55.1333 81.9845 55.1333Z" fill="#4285F4" />
                             </g>
                             <defs>
                                 <filter id="filter0_d_217_964" x="0.485352" y="0" width="163.001" height="163.001" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
@@ -187,10 +186,10 @@ const Section3 = ({ data }) => {
                             </defs>
                         </svg>
                     </div>
-                    <p className="w-[75%] md:w-[55%] m-auto text-[1.8rem] md:text-xl font-light md:leading-6 leading-10 tracking-wide mb-5 text-center">{data.text}</p>
                 </div>
-            </div >
-            
+                <p className={`w-[75%] md:w-[55%] m-auto text-[1.8rem] md:text-xl font-light md:leading-6 leading-10 tracking-wide mb-5 text-center text-${data.textColor}`}>{data.text}</p>
+            </div>
+        </div >
     )
 }
 
