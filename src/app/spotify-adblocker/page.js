@@ -16,23 +16,25 @@ const Spotify = () => {
             textColor: "text-[#C3F0C8]",
             navbar: {
                 navLinks: [
-                    {
-                        title: "blogs",
-                        link: "/blogs"
-                    },
-                    {
-                        title: "about us",
-                        link: "/about-us"
-                    },
-                    {
-                        title: "contact us",
-                        link: "/contact-us"
-                    }
+                  {
+                    title: "blogs",
+                    link: "/blogs"
+                  },
+                  {
+                    title: "about us",
+                    link: "/about-us"
+                  },
+                  {
+                    title: "contact us",
+                    link: "/contact-us"
+                  }
                 ],
-                textColor: "white",
-                buttonColor: "black",
-                bgColor: "bg-[#1AB26B]"
-            },
+                bgColor: "bg-[#1AB26B]",
+                logoColor: "black",
+                textColor: "text-black",
+                buttonColor: "bg-black",
+                buttonTextColor: "text-white"
+              },
         },
         section2: {
             heading: "all in one",
