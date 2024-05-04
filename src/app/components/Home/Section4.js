@@ -8,12 +8,11 @@ const Section4 = ({ data }) => {
         );
     }
     return (
-        <div className='z-[2] text-black'>
-            <div className='h-28 bg-[#F1C02A] rounded-bl-[6.5rem] rounded-br-[6.5rem]'></div>
+        <div className='z-[2]'>
             <div className="flex md:flex-row flex-col lg:px-28 px-10 py-28 justify-between relative">
                 <div className="md:sticky md:top-0 md:left-0 md:h-full block text-center">
                     <h2
-                        className={`text-${data.headingColor} py-6 text-[4rem] font-[700] leading-[3rem] capitalize`}>{data?.heading}</h2>
+                        className={`${data.headingColor} py-6 text-[4rem] font-[700] leading-[3rem] capitalize`}>{data?.heading}</h2>
                     <div className={`hidden py-4 px-10 lg:px-16 bg-${data.bgColor} text-white md:flex gap-6 items-center rounded-2xl mt-4`}>
                         <svg width="15%" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.2" d="M47.6223 19.409L41.25 25.7813L29.2188 13.75L35.591 7.37777C35.9133 7.05568 36.3503 6.87476 36.806 6.87476C37.2616 6.87476 37.6986 7.05568 38.0209 7.37777L47.6223 16.9727C47.7827 17.1324 47.91 17.3222 47.9969 17.5313C48.0838 17.7403 48.1285 17.9645 48.1285 18.1909C48.1285 18.4172 48.0838 18.6414 47.9969 18.8504C47.91 19.0595 47.7827 19.2493 47.6223 19.409Z" fill={data.textColor} />

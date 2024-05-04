@@ -34,7 +34,8 @@ const Footer = ({ data }) => {
 
     ]
     return (
-        <div className={`bg-${data.bgColor} rounded-tl-[6.5rem] mt-20 pt-10 rounded-tr-[6.5rem]`}>
+        <div className={`bg-${data.wrapperColor}`}>
+        <div className={`bg-${data.bgColor} rounded-tl-[6.5rem]  pt-10 rounded-tr-[6.5rem]`}>
             <h3 className={`md:text-2xl text-[2.2rem] font-semibold text-${data.headingColor} text-center mb-8`}>{data.heading}</h3>
             <p className={`md:w-[60%] w-[90%] m-auto text-xl md:text-lg font-normal text-${data.textColor} text-center`}>{data.keywords}</p>
             <div className='md:w-[50%] w-[80%] m-auto flex-wrap gap-2 gap-y-5 flex justify-evenly pt-20'>
@@ -54,7 +55,7 @@ const Footer = ({ data }) => {
             </div>
             <p className={`text-${data.textColor} text-center font-lg md:font-md font-normal p-2`}>copyright © 2024 expertadblocker. All rights reserved.</p>
         </div>
-
+        </div>
     )
 }
 

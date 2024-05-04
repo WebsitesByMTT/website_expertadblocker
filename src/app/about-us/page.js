@@ -27,30 +27,37 @@ const AboutUs = () => {
         },
         footer: {
             heading: "Popular Searches",
+            wrapperColor: "transparent",
+            headingColor: "black",
+            bgColor: "[#F74C04]",
+            textColor: "black",
+            webLinksBg: "white",
+            socialLinksBg: "#F1C02A",
+            linksBg: "[#F1C02A]",
             keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free",
             links: [
-                {
-                    name: "About us",
-                    link: "/about-us"
-                },
-                {
-                    name: "Contact US",
-                    link: "/contact-us"
-                },
-                {
-                    name: "Eula",
-                    link: "/terms"
-                },
-                {
-                    name: "Terms of services",
-                    link: "/terms"
-                },
-                {
-                    name: "Privacy Policy",
-                    link: "/privacy-policy"
-                },
+              {
+                name: "About us",
+                link: "/about-us"
+              },
+              {
+                name: "Contact US",
+                link: "/contact-us"
+              },
+              {
+                name: "Eula",
+                link: "/terms"
+              },
+              {
+                name: "Terms of services",
+                link: "/terms"
+              },
+              {
+                name: "Privacy Policy",
+                link: "/privacy-policy"
+              },
             ]
-        }
+          }
     }
 
     return (
