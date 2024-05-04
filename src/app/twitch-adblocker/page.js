@@ -32,9 +32,11 @@ const page = () => {
                 link: "/contact-us"
               }
             ],
-            textColor: "white",
-            buttonColor:"black",
-            bgColor: "bg-[#6441A5]"
+            bgColor: "bg-[#6441A5]",
+            logoColor: "white",
+            textColor: "text-white",
+            buttonColor: "bg-black",
+            buttonTextColor: "text-white"
           },
         },
         section2: {

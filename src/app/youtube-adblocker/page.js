@@ -17,23 +17,25 @@ const Youtube = () => {
             textColor: "text-[#430101]",
             navbar: {
                 navLinks: [
-                    {
-                        title: "blogs",
-                        link: "/blogs"
-                    },
-                    {
-                        title: "about us",
-                        link: "/about-us"
-                    },
-                    {
-                        title: "contact us",
-                        link: "/contact-us"
-                    }
+                  {
+                    title: "blogs",
+                    link: "/blogs"
+                  },
+                  {
+                    title: "about us",
+                    link: "/about-us"
+                  },
+                  {
+                    title: "contact us",
+                    link: "/contact-us"
+                  }
                 ],
-                textColor: "white",
-                buttonColor: "black",
-                bgColor: "bg-[#FF4A4A]"
-            },
+                bgColor: "bg-[#FF4A4A]",
+                logoColor: "black",
+                textColor: "text-black",
+                buttonColor: "bg-black",
+                buttonTextColor: "text-white"
+              },
         },
         section2: {
             heading: "all in one",

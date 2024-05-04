@@ -14,27 +14,29 @@ const page = () => {
             heading: "Block ads with the ultimate Twitch Adblocker Chrome Extension",
             text: "Twitch is the most popular streaming website where people gather for live streaming. While streaming, some disturbing ads spoil our moment, but just downloading Adblocker for Twitch you can block all disturbing ads including banner ads, pop-ups, and video ads. So, block ads and have fast browsing.",
             bgColor: "bg-[#1DE783]",
-            headingColor:"text-[#142C38]",
+            headingColor: "text-[#142C38]",
             textColor: "text-[#012A84]",
             navbar: {
                 navLinks: [
-                    {
-                        title: "blogs",
-                        link: "/blogs"
-                    },
-                    {
-                        title: "about us",
-                        link: "/about-us"
-                    },
-                    {
-                        title: "contact us",
-                        link: "/contact-us"
-                    }
+                  {
+                    title: "blogs",
+                    link: "/blogs"
+                  },
+                  {
+                    title: "about us",
+                    link: "/about-us"
+                  },
+                  {
+                    title: "contact us",
+                    link: "/contact-us"
+                  }
                 ],
-                textColor: "black",
-                buttonColor:"text-white",
-                bgColor: "bg-[#1DE783]"
-            },
+                bgColor: "bg-[#1DE783]",
+                logoColor: "black",
+                textColor: "text-black",
+                buttonColor: "bg-black",
+                buttonTextColor: "text-white"
+              },
         },
         section2: {
             heading: "all in one",
@@ -176,7 +178,7 @@ const page = () => {
             textColor: "text-black",
             webLinksBg: "white",
             socialLinksBg: "#012A84",
-            textlinkColor:'text-white',
+            textlinkColor: 'text-white',
             linksBg: "bg-[#012A84]",
             keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free",
             links: [
