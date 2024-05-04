@@ -32,7 +32,8 @@ export default function Home() {
           }
         ],
         textColor: "white",
-        buttonColor: "black"
+        buttonColor: "black",
+        bgColor: "black"
       },
     },
     section2: {
@@ -48,7 +49,7 @@ export default function Home() {
       heading: "Expert Adblocker",
       headingColor: "[#F74C04]",
       featureTextColor: "black",
-      featurebgColor: "[#F02828]",
+      featureBgColor: "#F02828",
       features: [
         {
           heading: "Go ad-free with this adblock chrome",
@@ -68,7 +69,7 @@ export default function Home() {
         }
       ],
       subFeaturesColor: "white",
-      subHoverBgFeaturesColor: "black",
+      subHoverBgFeaturesColor:"hover:bg-black",
       subFeatures: [
         {
           heading: "Browse Freely and Block Ads",
@@ -84,13 +85,13 @@ export default function Home() {
         }
       ],
       subtext: "Expert Adblocker for",
-      subTextColor: "[#F02828]",
+      subTextColor: "text-[#F02828]",
       textColor: "black",
       text: "It works smoothly on both Firefox and Chrome. So, what are you waiting for download the extension now and bid farewell to all the disturbing ads."
     },
     section4: {
       heading: "Reviews",
-      headingColor: "[#F1C02A]",
+      headingColor: "text-[#F1C02A]",
       textColor: "white",
       bgColor: "black",
       review: [
@@ -156,12 +157,13 @@ export default function Home() {
       text: "It is the best browser extension that eliminates all the ads including banner ads, video ads, pop-ups, and many more. It also protects your browser from third-party trackers and dangerous websites. This is the free adblocker Chrome extension so that everyone can use it freely. With just a few clicks, you can protect your privacy. We aim to give the best experience to our users by blocking all the unnecessary ads that distract you while working or streaming your favorite content. So, go ad-free and enjoy the best internet experience.",
       subtext: "Goodbye to all the annoying ads with ",
       subTextColor: "[#F74C04]",
-      subTextHoverColor: "black",
+      subTextHoverColor: "hover:text-black",
       tag: "Expert adblocker",
       tagColor: "white",
     },
     footer: {
       heading: "Popular Searches",
+      wrapperColor: "black",
       headingColor: "black",
       bgColor: "[#F74C04]",
       textColor: "black",
