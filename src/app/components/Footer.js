@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = ({ data }) => {
     const webLinks = [
-        { name: "Twitch adblocker", link: "" },
+        { name: "Twitch adblocker", link: "/twitch-adblocker" },
         { name: "Hulu adblocker", link: "" },
         { name: "Youtube adblocker", link: "/youtube-adblocker" },
         { name: "Spotify adblocker", link: "/spotify-adblocker" }

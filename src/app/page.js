@@ -1,5 +1,5 @@
+import React from "react";
 import Section1 from "./components/Home/Section1";
-import Navbar from "./components/Navbar";
 import Section2 from "./components/Home/Section2";
 import Section3 from "./components/Home/Section3";
 import Section4 from "./components/Home/Section4";
@@ -44,7 +44,7 @@ export default function Home() {
 
     },
     section3: {
-      bgColor: "[#F1C02A]",
+      bgColor: "bg-[#F1C02A]",
       subHeading: "Exceptional features of",
       heading: "Expert Adblocker",
       headingColor: "[#F74C04]",

@@ -6,7 +6,7 @@ const Section5 = ({ data }) => {
     return (
         <div className='z-[2] text-black '>
             <div className="flex md:flex-row flex-col-reverse px-10 lg:px-28 py-28 gap-20 relative">
-                <div className={`md:w-[55%]  rounded-[4.5rem] p-16 ${data.faqTextColor} flex flex-col gap-4 ${data.bgColor}`}>
+                <div className={`md:w-[55%]  rounded-[4.5rem] p-16 flex flex-col gap-4 ${data.bgColor}`}>
                     {data.faq.map((item, index) => (
                         <div key={index} className={`border-b-2 ${data.borderColor} ${data.faqTextColor}`}>
                             <div onClick={() => setOpenIndex(openIndex === index ? null : index)} className='flex justify-between px-5 py-4 transition-all duration-300 ease-in-out'>
