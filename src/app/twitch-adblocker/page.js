@@ -15,8 +15,8 @@ const page = () => {
           heading: "Block ads with the ultimate Twitch Adblocker Chrome Extension",
           text: "Twitch is the most popular streaming website where people gather for live streaming. While streaming, some disturbing ads spoil our moment, but just downloading Adblocker for Twitch you can block all disturbing ads including banner ads, pop-ups, and video ads. So, block ads and have fast browsing.",
           bgColor: "bg-[#6441A5]",
-          headingColor: "[#F1C02A]",
-          textColor: "white",
+          headingColor: "text-[#F1C02A]",
+          textColor: "text-white",
           navbar: {
             navLinks: [
               {
@@ -33,8 +33,8 @@ const page = () => {
               }
             ],
             textColor: "white",
-            buttonColor: "black",
-            bgColor: "[#6441A5]"
+            buttonColor:"black",
+            bgColor: "bg-[#6441A5]"
           },
         },
         section2: {
@@ -48,9 +48,9 @@ const page = () => {
           bgColor: "bg-[#190839]",
           subHeading: "Amazing Features of",
           heading: "Twitch Adblocker Chrome Extension",
-          headingColor: "[#F1C02A]",
+          headingColor: "text-[#F1C02A]",
           featureTextColor: "black",
-          featureBgColor: "#F1C02A",
+          featureBgColor: "bg-[#F1C02A]",
           features: [
             {
               heading: "Go ad-free with this adblock chrome",
@@ -69,7 +69,7 @@ const page = () => {
               text: "With Expert Adblocker, be the boss of your browser. You can restrict all the adult content that you don’t want to see while browsing."
             }
           ],
-          subFeaturesColor: "white",
+          subFeaturesColor: "text-white",
           subHoverBgFeaturesColor:"hover:bg-[#6441A5]",
           subFeatures: [
             {
@@ -87,14 +87,15 @@ const page = () => {
           ],
           subtext: "Twitch adblocker Chrome extension is for both ",
           subTextColor: "text-[#F1C02A]",
-          textColor: "white",
+          textColor: "text-white",
           text: "If you look at Twitch Adblock 2023 and Twitch Adblock Reddit in comparison, they operate seamlessly on popular web browsers like Chrome and Firefox. All you have to do is install the extension."
         },
         section4: {
           heading: "Reviews",
-          headingColor: "text-[#F1C02A]",
-          textColor: "white",
-          bgColor: "[#6441A5]",
+          headingColor: "text-[#190839]",
+          textColor: "text-white",
+          bgColor: "bg-[#6441A5]",
+          iconColor: "#fff",
           review: [
             {
               name: "Anushka",
@@ -122,9 +123,9 @@ const page = () => {
           heading: "FAQ",
           bgColor:'bg-[#190839]',
           headingColor: "text-[#012A84]",
-          subHeadingColor: "black",
+          subHeadingColor:"black",
           subheading: "Frequently Asked Questions",
-          faqTextColor: "white",
+          faqTextColor: "text-white",
           svgIconColor: "#F1C02A",
           faq: [
             {
@@ -169,13 +170,13 @@ const page = () => {
         },
         footer: {
           heading: "Popular Searches",
-          wrapperColor: "[#0B1418]",
+          wrapperColor: "bg-[#0B1418]",
           headingColor: "black",
           bgColor: "bg-[#9747FF]",
           textColor: "black",
           webLinksBg: "white",
           socialLinksBg: "#F1C02A",
-          linksBg: "[#F1C02A]",
+          linksBg: "bg-[#F1C02A]",
           keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free",
           links: [
             {

@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = ({ data }) => {
     const webLinks = [
         { name: "Twitch adblocker", link: "/twitch-adblocker" },
-        { name: "Hulu adblocker", link: "" },
+        { name: "Hulu adblocker", link: "/hulu" },
         { name: "Youtube adblocker", link: "/youtube-adblocker" },
         { name: "Spotify adblocker", link: "/spotify-adblocker" }
 
@@ -45,7 +45,7 @@ const Footer = ({ data }) => {
             </div>
             <div className='md:w-[50%] w-[70%] m-auto flex flex-wrap gap-2 gap-y-4 justify-evenly py-16 md:py-10'>
                 {data.links.map((item, index) => (
-                    <a key={index} href={item.link} className={`px-4 py-2 md:text-xl text-2xl font-normal ${data.textColor} rounded-3xl ${data.linksBg}`}>{item.name}</a>
+                    <a key={index} href={item.link} className={`px-4 py-2 md:text-xl text-2xl font-normal ${data.textlinkColor} rounded-3xl ${data.linksBg}`}>{item.name}</a>
                 ))}
             </div>
             <div className='w-[70%] md:w-[30%]  m-auto flex-wrap gap-5 flex justify-evenly pb-5'>
