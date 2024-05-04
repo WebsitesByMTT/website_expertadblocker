@@ -4,8 +4,8 @@ const Footer = ({ data }) => {
     const webLinks = [
         { name: "Twitch adblocker", link: "/twitch-adblocker" },
         { name: "Hulu adblocker", link: "" },
-        { name: "Youtube adblocker", link: "" },
-        { name: "Spotify adblocker", link: "" }
+        { name: "Youtube adblocker", link: "/youtube-adblocker" },
+        { name: "Spotify adblocker", link: "/spotify-adblocker" }
 
     ]
     const socialLinks = [
@@ -28,24 +28,24 @@ const Footer = ({ data }) => {
                 <path fillRule="evenodd" clipRule="evenodd" d="M23.3841 0H23.4866C35.8842 0 45.9346 10.0533 45.9346 22.4546V22.5571C45.9346 34.9584 35.8842 45.0117 23.4866 45.0117H23.3841C10.9864 45.0117 0.936127 34.9584 0.936127 22.5571V22.4546C0.936127 10.0533 10.9864 0 23.3841 0ZM16.4742 9.1582H30.398C34.2447 9.1582 37.3741 12.2885 37.3741 16.1363V28.8783C37.3741 32.7261 34.2447 35.8564 30.398 35.8564H16.4742C12.6275 35.8564 9.49814 32.7261 9.49814 28.8783V16.1363C9.49814 12.2885 12.6275 9.1582 16.4742 9.1582ZM16.4742 11.6199C13.9849 11.6199 11.9591 13.6463 11.9591 16.1363V28.8783C11.9591 31.3684 13.9849 33.3948 16.4742 33.3948H30.398C32.8873 33.3948 34.9131 31.3684 34.9131 28.8783V16.1363C34.9131 13.6463 32.8873 11.6199 30.398 11.6199H16.4742ZM23.4363 28.9964C27.0134 28.9964 29.9252 26.0853 29.9252 22.5055C29.9252 18.9258 27.015 16.0147 23.4363 16.0147C19.8576 16.0147 16.9474 18.9258 16.9474 22.5055C16.9474 26.0853 19.8576 28.9964 23.4363 28.9964ZM23.4363 18.4779C25.6576 18.4779 27.4643 20.2852 27.4643 22.5071C27.4643 24.7291 25.6576 26.5363 23.4363 26.5363C21.215 26.5363 19.4083 24.7291 19.4083 22.5071C19.4083 20.2852 21.215 18.4779 23.4363 18.4779ZM32.2741 15.3147C32.2741 16.2798 31.489 17.0636 30.5257 17.0636C29.5609 17.0636 28.7774 16.2798 28.7774 15.3147C28.7774 14.3496 29.5609 13.5658 30.5257 13.5658C31.4906 13.5658 32.2741 14.3496 32.2741 15.3147Z" fill={data.socialLinksBg} />
             </svg>
             ),
-            ink: ""
+            link: ""
         },
 
 
     ]
     return (
-        <div className={`bg-${data.wrapperColor}`}>
+        <div className={`${data.wrapperColor}`}>
         <div className={`${data.bgColor} rounded-tl-[6.5rem]  pt-10 rounded-tr-[6.5rem]`}>
-            <h3 className={`md:text-2xl text-[2.2rem] font-semibold text-${data.headingColor} text-center mb-8`}>{data.heading}</h3>
-            <p className={`md:w-[60%] w-[90%] m-auto text-xl md:text-lg font-normal text-${data.textColor} text-center`}>{data.keywords}</p>
+            <h3 className={`md:text-2xl text-[2.2rem] font-semibold ${data.headingColor} text-center mb-8`}>{data.heading}</h3>
+            <p className={`md:w-[60%] w-[90%] m-auto text-xl md:text-lg font-normal ${data.textColor} text-center`}>{data.keywords}</p>
             <div className='md:w-[50%] w-[80%] m-auto flex-wrap gap-2 gap-y-5 flex justify-evenly pt-20'>
                 {webLinks.map((item, index) => (
-                    <a key={index} href={item.link} className={`px-4 py-2 text-2xl md:text-xl font-normal text-${data.textColor} rounded-3xl bg-white`}>{item.name}</a>
+                    <a key={index} href={item.link} className={`px-4 py-2 text-2xl md:text-xl font-normal ${data.textColor} rounded-3xl bg-white`}>{item.name}</a>
                 ))}
             </div>
             <div className='md:w-[50%] w-[70%] m-auto flex flex-wrap gap-2 gap-y-4 justify-evenly py-16 md:py-10'>
                 {data.links.map((item, index) => (
-                    <a key={index} href={item.link} className={`px-4 py-2 md:text-xl text-2xl font-normal text-${data.textColor} rounded-3xl bg-${data.linksBg}`}>{item.name}</a>
+                    <a key={index} href={item.link} className={`px-4 py-2 md:text-xl text-2xl font-normal ${data.textColor} rounded-3xl ${data.linksBg}`}>{item.name}</a>
                 ))}
             </div>
             <div className='w-[70%] md:w-[30%]  m-auto flex-wrap gap-5 flex justify-evenly pb-5'>
@@ -53,7 +53,7 @@ const Footer = ({ data }) => {
                     <a key={index} href={item.link} className='py-2 min-w-[8rem] md:min-w-[0rem] text-xl w-[20%] '>{item.icon}</a>
                 ))}
             </div>
-            <p className={`text-${data.textColor} text-center font-lg md:font-md font-normal p-2`}>copyright © 2024 expertadblocker. All rights reserved.</p>
+            <p className={`${data.textColor} text-center font-lg md:font-md font-normal p-2`}>copyright © 2024 expertadblocker. All rights reserved.</p>
         </div>
         </div>
     )
