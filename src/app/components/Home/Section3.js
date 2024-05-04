@@ -49,7 +49,7 @@ const Section3 = ({ data }) => {
             <div className={`w-[95%] gap-2 md:gap-0 mx-auto my-[4rem] flex flex-wrap justify-center items-stretch ${data.subFeaturesColor}`}>
                 {data.subFeatures.map((item, index) => (
                     <div key={index} className={`border-[1px] ${data.subFeaturesBorderColor} md:w-[25%] p-4 last:rounded-tr-3xl lg:last:rounded-br-3xl lg:rounded-none lg:first:rounded-tl-3xl first:rounded-bl-3xl md:min-w-[300px] rounded-3xl`}>
-                        <div class={`md:hover:scale-[1.2] ${data.subHoverBgFeaturesColor} duration-200 w-full p-4  flex h-[100%] flex-col ${data.subHoverBgFeaturesColor} ${data.subHoverBgFeaturesColor} rounded-3xl`} key={index}>
+                        <div class={`md:hover:scale-[1.2] ${data.subHoverBgFeaturesColor} duration-200 w-full p-4  flex h-[100%] flex-col ${data.subHoverBgFeaturesColor} ${data.subHoverTextFeaturesColor} rounded-3xl`} key={index}>
                             <h3 className='text-[3.2rem] md:text-[2rem] font-[600] py-4 capitalize'>{item.heading}</h3>
                             <p className="text-2xl md:text-xl font-light leading-6 tracking-wide mb-5">{item.text}</p>
                         </div>

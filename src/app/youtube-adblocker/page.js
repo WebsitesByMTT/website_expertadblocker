@@ -45,50 +45,50 @@ const Youtube = () => {
         section3: {
             bgColor: "bg-[#DBDBDB]",
             subHeading: "Features of",
-            heading: "Youtube Adblocker Chrome Extension ",
+            heading: "Youtube Adblocker",
             headingColor: "text-[#E31010]",
             featureTextColor: "text-white",
             featureBgColor: "bg-black",
             features: [
                 {
-                    heading: "Block Spotify Ads",
-                    text: "By simply downloading the extension you can enjoy spotify without ads"
+                    heading: "Shield Your Privacy",
+                    text: "YouTube ad blocker is the best extension that not only blocks ads but also protects your privacy. It also saves your data usage and shields you from all the malware that may harm your browser."
                 },
                 {
-                    heading: "Avoid Third-Party Trackers",
-                    text: "This is the best extension that not only blocks ads but also protects you from third-party hackers and all the malware that may harm your browser."
+                    heading: "Eliminate ads with YouTube ad blocker",
+                    text: "This adblocker free to use and very simple to download. It removes all types of YouTube ads that spoil your moment. So install the extension now and feel free to watch the video."
                 },
                 {
-                    heading: "Save Data Usage",
-                    text: "By removing all those ads, it will save your data usage and also maintain your privacy"
+                    heading: "Parenting Control",
+                    text: "It has the best web assistance and you can be the boss of your online journey by removing all the content that you don’t want on your screen."
                 },
                 {
-                    heading: "Enjoy ad-free Spotify for free",
-                    text: "Enjoy spotify no ads by using this extension for free"
+                    heading: "Free to Use",
+                    text: "Now you can block YouTube ads for free. So, what are you waiting for? Download the extension now!"
                 }
             ],
             subFeaturesColor: "text-[#FF0000] ",
             subFeaturesBorderColor: "border-[#FF0000] ",
             subHoverBgFeaturesColor: "hover:bg-[#FF0000]",
-            subHovertextFeaturesColor: "hover:text-[#DBDBDB]",
+            subHoverTextFeaturesColor: "hover:text-[#DBDBDB]",
             subFeatures: [
                 {
-                    heading: " Listen Without Limits",
-                    text: "There will be no limits after downloading this amazing extension on your browser. With this extension, you can listen to all your most awaited music lists that are on hold due to those disturbing ads. So, freshen up your mood and start your playlist with the only Spotify ad blocker."
+                    heading: "Enjoy More and Browse Fast",
+                    text: "By simply downloading the YouTube Adblocker Chrome extension you can watch all your favorite videos without any disturbance. By removing all those ads, it will also speed up your page loading."
                 },
                 {
-                    heading: "Security Comes First",
-                    text: "Before downloading any extension, security is the first thing that comes to our mind. But with spotify adblocker, you don’t need to worry about that this extension is free and safe to use."
+                    heading: "Protect Your Browser",
+                    text: "Thanks to the YouTube ad blocker that will remove all the elements that may harm your browser. It will give you a seamless experience where you can stream hassle-free."
                 },
                 {
-                    heading: "Protect Your Device",
-                    text: "This amazing extension not only blocks ads but also maintains your privacy. Apart from ads, it will also remove all the malware that can ruin your browser. By deleting those, it will also fasten up your web page loading."
+                    heading: "It is very simple to use",
+                    text: "The best part is YouTube Adblocker Chrome extension is very simple to download. You just need to visit its official website where you can install the extension directly. After downloading it will automatically block ads from your browser."
                 }
             ],
-            subtext: "Spotify adblocker works on",
+            subtext: "YouTube Adblocker Chrome Extension works On",
             subTextColor: "text-[#FF0000]",
             textColor: "text-[#012A84]",
-            text: "This extension smoothly runs on Chrome and Firefox for free. Now you can remove all types of ads by simply installing it."
+            text: "The extension perfectly works on both Chrome and Firefox and allows you to remove any distracting elements while you work."
         },
         section4: {
             heading: "Reviews",
@@ -99,23 +99,23 @@ const Youtube = () => {
             review: [
                 {
                     name: "Anushka",
-                    text: "Now I can play my favorite music list without worrying about ads."
+                    text: "I have been using this extension for years now and it is the best."
                 },
                 {
                     name: "Gursimar",
-                    text: "This is the best extension as it helps me to listen to my favorite songs without those irritating ads."
+                    text: "Now I can watch all my favorite videos without those irritating ads."
                 },
                 {
                     name: "Rahul",
-                    text: "Now I can block spotify ads for free."
+                    text: "This extension is free to use and smoothly runs in both Chrome and Firefox."
                 },
                 {
                     name: "Gaurav",
-                    text: "Thanks to spotify adblocker as now with blocking ads I can keep my device safe by removing all the malware."
+                    text: "Such a wonderful extension it is! It automatically removes all the ads and lets me stream freely."
                 },
                 {
                     name: "Ashish",
-                    text: "I have been using this for months now and I bet this is the best."
+                    text: "The best part is it also protects your browser from all the dangerous websites."
                 },
             ]
         },
@@ -130,24 +130,24 @@ const Youtube = () => {
             svgIconColor: "#430101",
             faq: [
                 {
-                    ques: "Can I block ads on Spotify?",
-                    answer: "Yes, by simply downloading the Spotify adblocker you can block all those spotify ads that ruin your mood while listening to your favorite music."
+                    ques: "How to use an adblocker on YouTube?",
+                    answer: "Yes, by simply downloading the Spotify adblocker you can block all those spotify ads that ruin your mood while listening to your favorite music.It is very easy, you just need to install our separate extension for YouTube which is YouTube adblocker, and block ads."
                 },
                 {
-                    ques: "What is a Spotify ad blocker, and how does it function within the Spotify platform?",
-                    answer: "Spotify adblocker is the extension that blocks all types of spotify ads. Just download the extension and it will work automatically on your browser."
+                    ques: "How does Adblock affect Youtubers?",
+                    answer: "They indirectly on Youtubers as it may reduce the ad revenue. Adblocker prevents users from seeing ads while watching a YouTube video."
                 },
                 {
-                    ques: "How to Block Spotify Ads without Premium?",
-                    answer: "Now you don’t have to buy premium as with spotify adblocker you can block ads for free."
+                    ques: "Which ad blocker works on YouTube?",
+                    answer: "YouTube adblocker Chrome extension perfectly works on YouTube."
                 },
                 {
-                    ques: "Is this extension safe to use?",
-                    answer: "Yes, this is safe to use as it is the most trustworthy extension around the world."
+                    ques: "Do ad blockers violate YouTube's terms of service?",
+                    answer: "Yes, it may violate their terms and services because the whole model of YouTube is based on ads. YouTube adblocker blocks those ads."
                 },
                 {
-                    ques: "Is spotify adblocker free?",
-                    answer: "Yes, this extension is free to use."
+                    ques: "Which ad blocker works on YouTube?",
+                    answer: "YouTube ad blocker Chrome extension works on YouTube."
                 },
             ]
         },
@@ -157,14 +157,14 @@ const Youtube = () => {
             borderColor: "border-[#FF0000]",
             subHeadingColor: "text-[#FF0000]",
             headingColor: "text-white",
-            subheading: "Spotify Adblocker",
+            subheading: "Youtube Adblocker",
             textColor: "text-white",
-            text: "Spotify is the most popular audio-streaming platform where there are huge variety of songs. Whether you are fond of old classic music or rap, you will get everything on Spotify. But while listening to our music some ads come in between and spoil our mood. But for that case, we have a spotify ad blocker that will block all those ads for free and let you enjoy your music without limits. Apart from removing ads, it will also speed up your page loading and protect you from all the malware that may ruin your browser. The best part is, that you don’t have to buy premium as this extension is free to use.",
-            subtext: "Tired of Spotify ads? ",
+            text: "YouTube is the most popular streaming website among people and they love to watch videos on it. Most of the time when we stream our favorite content some ads are so annoying to watch. But don’t worry about that now as there is a YouTube adblocker Chrome extension that blocks all those ads that come in between while streaming. By removing those ads, you can also browse faster on YouTube. It will also block all those dangerous websites that may harm your browser. So, download the extension now and block ads for free.",
+            subtext: "Get rid of ",
             subTextColor: "text-[#FF0000]",
             subTextHoverColor: "hover:text-black",
             hoverColor: "hover:bg-[#FF0000]",
-            tag: "Download the extension now",
+            tag: "YouTube ads now",
             tagColor: "text-white",
         },
         footer: {
@@ -173,6 +173,7 @@ const Youtube = () => {
             headingColor: "text-black",
             bgColor: "bg-[#FF4A4A]",
             textColor: "text-black",
+            textlinkColor: "text-black",
             webLinksBg: "bg-[#C3F0C8]",
             socialLinksBg: "#FFD7B3",
             linksBg: "bg-[#FFD7B3]",

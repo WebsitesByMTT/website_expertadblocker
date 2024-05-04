@@ -4,8 +4,8 @@ const Section1 = ({ data }) => {
     return (
         <div>
             <Navbar data={data.navbar} />
-            <div className={data.bgColor}>
-                <div className={`grid grid-cols-12 w-[90%] mx-auto items-center  rounded-bl-[6.5rem] rounded-br-[6.5rem] min-h-screen `}>
+            <div className={`${data.bgColor}  rounded-bl-[6.5rem] rounded-br-[6.5rem] `}>
+                <div className={`grid grid-cols-12 w-[90%] mx-auto items-center min-h-screen `}>
 
                     <div className="col-span-12 pb-32 md:pb-0 order-2 md:order-1 md:col-span-6 space-y-10 text-center md:text-left">
                         <h1 className={`${data.headingColor} text-[4rem] font-[800]  leading-tight capitalize`}>{data?.heading}</h1>
