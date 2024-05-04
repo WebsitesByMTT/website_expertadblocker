@@ -4,7 +4,7 @@ import { useState } from "react";
 const Section5 = ({ data }) => {
     const [openIndex, setOpenIndex] = useState(null);
     return (
-        <div className='bg-white z-[2] text-black' style={{ backgroundImage: 'url(./bg.png)' }}>
+        <div className='z-[2] text-black '>
             <div className="flex md:flex-row flex-col-reverse px-10 lg:px-28 py-28 gap-20 relative">
                 <div className="md:w-[55%] bg-[#F1C02A] rounded-[4.5rem] p-16 text-white flex flex-col gap-4">
                     {data.faq.map((item, index) => (
@@ -33,7 +33,6 @@ const Section5 = ({ data }) => {
                     <p className='text-black py-6 text-3xl font-[800] leading-10 lg:leading-3 capitalize'>{data.subheading}</p>
                 </div>
             </div>
-            <div className='h-28 bg-black rounded-tl-[6.5rem] rounded-tr-[6.5rem]'></div>
         </div>
     );
 };

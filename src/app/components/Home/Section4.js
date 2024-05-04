@@ -8,7 +8,7 @@ const Section4 = ({ data }) => {
         );
     }
     return (
-        <div className='bg-white z-[2] text-black' style={{ backgroundImage: 'url(./bg.png)' }}>
+        <div className='z-[2] text-black'>
             <div className='h-28 bg-[#F1C02A] rounded-bl-[6.5rem] rounded-br-[6.5rem]'></div>
             <div className="flex md:flex-row flex-col lg:px-28 px-10 py-28 justify-between relative">
                 <div className="md:sticky md:top-0 md:left-0 md:h-full block text-center">
