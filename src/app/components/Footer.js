@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = ({ data }) => {
     const webLinks = [
-        { name: "Twitch adblocker", link: "" },
+        { name: "Twitch adblocker", link: "/twitch-adblocker" },
         { name: "Hulu adblocker", link: "" },
         { name: "Youtube adblocker", link: "" },
         { name: "Spotify adblocker", link: "" }
@@ -35,7 +35,7 @@ const Footer = ({ data }) => {
     ]
     return (
         <div className={`bg-${data.wrapperColor}`}>
-        <div className={`bg-${data.bgColor} rounded-tl-[6.5rem]  pt-10 rounded-tr-[6.5rem]`}>
+        <div className={`${data.bgColor} rounded-tl-[6.5rem]  pt-10 rounded-tr-[6.5rem]`}>
             <h3 className={`md:text-2xl text-[2.2rem] font-semibold text-${data.headingColor} text-center mb-8`}>{data.heading}</h3>
             <p className={`md:w-[60%] w-[90%] m-auto text-xl md:text-lg font-normal text-${data.textColor} text-center`}>{data.keywords}</p>
             <div className='md:w-[50%] w-[80%] m-auto flex-wrap gap-2 gap-y-5 flex justify-evenly pt-20'>

@@ -1,5 +1,5 @@
+import React from "react";
 import Section1 from "./components/Home/Section1";
-import Navbar from "./components/Navbar";
 import Section2 from "./components/Home/Section2";
 import Section3 from "./components/Home/Section3";
 import Section4 from "./components/Home/Section4";
@@ -13,7 +13,7 @@ export default function Home() {
     section1: {
       heading: "Block Ads not your privacy",
       text: "Expert Adblocker is the ultimate extension that not only blocks all the annoying ads from your browser but also protects your privacy. So, download this ad blocker in Chrome now and enjoy an ad-free experience.",
-      bgColor: "black",
+      bgColor: "bg-black",
       headingColor: "[#F74C04]",
       textColor: "[#F1C02A]",
       navbar: {
@@ -44,7 +44,7 @@ export default function Home() {
 
     },
     section3: {
-      bgColor: "[#F1C02A]",
+      bgColor: "bg-[#F1C02A]",
       subHeading: "Exceptional features of",
       heading: "Expert Adblocker",
       headingColor: "[#F74C04]",

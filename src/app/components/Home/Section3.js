@@ -18,7 +18,7 @@ const Section3 = ({ data }) => {
         return () => clearInterval(intervalId);
     }, []);
     return (
-        <div className={`flex flex-col bg-${data.bgColor} justify-between py-20 rounded-[6.5rem]`}>
+        <div className={`flex flex-col ${data.bgColor} justify-between py-20 rounded-[6.5rem]`}>
             <h2 className='text-white text-[4rem] font-[700] leading-tight capitalize text-center'>{data?.subHeading}</h2>
             <h3 className={`text-${data.headingColor} text-[4rem] font-[700] leading-tight uppercase text-center`}>{data?.heading}</h3>
             <div style={{ backgroundColor: data.featureBgColor }} className={` md:w-[80%] lg:w-[50%] min-h-[45vh] md:min-h-[0hv] w-[90%] gap-5 m-auto my-[3rem] rounded-[6rem] flex-col md:flex-row p-16 md:p-0 md:pr-5 flex overflow-hidden`}>

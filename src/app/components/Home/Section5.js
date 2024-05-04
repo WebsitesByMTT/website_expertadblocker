@@ -6,7 +6,7 @@ const Section5 = ({ data }) => {
     return (
         <div className='z-[2] text-black '>
             <div className="flex md:flex-row flex-col-reverse px-10 lg:px-28 py-28 gap-20 relative">
-                <div className="md:w-[55%] bg-[#F1C02A] rounded-[4.5rem] p-16 text-white flex flex-col gap-4">
+                <div className={`md:w-[55%] ${data.bgColor} rounded-[4.5rem] p-16 text-white flex flex-col gap-4`}>
                     {data.faq.map((item, index) => (
                         <div key={index} className={`border-b-2 border-${data.faqTextColor} text-${data.faqTextColor}`}>
                             <div onClick={() => setOpenIndex(openIndex === index ? null : index)} className='flex justify-between px-5 py-4 transition-all duration-300 ease-in-out'>
@@ -29,7 +29,7 @@ const Section5 = ({ data }) => {
                     ))}
                 </div>
                 <div className="md:sticky md:top-0 md:left-0 md:h-full text-center md:text-left">
-                    <h2 className={`text-${data.headingColor} py-6 text-[4rem] font-[700] leading-[3rem] uppercase`}>{data?.heading}</h2>
+                    <h2 className={` ${data.headingColor} py-6 text-[4rem] font-[700] leading-[3rem] uppercase`}>{data?.heading}</h2>
                     <p className={`text-${data.subHeadingColor} py-6 text-3xl font-[800] leading-10 lg:leading-3 capitalize`}>{data.subheading}</p>
                 </div>
             </div>
