@@ -18,10 +18,10 @@ const Section3 = ({ data }) => {
         return () => clearInterval(intervalId);
     }, []);
     return (
-        <div className="flex flex-col bg-[#F1C02A] justify-between">
+        <div className={`flex flex-col bg-${data.bgColor} justify-between`}>
             <h2 className='text-white text-[4rem] font-[700] leading-tight capitalize text-center'>{data?.subHeading}</h2>
-            <h3 className='text-[#F02828] text-[4rem] font-[700] leading-tight uppercase text-center'>{data?.heading}</h3>
-            <div className="md:w-[80%] lg:w-[50%] min-h-[45vh] md:min-h-[0hv] w-[90%] gap-5 m-auto my-[3rem] rounded-[6rem] flex-col md:flex-row p-16 md:p-0 md:pr-5 bg-[#F02828] flex overflow-hidden">
+            <h3 className={`text-${data.headingColor} text-[4rem] font-[700] leading-tight uppercase text-center`}>{data?.heading}</h3>
+            <div className={`md:w-[80%] lg:w-[50%] min-h-[45vh] md:min-h-[0hv] w-[90%] gap-5 m-auto my-[3rem] rounded-[6rem] flex-col md:flex-row p-16 md:p-0 md:pr-5 bg-${data.featurebgColor} flex overflow-hidden`}>
                 <div className="w-[60%] md:bg-white md:w-[40%] p-2 md:rounded-[6rem] overflow-hidden flex justify-between">
                     <motion.img
                         src={icons[currentIndex].src}
@@ -39,17 +39,17 @@ const Section3 = ({ data }) => {
                     initial={{ opacity: 0, x: ["100%"] }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3 }}
-                    className='flex flex-col justify-center md:w-[50%] w-[90%] md:m-auto text-black'
+                    className={`flex flex-col justify-center md:w-[50%] w-[90%] md:m-auto text-${data.featureTextColor}`}
 
                 >
                     <h3 className='text-[2.5rem] font-bold leading-tight capitalize'>{data.features[currentIndex].heading}</h3>
                     <p className="text-[1.8rem] md:text-xl font-light leading-10 md:leading-6 tracking-wide">{data.features[currentIndex].text}</p>
                 </motion.div>
             </div >
-            <div className="w-[95%] gap-2 md:gap-0 mx-auto my-[4rem] flex flex-wrap justify-center items-stretch">
+            <div className={`w-[95%] gap-2 md:gap-0 mx-auto my-[4rem] flex flex-wrap justify-center items-stretch text-${data.subFeaturesColor} `}>
                 {data.subFeatures.map((item, index) => (
-                    <div key={index} className='border-[1px] md:w-[25%] p-4 last:rounded-tr-3xl lg:last:rounded-br-3xl lg:rounded-none lg:first:rounded-tl-3xl first:rounded-bl-3xl md:min-w-[300px] rounded-3xl'>
-                        <div className={`md:hover:scale-[1.2] duration-200 w-full p-4  flex h-[100%] flex-col md:hover:bg-black md:hover:border-black rounded-3xl`} key={index}>
+                    <div key={index} className={`border-[1px] border-${data.subFeaturesColor} md:w-[25%] p-4 last:rounded-tr-3xl lg:last:rounded-br-3xl lg:rounded-none lg:first:rounded-tl-3xl first:rounded-bl-3xl md:min-w-[300px] rounded-3xl`}>
+                        <div className={`md:hover:scale-[1.2] duration-200 w-full p-4  flex h-[100%] flex-col md:hover:bg-${data.subHoverBgFeaturesColor} md:hover:border-black rounded-3xl`} key={index}>
                             <h3 className='text-[3.2rem] md:text-[2rem] font-[600] py-4 capitalize'>{item.heading}</h3>
                             <p className="text-2xl md:text-xl font-light leading-6 tracking-wide mb-5">{item.text}</p>
                         </div>
@@ -57,7 +57,7 @@ const Section3 = ({ data }) => {
                 ))}
             </div>
             <div className="my-[4rem] flex flex-col gap-5">
-                <h3 className='text-[4.5rem] font-[700] py-4 text-[#F02828] text-center'>{data.subtext}</h3>
+                <h3 className={`text-[4.5rem] font-[700] py-4 text-${data.subTextColor} text-center`}>{data.subtext}</h3>
                 <div className='flex gap-5 justify-center items-center'>
                     <svg className="w-[5%] min-w-[50px]" width="100%" height="100%" viewBox="0 0 164 163" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_217_964)">
@@ -187,7 +187,7 @@ const Section3 = ({ data }) => {
                         </defs>
                     </svg>
                 </div>
-                <p className="w-[75%] md:w-[55%] m-auto text-[1.8rem] md:text-xl font-light md:leading-6 leading-10 tracking-wide mb-5 text-center">{data.text}</p>
+                <p className={`w-[75%] md:w-[55%] m-auto text-[1.8rem] md:text-xl font-light md:leading-6 leading-10 tracking-wide mb-5 text-center text-${data.textColor}`}>{data.text}</p>
             </div>
         </div >
     )
