@@ -54,6 +54,7 @@ const Footer = ({ data }) => {
             </div>
             <p className={`text-${data.textColor} text-center font-lg md:font-md font-normal p-2`}>copyright © 2024 expertadblocker. All rights reserved.</p>
         </div>
+
     )
 }
 

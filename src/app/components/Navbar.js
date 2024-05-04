@@ -8,13 +8,7 @@ const Navbar = ({ data }) => {
     const handleClick = () => {
         setOpen(prev => !prev);
     }
-    useEffect(() => {
-        if (open) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
-        }
-    }, [open]);
+   
     return (
         <div className='p-8 px-12 md:px-12 lg:px-28 md:pt-10 pb-3 flex justify-between items-center relative'>
             <a href="/">
@@ -36,17 +30,10 @@ const Navbar = ({ data }) => {
                 <a className={` md:block hidden bg-${data.textColor} text-${data.buttonColor} uppercase text-xl font-[500] rounded-3xl border-2 px-4 py-1 hover:bg-[#F74C04] hover:text-white`}>Add to chrome its free</a>
                 <div onClick={handleClick} className='z-[11] md:hidden'>{open ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill={data.textColor} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg> : <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill={data.textColor} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-align-justify"><line x1="3" x2="21" y1="6" y2="6" /><line x1="3" x2="21" y1="12" y2="12" /><line x1="3" x2="21" y1="18" y2="18" /></svg>}</div>
             </div>
-            {open &&
-                <motion.div
-                    initial={{ y: "-100%", height: 0, opacity: 0 }}
-                    whileInView={{ y: 0, height: "100vh", opacity: 1, transition: { type: "tween", stiffness: 100, damping: 5 } }}
-                    className='backdrop-blur-sm h-screen w-[100%] top-[100%] right-0 absolute z-10 scroll'>
-                    <div className='flex flex-col px-8 py-12'>
-                        <a className='bg-white uppercase w-fit text-black text-3xl font-[500] rounded-3xl border-2 px-4 py-1 hover:bg-[#F74C04] hover:text-white'>Add to chrome its free</a>
-                    </div>
-                </motion.div>
+            {/* Mobile NavBar */}
+            <div className='fixed  top-0 -left-[50%] hidden w-full h-screen bg-black z-50'>
 
-            }
+            </div>
         </div>
     )
 }

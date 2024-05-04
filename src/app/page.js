@@ -194,7 +194,8 @@ export default function Home() {
     }
   }
   return (
-    <div>
+    <>
+     <div>
       <Section1 data={data.section1} />
       <Section2 data={data.section2} />
       <Section3 data={data.section3} />
@@ -203,5 +204,7 @@ export default function Home() {
       <Section6 data={data.section6} />
       <Footer data={data.footer} />
     </div>
+    </>
+   
   );
 }
