@@ -18,10 +18,10 @@ const Section3 = ({ data }) => {
         return () => clearInterval(intervalId);
     }, []);
     return (
-        <div className={`flex flex-col bg-${data.bgColor} justify-between py-20 rounded-[6.5rem]`}>
+        <div className={`flex flex-col ${data.bgColor} justify-between py-20 rounded-[6.5rem]`}>
             <h2 className='text-white text-[4rem] font-[700] leading-tight capitalize text-center'>{data?.subHeading}</h2>
-            <h3 className={`text-${data.headingColor} text-[4rem] font-[700] leading-tight uppercase text-center`}>{data?.heading}</h3>
-            <div style={{ backgroundColor: data.featureBgColor }} className={` md:w-[80%] lg:w-[50%] min-h-[45vh] md:min-h-[0hv] w-[90%] gap-5 m-auto my-[3rem] rounded-[6rem] flex-col md:flex-row p-16 md:p-0 md:pr-5 flex overflow-hidden`}>
+            <h3 className={`${data.headingColor} text-[4rem] font-[700] leading-tight uppercase text-center`}>{data?.heading}</h3>
+            <div className={` ${data.featureBgColor} md:w-[80%] lg:w-[50%] min-h-[45vh] md:min-h-[0hv] w-[90%] gap-5 m-auto my-[3rem] rounded-[6rem] flex-col md:flex-row p-16 md:p-0 md:pr-5 flex overflow-hidden`}>
                 <div className="w-[60%] md:bg-white md:w-[40%] p-2 md:rounded-[6rem] overflow-hidden flex justify-between">
                     <motion.img
                         src={icons[currentIndex].src}
@@ -39,17 +39,17 @@ const Section3 = ({ data }) => {
                     initial={{ opacity: 0, x: ["100%"] }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3 }}
-                    className={`flex flex-col justify-center md:w-[50%] w-[90%] md:m-auto text-${data.featureTextColor}`}
+                    className={`flex flex-col justify-center md:w-[50%] w-[90%] md:m-auto ${data.featureTextColor}`}
 
                 >
                     <h3 className='text-[2.5rem] font-bold leading-tight capitalize'>{data.features[currentIndex].heading}</h3>
                     <p className="text-[1.8rem] md:text-xl font-light leading-10 md:leading-6 tracking-wide">{data.features[currentIndex].text}</p>
                 </motion.div>
             </div >
-            <div className={`w-[95%] gap-2 md:gap-0 mx-auto my-[4rem] flex flex-wrap justify-center items-stretch text-${data.subFeaturesColor}`}>
+            <div className={`w-[95%] gap-2 md:gap-0 mx-auto my-[4rem] flex flex-wrap justify-center items-stretch ${data.subFeaturesColor}`}>
                 {data.subFeatures.map((item, index) => (
-                    <div key={index} className={`border-[1px] border-${data.subFeaturesColor} md:w-[25%] p-4 last:rounded-tr-3xl lg:last:rounded-br-3xl lg:rounded-none lg:first:rounded-tl-3xl first:rounded-bl-3xl md:min-w-[300px] rounded-3xl`}>
-                        <div class={`md:hover:scale-[1.2] ${data.subHoverBgFeaturesColor} duration-200 w-full p-4  flex h-[100%] flex-col md:hover:bg-${data.subHoverBgFeaturesColor} rounded-3xl`} key={index}>
+                    <div key={index} className={`border-[1px] ${data.subFeaturesBorderColor} md:w-[25%] p-4 last:rounded-tr-3xl lg:last:rounded-br-3xl lg:rounded-none lg:first:rounded-tl-3xl first:rounded-bl-3xl md:min-w-[300px] rounded-3xl`}>
+                        <div class={`md:hover:scale-[1.2] ${data.subHoverBgFeaturesColor} duration-200 w-full p-4  flex h-[100%] flex-col ${data.subHoverBgFeaturesColor} ${data.subHoverBgFeaturesColor} rounded-3xl`} key={index}>
                             <h3 className='text-[3.2rem] md:text-[2rem] font-[600] py-4 capitalize'>{item.heading}</h3>
                             <p className="text-2xl md:text-xl font-light leading-6 tracking-wide mb-5">{item.text}</p>
                         </div>
@@ -188,7 +188,7 @@ const Section3 = ({ data }) => {
                     </svg>
                 </div>
             </div>
-            <p className={`w-[75%] md:w-[55%] m-auto text-[1.8rem] md:text-xl font-light md:leading-6 leading-10 tracking-wide mb-5 text-center text-${data.textColor}`}>{data.text}</p>
+            <p className={`w-[75%] md:w-[55%] m-auto text-[1.8rem] md:text-xl font-light md:leading-6 leading-10 tracking-wide mb-5 text-center ${data.textColor}`}>{data.text}</p>
         </div>
     )
 }

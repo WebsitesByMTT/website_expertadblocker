@@ -13,9 +13,9 @@ export default function Home() {
     section1: {
       heading: "Block Ads not your privacy",
       text: "Expert Adblocker is the ultimate extension that not only blocks all the annoying ads from your browser but also protects your privacy. So, download this ad blocker in Chrome now and enjoy an ad-free experience.",
-      bgColor: "black",
-      headingColor: "[#F74C04]",
-      textColor: "[#F1C02A]",
+      bgColor: "bg-black",
+      headingColor: "text-[#F74C04]",
+      textColor: "text-[#F1C02A]",
       navbar: {
         navLinks: [
           {
@@ -33,13 +33,13 @@ export default function Home() {
         ],
         textColor: "white",
         buttonColor: "black",
-        bgColor: "black"
+        bgColor: "bg-black"
       },
     },
     section2: {
       heading: "all in one",
-      headingColor: "[#F74C04]",
-      textColor: "black",
+      headingColor: "text-[#F74C04]",
+      textColor: "text-black",
       text: "As compared to all the adblockers including abp plus chrome, adb plus chrome and fair adblocker, it is the only extension that has a separate Hulu adblock, adblocker for Twitch, YouTube adblock, and Spotify Adblock that will work smoothly on these platforms.",
 
     },

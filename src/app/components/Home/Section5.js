@@ -6,9 +6,9 @@ const Section5 = ({ data }) => {
     return (
         <div className='z-[2] text-black '>
             <div className="flex md:flex-row flex-col-reverse px-10 lg:px-28 py-28 gap-20 relative">
-                <div className="md:w-[55%] bg-[#F1C02A] rounded-[4.5rem] p-16 text-white flex flex-col gap-4">
+                <div className={`md:w-[55%]  rounded-[4.5rem] p-16 ${data.faqTextColor} flex flex-col gap-4 ${data.bgColor}`}>
                     {data.faq.map((item, index) => (
-                        <div key={index} className={`border-b-2 border-${data.faqTextColor} text-${data.faqTextColor}`}>
+                        <div key={index} className={`border-b-2 ${data.borderColor} ${data.faqTextColor}`}>
                             <div onClick={() => setOpenIndex(openIndex === index ? null : index)} className='flex justify-between px-5 py-4 transition-all duration-300 ease-in-out'>
                                 <p className="text-[2.2rem] md:text-[1.9rem] font-semibold md:my-auto">{item.ques}</p>
                                 <div className={openIndex === index ? 'transform rotate-180 transition-transform duration-300 min-w-[3rem] w-[4rem] h-fit ease' : 'min-w-[3rem] w-[4rem] transition-transform h-fit duration-300 ease'}>
@@ -29,8 +29,8 @@ const Section5 = ({ data }) => {
                     ))}
                 </div>
                 <div className="md:sticky md:top-0 md:left-0 md:h-full text-center md:text-left">
-                    <h2 className={`text-${data.headingColor} py-6 text-[4rem] font-[700] leading-[3rem] uppercase`}>{data?.heading}</h2>
-                    <p className={`text-${data.subHeadingColor} py-6 text-3xl font-[800] leading-10 lg:leading-3 capitalize`}>{data.subheading}</p>
+                    <h2 className={`${data.headingColor} py-6 text-[4rem] font-[700] leading-[3rem] uppercase`}>{data?.heading}</h2>
+                    <p className={`${data.subHeadingColor} py-6 text-3xl font-[800] leading-10 lg:leading-3 capitalize`}>{data.subheading}</p>
                 </div>
             </div>
         </div>

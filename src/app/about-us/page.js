@@ -61,11 +61,11 @@ const AboutUs = () => {
     }
 
     return (
-        <div className="">
-            <div className="bg-[url('/BGPattern.png')] object-cover ">
-                <Navbar data={data.navbar} />
-                <div className="text-[#F74C04] text-[3rem] font-bold  px-12 md:px-12 lg:px-28">About us</div>
-            </div>
+        <div className="bg-white">
+            <div className=' bg-[#F3F3F3] rounded-bl-[4rem] rounded-br-[4rem] lg:rounded-bl-[6.5rem] lg:rounded-br-[6.5rem]' style={{ backgroundImage: 'url(./bg.png)' }}>
+        <Navbar data={data.navbar} />
+        <h1 className="text-[4.5rem] text-center lg:text-left font-[800] px-10 lg:px-28 py-5 text-[#F74C04]">About Us</h1>
+      </div>
             <div className="bg-white">
             <div className="grid grid-cols-12 py-20 px-5 md:px-0 space-y-10 md:space-y-0 items-center md:w-[95%] 2xl:w-[90%] mx-auto">
                 <div className="col-span-12 md:col-span-6 flex justify-center">

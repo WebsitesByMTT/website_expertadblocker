@@ -37,6 +37,13 @@ const Terms = () => {
     ],
     footer: {
       heading: "Popular Searches",
+      wrapperColor: "transparent",
+      headingColor: "black",
+      bgColor: "[#F74C04]",
+      textColor: "black",
+      webLinksBg: "white",
+      socialLinksBg: "#F1C02A",
+      linksBg: "[#F1C02A]",
       keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free",
       links: [
         {
@@ -63,7 +70,7 @@ const Terms = () => {
     }
   }
   return (
-    <div>
+    <div className="bg-black">
       <div className=' bg-white rounded-bl-[4rem] rounded-br-[4rem] lg:rounded-bl-[6.5rem] lg:rounded-br-[6.5rem]' style={{ backgroundImage: 'url(./bg.png)' }}>
         <Navbar data={data.navbar} />
         <h1 className="text-[4.5rem] text-center lg:text-left font-[800] px-10 lg:px-28 py-5 text-[#F74C04]">{data.heading}</h1>
@@ -83,7 +90,6 @@ const Terms = () => {
           </ul>
         ))}
       </div>
-      <div className='h-32 bg-[#F74C04] rounded-tl-[6.5rem] rounded-tr-[6.5rem] mt-28'></div>
       <Footer data={data.footer} />
     </div>
   )
