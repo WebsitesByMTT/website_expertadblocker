@@ -18,8 +18,10 @@ const Terms = () => {
           link: "/contact-us"
         }
       ],
-      textColor: "black",
-      buttonColor: "white"
+      logoColor: "black",
+      textColor: "text-black",
+      buttonColor: "bg-black",
+      buttonTextColor: "text-white"
     },
     heading: "Terms of service",
     intro: 'These Terms of Service and End User License Agreement (collectively, the "Agreement") are an agreement between Total Security Limited (incorporated in England under number 10161957) conducting business (or trading) as an Expert adblocker("Total Security Group", "we" or "our") and you ("you," "yourself," "User" or "Customer"). This Agreement establishes the terms and conditions for your use of all our Security Group goods and services (collectively, the "Services"). Within the limits of such Services, this Agreement applies to both (i) your service plan and (ii) any extra services you acquire to supplement your service plan, as indicated on our Services and Prices page. <br/> <br/> By accessing, using, registering for, or receiving any of the Services, if you agree to the terms and conditions listed below and those included in our Privacy Policy, which will be integrated by reference into this Agreement. Additionally,  terms will be applied to specific Services that you purchase. In such instances, the supplementary terms will apply in addition to this Agreement. <br/> <br/> You are not permitted to access or use the Services if you disagree with these Terms and Conditions and our Privacy Policies. <br/> <br/> Our Security Group has the right to alter this Agreement from time to time to reflect changes in or requirements of relevant law, as well as revisions or updates to the Services. Our security group shall notify you if such a change materially impacts your rights under this Agreement. Changes will not apply retroactively, and unless the change is necessary to be effective instantly for regulatory or security purposes, notice of the amended terms will be provided at least a reasonable time before the changes take effect. If you disagree to be bound by this Agreement, our privacy policies, or any later changes, you must discontinue using the Services.',
@@ -37,6 +39,14 @@ const Terms = () => {
     ],
     footer: {
       heading: "Popular Searches",
+      wrapperColor: "bg-black",
+      headingColor: "text-black",
+      bgColor: "bg-[#F74C04]",
+      textColor: "text-black",
+      textlinkColor: "text-black",
+      webLinksBg: "bg-white",
+      socialLinksBg: "#F1C02A",
+      linksBg: "bg-[#F1C02A]",
       keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free",
       links: [
         {
@@ -63,7 +73,7 @@ const Terms = () => {
     }
   }
   return (
-    <div>
+    <div className="bg-black">
       <div className=' bg-white rounded-bl-[4rem] rounded-br-[4rem] lg:rounded-bl-[6.5rem] lg:rounded-br-[6.5rem]' style={{ backgroundImage: 'url(./bg.png)' }}>
         <Navbar data={data.navbar} />
         <h1 className="text-[4.5rem] text-center lg:text-left font-[800] px-10 lg:px-28 py-5 text-[#F74C04]">{data.heading}</h1>
@@ -83,7 +93,6 @@ const Terms = () => {
           </ul>
         ))}
       </div>
-      <div className='h-32 bg-[#F74C04] rounded-tl-[6.5rem] rounded-tr-[6.5rem] mt-28'></div>
       <Footer data={data.footer} />
     </div>
   )

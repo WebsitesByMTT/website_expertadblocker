@@ -9,7 +9,7 @@ const Section3 = ({ data }) => {
         { src: '/Section3/icon4.svg', alt: "" },
     ]
     const [currentIndex, setCurrentIndex] = useState(0);
-
+    const hoverColorClass = `bg-${data.subHoverBgFeaturesColor}`;
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentIndex(prevIndex => (prevIndex === icons.length - 1 ? 0 : prevIndex + 1));
@@ -18,10 +18,10 @@ const Section3 = ({ data }) => {
         return () => clearInterval(intervalId);
     }, []);
     return (
-        <div className="flex flex-col bg-[#F1C02A] justify-between">
+        <div className={`flex flex-col ${data.bgColor} justify-between py-20 rounded-[6.5rem]`}>
             <h2 className='text-white text-[4rem] font-[700] leading-tight capitalize text-center'>{data?.subHeading}</h2>
-            <h3 className='text-[#F02828] text-[4rem] font-[700] leading-tight uppercase text-center'>{data?.heading}</h3>
-            <div className="md:w-[80%] lg:w-[50%] min-h-[45vh] md:min-h-[0hv] w-[90%] gap-5 m-auto my-[3rem] rounded-[6rem] flex-col md:flex-row p-16 md:p-0 md:pr-5 bg-[#F02828] flex overflow-hidden">
+            <h3 className={`${data.headingColor} text-[4rem] font-[700] leading-tight uppercase text-center`}>{data?.heading}</h3>
+            <div className={` ${data.featureBgColor} md:w-[80%] lg:w-[50%] min-h-[45vh] md:min-h-[0hv] w-[90%] gap-5 m-auto my-[3rem] rounded-[6rem] flex-col md:flex-row p-16 md:p-0 md:pr-5 flex overflow-hidden`}>
                 <div className="w-[60%] md:bg-white md:w-[40%] p-2 md:rounded-[6rem] overflow-hidden flex justify-between">
                     <motion.img
                         src={icons[currentIndex].src}
@@ -39,17 +39,17 @@ const Section3 = ({ data }) => {
                     initial={{ opacity: 0, x: ["100%"] }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3 }}
-                    className='flex flex-col justify-center md:w-[50%] w-[90%] md:m-auto text-black'
+                    className={`flex flex-col justify-center md:w-[50%] w-[90%] md:m-auto ${data.featureTextColor}`}
 
                 >
                     <h3 className='text-[2.5rem] font-bold leading-tight capitalize'>{data.features[currentIndex].heading}</h3>
                     <p className="text-[1.8rem] md:text-xl font-light leading-10 md:leading-6 tracking-wide">{data.features[currentIndex].text}</p>
                 </motion.div>
             </div >
-            <div className="w-[95%] gap-2 md:gap-0 mx-auto my-[4rem] flex flex-wrap justify-center items-stretch">
+            <div className={`w-[95%] gap-2 md:gap-0 mx-auto my-[4rem] flex flex-wrap justify-center items-stretch ${data.subFeaturesColor}`}>
                 {data.subFeatures.map((item, index) => (
-                    <div key={index} className='border-[1px] md:w-[25%] p-4 last:rounded-tr-3xl lg:last:rounded-br-3xl lg:rounded-none lg:first:rounded-tl-3xl first:rounded-bl-3xl md:min-w-[300px] rounded-3xl'>
-                        <div className={`md:hover:scale-[1.2] duration-200 w-full p-4  flex h-[100%] flex-col md:hover:bg-black md:hover:border-black rounded-3xl`} key={index}>
+                    <div key={index} className={`border-[1px] ${data.subFeaturesBorderColor} md:w-[25%] p-4 last:rounded-tr-3xl lg:last:rounded-br-3xl lg:rounded-none lg:first:rounded-tl-3xl first:rounded-bl-3xl md:min-w-[300px] rounded-3xl`}>
+                        <div class={`md:hover:scale-[1.2] ${data.subHoverBgFeaturesColor} duration-200 w-full p-4  flex h-[100%] flex-col ${data.subHoverBgFeaturesColor} ${data.subHoverTextFeaturesColor} rounded-3xl`} key={index}>
                             <h3 className='text-[3.2rem] md:text-[2rem] font-[600] py-4 capitalize'>{item.heading}</h3>
                             <p className="text-2xl md:text-xl font-light leading-6 tracking-wide mb-5">{item.text}</p>
                         </div>
@@ -57,7 +57,7 @@ const Section3 = ({ data }) => {
                 ))}
             </div>
             <div className="my-[4rem] flex flex-col gap-5">
-                <h3 className='text-[4.5rem] font-[700] py-4 text-[#F02828] text-center'>{data.subtext}</h3>
+                <h3 className={`text-[4.5rem] font-[700] py-4 ${data.subTextColor} text-center`}>{data.subtext}</h3>
                 <div className='flex gap-5 justify-center items-center'>
                     <svg className="w-[5%] min-w-[50px]" width="100%" height="100%" viewBox="0 0 164 163" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_217_964)">
@@ -71,19 +71,19 @@ const Section3 = ({ data }) => {
                                 <path d="M81.9842 49.5413C97.4255 49.5413 109.942 62.0594 109.942 77.4994C109.942 92.9406 97.4255 105.459 81.9842 105.459C66.543 105.459 54.0262 92.9406 54.0262 77.4994C54.0262 62.0594 66.543 49.5413 81.9842 49.5413Z" fill="#F1F1F1" />
                                 <path d="M81.9845 55.1333C94.3372 55.1333 104.351 65.147 104.351 77.4998C104.351 89.8525 94.3372 99.8662 81.9845 99.8662C69.6317 99.8662 59.618 89.8525 59.618 77.4998C59.618 65.147 69.6317 55.1333 81.9845 55.1333Z" fill="#4285F4" />
                             </g>
+                            <defs>
+                                <filter id="filter0_d_217_964" x="0.485352" y="0" width="163.001" height="163.001" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="10" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_217_964" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_217_964" result="shape" />
+                                </filter>
+                            </defs>
                         </g>
-                        <defs>
-                            <filter id="filter0_d_217_964" x="0.485352" y="0" width="163.001" height="163.001" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                                <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                <feOffset dy="4" />
-                                <feGaussianBlur stdDeviation="10" />
-                                <feComposite in2="hardAlpha" operator="out" />
-                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_217_964" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_217_964" result="shape" />
-                            </filter>
-                        </defs>
                     </svg>
                     <svg className="w-[3.5%] min-w-[40px]" width="100%" height="100%" viewBox="0 0 120 123" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M115.227 41.2565C112.637 35.0264 107.391 28.3004 103.272 26.1745C106.625 32.747 108.565 39.3402 109.306 44.2607C109.306 44.2704 109.31 44.2945 109.318 44.3599C102.579 27.5639 91.153 20.7912 81.8224 6.04466C81.3513 5.299 80.8789 4.55136 80.4187 3.7633C80.1843 3.36083 79.9654 2.94944 79.7625 2.53037C79.3749 1.78198 79.0759 0.990942 78.8715 0.173122C78.8745 0.0932742 78.8152 0.0235934 78.7361 0.0134264C78.6997 0.0030115 78.6608 0.0030115 78.6243 0.0134264C78.6159 0.0164021 78.6035 0.0260731 78.5946 0.0295448C78.5814 0.0347522 78.5648 0.046655 78.5509 0.0543422C78.5576 0.0454151 78.5715 0.0253292 78.5757 0.0206177C63.6055 8.788 58.527 25.0068 58.0603 33.1212C52.0831 33.5321 46.3661 35.7351 41.6588 39.4416C41.1658 39.0253 40.6505 38.6362 40.1151 38.2761C38.757 33.5242 38.6992 28.4938 39.948 23.7121C33.826 26.4996 29.0644 30.9058 25.6027 34.7965H25.5751C23.2127 31.8042 23.3793 21.9334 23.514 19.8725C23.4857 19.7447 21.7516 20.7726 21.5245 20.9276C19.4398 22.4157 17.4909 24.0853 15.7006 25.9168C13.6632 27.983 11.8019 30.2152 10.1355 32.5906C10.1355 32.5935 10.1338 32.597 10.1328 32.6C10.1328 32.5968 10.1345 32.5935 10.1355 32.5906C6.30357 38.021 3.58552 44.1573 2.13909 50.6443C2.11057 50.7735 2.08651 50.9074 2.05874 51.0376C1.94666 51.5623 1.54295 54.1869 1.47228 54.7572C1.46683 54.8011 1.46435 54.8433 1.45914 54.8872C0.937153 57.6008 0.614043 60.3488 0.492039 63.1093C0.492039 63.2109 0.48584 63.3116 0.48584 63.4135C0.486832 96.323 27.1689 123.001 60.081 123.001C89.5565 123.001 114.03 101.603 118.822 73.4974C118.923 72.7346 119.003 71.9679 119.092 71.1984C120.277 60.9794 118.961 50.2384 115.227 41.2565ZM46.5396 87.899C46.8184 88.0322 47.0802 88.1777 47.3664 88.3055C47.3783 88.3136 47.3947 88.3228 47.4068 88.3303C47.1154 88.1909 46.8266 88.0473 46.5396 87.899ZM109.323 44.3746L109.315 44.3168C109.318 44.3379 109.322 44.3599 109.325 44.381L109.323 44.3746Z" fill="url(#paint0_linear_217_973)" />
@@ -187,9 +187,9 @@ const Section3 = ({ data }) => {
                         </defs>
                     </svg>
                 </div>
-                <p className="w-[75%] md:w-[55%] m-auto text-[1.8rem] md:text-xl font-light md:leading-6 leading-10 tracking-wide mb-5 text-center">{data.text}</p>
             </div>
-        </div >
+            <p className={`w-[75%] md:w-[55%] m-auto text-[1.8rem] md:text-xl font-light md:leading-6 leading-10 tracking-wide mb-5 text-center ${data.textColor}`}>{data.text}</p>
+        </div>
     )
 }
 

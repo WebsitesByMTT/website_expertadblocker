@@ -18,8 +18,10 @@ const PrivacyPolicy = () => {
           link: "/contact-us"
         }
       ],
-      textColor: "black",
-      buttonColor: "white"
+      logoColor: "black",
+      textColor: "text-black",
+      buttonColor: "bg-black",
+      buttonTextColor: "text-white"
     },
     heading: "Privacy Policy",
     subHeadings: [
@@ -72,6 +74,14 @@ const PrivacyPolicy = () => {
     },
     footer: {
       heading: "Popular Searches",
+      wrapperColor: "bg-[#F1C02A]",
+      headingColor: "text-black",
+      bgColor: "bg-[#F74C04]",
+      textColor: "text-black",
+      textlinkColor: "text-black",
+      webLinksBg: "bg-white",
+      socialLinksBg: "#F1C02A",
+      linksBg: "bg-[#F1C02A]",
       keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free",
       links: [
         {
@@ -123,11 +133,10 @@ const PrivacyPolicy = () => {
             <li className="m-2">{item}</li>
           </ul>
         ))}
-         <p className="font-[600] mt-4">{data.protection.heading}</p>
-         <p className="md:text-lg text-2xl font-[400] leading-6" dangerouslySetInnerHTML={{ __html: `<span>${data.protection.text}</span>` }}></p>
+        <p className="font-[600] mt-4">{data.protection.heading}</p>
+        <p className="md:text-lg text-2xl font-[400] leading-6" dangerouslySetInnerHTML={{ __html: `<span>${data.protection.text}</span>` }}></p>
       </div>
-     
-      <div className='h-32 bg-[#F74C04] rounded-tl-[6.5rem] rounded-tr-[6.5rem] mt-28'></div>
+
       <Footer data={data.footer} />
     </div>
   )
