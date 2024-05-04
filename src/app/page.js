@@ -9,7 +9,6 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   const data = {
-
     section1: {
       heading: "Block Ads not your privacy",
       text: "Expert Adblocker is the ultimate extension that not only blocks all the annoying ads from your browser but also protects your privacy. So, download this ad blocker in Chrome now and enjoy an ad-free experience.",
@@ -31,8 +30,10 @@ export default function Home() {
             link: "/contact-us"
           }
         ],
+        logoColor: "#fff",
         textColor: "white",
-        buttonColor: "black",
+        buttonColor: "bg-white",
+        buttonTextColor: "bg-black",
         bgColor: "bg-black"
       },
     },
@@ -47,9 +48,9 @@ export default function Home() {
       bgColor: "bg-[#F1C02A]",
       subHeading: "Exceptional features of",
       heading: "Expert Adblocker",
-      headingColor: "[#F74C04]",
-      featureTextColor: "black",
-      featureBgColor: "#F02828",
+      headingColor: "text-[#F74C04]",
+      featureTextColor: "text-black",
+      featureBgColor: "bg-[#F02828]",
       features: [
         {
           heading: "Go ad-free with this adblock chrome",
@@ -68,8 +69,9 @@ export default function Home() {
           text: "With Expert Adblocker, be the boss of your browser. You can restrict all the adult content that you don’t want to see while browsing."
         }
       ],
-      subFeaturesColor: "white",
-      subHoverBgFeaturesColor:"hover:bg-black",
+      subFeaturesColor: "text-white",
+      subFeaturesBorderColor: "border-white ",
+      subHoverBgFeaturesColor: "hover:bg-black",
       subFeatures: [
         {
           heading: "Browse Freely and Block Ads",
@@ -86,14 +88,15 @@ export default function Home() {
       ],
       subtext: "Expert Adblocker for",
       subTextColor: "text-[#F02828]",
-      textColor: "black",
+      textColor: "text-black",
       text: "It works smoothly on both Firefox and Chrome. So, what are you waiting for download the extension now and bid farewell to all the disturbing ads."
     },
     section4: {
       heading: "Reviews",
       headingColor: "text-[#F1C02A]",
-      textColor: "white",
-      bgColor: "black",
+      textColor: "text-white",
+      bgColor: "bg-black",
+      iconColor: "white",
       review: [
         {
           name: "Anushka",
@@ -119,10 +122,12 @@ export default function Home() {
     },
     section5: {
       heading: "FAQ",
-      headingColor: "[#F74C04]",
-      subHeadingColor: "black",
+      bgColor: "bg-[#F1C02A]",
+      headingColor: "text-[#F74C04]",
+      subHeadingColor: "text-black",
       subheading: "Frequently Asked Questions",
-      faqTextColor: "white",
+      faqTextColor: "text-white",
+      borderColor: "border-white",
       svgIconColor: "#F02828",
       faq: [
         {
@@ -149,27 +154,30 @@ export default function Home() {
     },
     section6: {
       heading: "About ",
-      bgColor: "black",
-      subHeadingColor: "[#F74C04]",
-      headingColor: "white",
+      bgColor: "bg-black",
+      borderColor: "border-[#F74C04]",
+      subHeadingColor: "text-[#F74C04]",
+      headingColor: "text-white",
       subheading: "expert Adblocker",
-      textColor: "white",
+      textColor: "text-white",
       text: "It is the best browser extension that eliminates all the ads including banner ads, video ads, pop-ups, and many more. It also protects your browser from third-party trackers and dangerous websites. This is the free adblocker Chrome extension so that everyone can use it freely. With just a few clicks, you can protect your privacy. We aim to give the best experience to our users by blocking all the unnecessary ads that distract you while working or streaming your favorite content. So, go ad-free and enjoy the best internet experience.",
       subtext: "Goodbye to all the annoying ads with ",
-      subTextColor: "[#F74C04]",
+      subTextColor: "text-[#F74C04]",
+      hoverColor: "hover:bg-[#F74C04]",
       subTextHoverColor: "hover:text-black",
       tag: "Expert adblocker",
-      tagColor: "white",
+      tagColor: "text-white",
     },
     footer: {
       heading: "Popular Searches",
-      wrapperColor: "black",
-      headingColor: "black",
-      bgColor: "[#F74C04]",
-      textColor: "black",
-      webLinksBg: "white",
+      wrapperColor: "bg-black",
+      headingColor: "text-black",
+      bgColor: "bg-[#F74C04]",
+      textColor: "text-black",
+      textlinkColor: "text-black",
+      webLinksBg: "bg-white",
       socialLinksBg: "#F1C02A",
-      linksBg: "[#F1C02A]",
+      linksBg: "bg-[#F1C02A]",
       keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free",
       links: [
         {
@@ -197,16 +205,16 @@ export default function Home() {
   }
   return (
     <>
-     <div>
-      <Section1 data={data.section1} />
-      <Section2 data={data.section2} />
-      <Section3 data={data.section3} />
-      <Section4 data={data.section4} />
-      <Section5 data={data.section5} />
-      <Section6 data={data.section6} />
-      <Footer data={data.footer} />
-    </div>
+      <div>
+        <Section1 data={data.section1} />
+        <Section2 data={data.section2} />
+        <Section3 data={data.section3} />
+        <Section4 data={data.section4} />
+        <Section5 data={data.section5} />
+        <Section6 data={data.section6} />
+        <Footer data={data.footer} />
+      </div>
     </>
-   
+
   );
 }

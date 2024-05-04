@@ -7,33 +7,34 @@ const AboutUs = () => {
     const data = {
         navbar: {
             navLinks: [
-                {
-                    title: "blogs",
-                    link: "/blogs"
-                },
-                {
-                    title: "about us",
-                    link: "/about-us"
-                },
-                {
-                    title: "contact us",
-                    link: "/contact-us"
-                }
+              {
+                title: "blogs",
+                link: "/blogs"
+              },
+              {
+                title: "about us",
+                link: "/about-us"
+              },
+              {
+                title: "contact us",
+                link: "/contact-us"
+              }
             ],
-            textColor: "black",
-            buttonText: "white",
-            openColor:'text-black',
-            closeColor:'text-black',
-        },
-        footer: {
+            logoColor: "black",
+            textColor: "text-black",
+            buttonColor: "bg-black",
+            buttonTextColor: "text-white"
+          },
+          footer: {
             heading: "Popular Searches",
-            wrapperColor: "transparent",
-            headingColor: "black",
-            bgColor: "[#F74C04]",
-            textColor: "black",
-            webLinksBg: "white",
+            wrapperColor: "bg-transparent",
+            headingColor: "text-black",
+            bgColor: "bg-[#F74C04]",
+            textColor: "text-black",
+            textlinkColor: "text-black",
+            webLinksBg: "bg-white",
             socialLinksBg: "#F1C02A",
-            linksBg: "[#F1C02A]",
+            linksBg: "bg-[#F1C02A]",
             keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free",
             links: [
               {
@@ -75,7 +76,7 @@ const AboutUs = () => {
                     <div className="space-y-8">
                         <div className="bg-[#F3F3F3] border-[2px] border-transparent group hover:border-black md:w-[90%] 2xl:w-[70%] p-5 rounded-[1.5rem]">
                             <div className="text-black group-hover:text-[#F74C04] text-[2.4rem] font-bold md:text-[2rem] 2xl:text-[2.5rem]">What is an Expert AdBlocker?</div>
-                            <p className="text-black text-[1.6rem] md:text-sm">It is the browser extension that blocks all the unnecessary ads and protects you from third-party trackers. It also saves your data usage. By simply downloading the extension, you can have the best internet experience and it also speeds up your page loading. The best part is it not only removes ads but also protects your privacy. It is very simple to use and it's customizable which will improve your online experience.</p>
+                            <p className="text-black text-[1.6rem] md:text-sm">It is the browser extension that blocks all the unnecessary ads and protects you from third-party trackers. It also saves your data usage. By simply downloading the extension, you can have the best internet experience and it also speeds up your page loading. The best part is it not only removes ads but also protects your privacy. It is very simple to use and it&apos;s customizable which will improve your online experience.</p>
                         </div>
                         <div className="bg-[#F3F3F3] border-[2px] border-transparent group hover:border-black  md:w-[90%] md:text-[2rem] 2xl:w-[70%] p-5 rounded-[1.5rem]">
                             <div className="text-black group-hover:text-[#F1C02A] md:text-[2rem] text-[2.4rem] font-bold 2xl:text-[2.5rem]">Adblocker for all</div>

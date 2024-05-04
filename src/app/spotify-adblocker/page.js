@@ -68,7 +68,8 @@ const Spotify = () => {
             ],
             subFeaturesColor: "text-[#C3F0C8] ",
             subFeaturesBorderColor: "border-[#C3F0C8] ",
-            subHoverBgFeaturesColor: "hover:bg-black",
+            subHoverBgFeaturesColor: "hover:bg-[#C3F0C8]",
+            subHoverTextFeaturesColor: "hover:text-[#2D46B9]",
             subFeatures: [
                 {
                     heading: " Listen Without Limits",
@@ -171,6 +172,7 @@ const Spotify = () => {
             headingColor: "black",
             bgColor: "bg-[#1AB26B]",
             textColor: "text-black",
+            textlinkColor: "text-black",
             webLinksBg: "bg-[#C3F0C8]",
             socialLinksBg: "#C3F0C8",
             linksBg: "bg-[#C3F0C8]",

@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-         <img src="./bg.png" className="fixed -z-10 top-0 left-0 w-full h-full"/>
+         <Image src="./bg.png" className="fixed -z-10 top-0 left-0 w-full h-full" alt="background"/>
         {children}
       </body>
     </html>
