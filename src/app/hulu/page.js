@@ -11,11 +11,13 @@ const page = () => {
 
     const data = {
         section1: {
-            heading: "Block ads with the ultimate Twitch Adblocker Chrome Extension",
-            text: "Twitch is the most popular streaming website where people gather for live streaming. While streaming, some disturbing ads spoil our moment, but just downloading Adblocker for Twitch you can block all disturbing ads including banner ads, pop-ups, and video ads. So, block ads and have fast browsing.",
+            heading: "Surf safely with the Hulu adblocker Chrome extension",
+            text: "Download the Hulu Adblocker Chrome extension and enjoy ad-free Hulu. It is the best extension that will not only remove ads from your screen but also keep your device safe from all the malware.",
             bgColor: "bg-[#1DE783]",
             headingColor: "text-[#142C38]",
             textColor: "text-[#012A84]",
+            HeadingFontSize:'text-[4rem]',
+            textFontSize:'text-[1.1rem]',
             navbar: {
                 navLinks: [
                   {
@@ -35,8 +37,16 @@ const page = () => {
                 logoColor: "black",
                 textColor: "text-black",
                 buttonColor: "bg-black",
-                buttonTextColor: "text-white"
+                buttonTextColor: "text-white",
+                MobileNavbgColor:'bg-white',
+                mobileNavTextColor:'text-black',
+                mobilebuttonBgColor:'bg-black',
+                mobilebuttonTextColor:'text-white'
               },
+              animationImages:{
+                image1:'/Hero/heroanimation.svg',
+                image2:'/Hero/hulustand.svg'
+              }
         },
         section2: {
             heading: "all in one",
@@ -47,50 +57,56 @@ const page = () => {
         },
         section3: {
             bgColor: "bg-[#00D9D9]",
-            subHeading: "Amazing Features of",
-            heading: "Twitch Adblocker Chrome Extension",
+            subHeading: "Wonderful Features of",
+            heading: "Hulu adblocker",
             headingColor: "text-[#142C38]",
             featureTextColor: "text-white",
             featureBgColor: "bg-[#142C38]",
             features: [
                 {
-                    heading: "Go ad-free with this adblock chrome",
-                    text: "This is the free adblocker Chrome extension that blocks all the hidden ads from your browser."
+                    heading: "Avoid third-party trackers",
+                    text: "By simply downloading the extension, it will protect you from third-party trackers and all the dangerous websites that may harm your browser."
                 },
                 {
-                    heading: "Shield your privacy",
-                    text: "It is the best extension that maintains and protects your privacy from all the harmful sites that may ruin your experience while streaming your favorite shows. So, keep your device safe by installing this adblock Chrome."
+                    heading: "Eliminate all types of ads",
+                    text: "With the Hulu, Adblock Chrome extension enjoy Hulu without ads. Enjoy all the latest series and shows without spoiling your moment."
                 },
                 {
-                    heading: "Speed up your page loading with this free adblocker Chrome extension",
-                    text: "Block all the annoying ads including pop-ups, banner ads, video ads, etc. It will also improve your page loading and give you a seamless experience. "
+                    heading: "Web assistance",
+                    text: "It has the best web assistance where you can enjoy Hulu no ads."
                 },
                 {
-                    heading: "Parenting control",
-                    text: "With Expert Adblocker, be the boss of your browser. You can restrict all the adult content that you don’t want to see while browsing."
+                    heading: "TechnicaMaintain your privacyl Assistance",
+                    text: "It also protects your data and speeds up your web page loading."
                 }
             ],
+            icons: [
+                { src: '/Section3/huluicon1.svg', alt: "" },
+                { src: '/Section3/huluicon2.svg', alt: "" },
+                { src: '/Section3/huluicon3.svg', alt: "" },
+                { src: '/Section3/huluicon4.svg', alt: "" },
+              ],
             subFeaturesColor: "text-[#012A84]",
             subFeaturesBorderColor: "border-[#012A84]",
             subHoverBgFeaturesColor: "hover:bg-[#1DE783]",
             subFeatures: [
                 {
-                    heading: "Enjoy More and Surf Fast",
-                    text: "By downloading the Twitch adblocker Chrome extension you can eliminate all the intrusive ads that spoil your streaming experience. So, install the extension now and enjoy!"
+                    heading: "Fasten Up Your Page",
+                    text: "Within just a few clicks bid farewell to all the disturbing ads that ruin your special moment. By removing all the elements, it will speed up your page loading while browsing."
                 },
                 {
-                    heading: "Browse Freely Without Ads",
-                    text: "With a few clicks, you can remove all the ads from your screen and browse smoothly. It will also shield you from all the third-party trackers and malware attacks."
+                    heading: "Eliminate Hulu Ads",
+                    text: "By just installing the extension on your web browser, you can finally say goodbye to all the frustrating ads including banner ads, video ads, and pop-ups. So you can enjoy Hulu movies and series peacefully without ads."
                 },
                 {
-                    heading: "Keep Your Device Safe",
-                    text: "With the Twitch adblocker Chrome extension avoid tracking and stop hidden companies from following your online activity. It keeps your device safe by eliminating all the hidden ads that can spoil your browser."
+                    heading: "Maintain Your Data",
+                    text: "Avoid tracking and eliminate all the dangerous websites that harm your data. It also saves your data usage and supports privacy."
                 }
             ],
-            subtext: "Twitch adblocker Chrome extension is for both ",
+            subtext: "Hulu adblocker works on both",
             subTextColor: "text-[#142C38]",
             textColor: "text-[#012A84]",
-            text: "If you look at Twitch Adblock 2023 and Twitch Adblock Reddit in comparison, they operate seamlessly on popular web browsers like Chrome and Firefox. All you have to do is install the extension."
+            text: "It is the best extension that works perfectly on both Chrome and Firefox."
         },
         section4: {
             heading: "Reviews",
@@ -100,24 +116,29 @@ const page = () => {
             iconColor: "#012A84",
             review: [
                 {
-                    name: "Anushka",
-                    text: "By downloading this free adblocker Chrome extension, now I can block all the hidden ads that disturb me while browsing."
+                    name: "Rajveer",
+                    text: "Hulu adblocker is the best extension that lets you watch all your favorite movies without ads.",
+                    reviewer:'/reviewer2.png'
                 },
                 {
                     name: "Gursimar",
-                    text: "Yeah!! This is the best extension where I can stream all my favorite movies without those ads."
+                    text: "I have been using this extension for years now and it is the best extension to block ads.",
+                    reviewer:'/reviewer1.png'
                 },
                 {
                     name: "Rahul",
-                    text: "I have been using this extension for years now and this is the best extension."
+                    text: "This is an amazing extension where you can remove all the ads and enjoy unlimited movies.",
+                    reviewer:'/reviewer4.png'
                 },
                 {
-                    name: "Gaurav",
-                    text: "Such an amazing extension, as it eliminates all the ads in one go and lets you browse freely."
+                    name: "Shama",
+                    text: "It is the best extension as now I can watch all the latest shows without those spoiling ads.",
+                    reviewer:'/reviewer5.png'
                 },
                 {
-                    name: "Ashish",
-                    text: "This is the best extension as it not only blocks ads but also protects your browser from all the malware."
+                    name: "Neeraj",
+                    text: "Have a great online experience with this extension.",
+                    reviewer:'/reviewer3.png'
                 },
             ]
         },
@@ -131,24 +152,24 @@ const page = () => {
             svgIconColor: "#012A84",
             faq: [
                 {
-                    ques: "How do AdBlock detectors work?",
-                    answer: "By just downloading the extension, it will automatically detect all the elements from your page that may harm your browser."
+                    ques: "Why does Hulu have ads?",
+                    answer: "Hulu has a huge number of ads in its library that pop up during streaming. But to get rid of these ads download Hulu Adblocker Chrome extension and say goodbye to Hulu ads.                    "
                 },
                 {
-                    ques: "How to stop YouTube adblocker popup?",
-                    answer: "The best part is that this ad blocker works on YouTube also. It works by eliminating all the YouTube ads and lets you stream all your favorite videos without ads."
+                    ques: "How to get rid of ads on Hulu?",
+                    answer: "It is very simple and easy, just download the extension now and it will automatically block all the annoying ads."
                 },
                 {
-                    ques: "How to get rid of YouTube adblocker popup?",
-                    answer: "It is very simple, just download our separate extension for YouTube and block all the pop-ups, video ads, banner ads, and many more."
+                    ques: "Why do I have ads on Hulu?",
+                    answer: "Hulu is an ad-supported platform where you see a variety of ads on it. But don’t worry install the extension now and eliminate all the annoying ads in one go."
                 },
                 {
-                    ques: "Are ad blockers legal?",
-                    answer: "Yes, all ad blockers including expert adblocker are legal to use."
+                    ques: "What is Adblock Hulu?",
+                    answer: "Hulu adblock is the perfect extension that removes all types of ads including banner ads, video ads, pop-ups, and many more. "
                 },
                 {
-                    ques: "Why are people using adblockers?",
-                    answer: "Because by just installing the extension you can have the best experience. It is the most trustworthy extension that continuously helps users block all ads and protect their data from all malware."
+                    ques: "Does Adblocker work on Hulu?",
+                    answer: "Yes, we have a separate extension for Hulu that blocks all the ads on Hulu."
                 },
             ]
         },
@@ -158,10 +179,10 @@ const page = () => {
             bgColor: "bg-[#0B1418]",
             subHeadingColor: "text-[#00D9D9]",
             headingColor: "text-white",
-            subheading: "Twitch adblocker",
+            subheading: "HULU ADS?",
             textColor: "text-white",
-            text: "Twitch is the most popular streaming platform among gamers where you can stream live streaming. But some ads frustrate us while streaming. In that case, there is the Twitch adblocker Chrome extension where you can eliminate all the ads that spoil your moment. It not only blocks ads but also protects your browser from all the third-party trackers.",
-            subtext: "Worry About ",
+            text: "Hulu is the most famous online platform among people where you can binge all the latest movies and series. But when you stream your favorite content some ads ruin your moment. For that, the Hulu Adblock Chrome extension blocks all types of ads in one go. The best part is it is free to use and not only blocks ads but also protects your data and privacy.",
+            subtext: "Wory About ",
             subTextColor: "text-[#00D9D9]",
             subTextHoverColor: "hover:text-black",
             tag: "Download Hulu Adblocker Now",

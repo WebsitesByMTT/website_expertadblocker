@@ -21,7 +21,11 @@ const Terms = () => {
       logoColor: "black",
       textColor: "text-black",
       buttonColor: "bg-black",
-      buttonTextColor: "text-white"
+      buttonTextColor: "text-white",
+      MobileNavbgColor: 'bg-white',
+      mobileNavTextColor: 'text-black',
+      mobilebuttonBgColor: 'bg-black',
+      mobilebuttonTextColor: 'text-white'
     },
     heading: "Terms of service",
     intro: 'These Terms of Service and End User License Agreement (collectively, the "Agreement") are an agreement between Total Security Limited (incorporated in England under number 10161957) conducting business (or trading) as an Expert adblocker("Total Security Group", "we" or "our") and you ("you," "yourself," "User" or "Customer"). This Agreement establishes the terms and conditions for your use of all our Security Group goods and services (collectively, the "Services"). Within the limits of such Services, this Agreement applies to both (i) your service plan and (ii) any extra services you acquire to supplement your service plan, as indicated on our Services and Prices page. <br/> <br/> By accessing, using, registering for, or receiving any of the Services, if you agree to the terms and conditions listed below and those included in our Privacy Policy, which will be integrated by reference into this Agreement. Additionally,  terms will be applied to specific Services that you purchase. In such instances, the supplementary terms will apply in addition to this Agreement. <br/> <br/> You are not permitted to access or use the Services if you disagree with these Terms and Conditions and our Privacy Policies. <br/> <br/> Our Security Group has the right to alter this Agreement from time to time to reflect changes in or requirements of relevant law, as well as revisions or updates to the Services. Our security group shall notify you if such a change materially impacts your rights under this Agreement. Changes will not apply retroactively, and unless the change is necessary to be effective instantly for regulatory or security purposes, notice of the amended terms will be provided at least a reasonable time before the changes take effect. If you disagree to be bound by this Agreement, our privacy policies, or any later changes, you must discontinue using the Services.',
@@ -78,7 +82,7 @@ const Terms = () => {
         <Navbar data={data.navbar} />
         <h1 className="text-[4.5rem] text-center lg:text-left font-[800] px-10 lg:px-28 py-5 text-[#F74C04]">{data.heading}</h1>
       </div>
-      <div className="w-[90%] md:w-[80%] lg:w-[60%] m-auto bg-[#F1F1F1] my-20 rounded-[4.5rem] p-10 text-black md:text-xl text-3xl font-[500]">
+      <div className="w-[90%] md:w-[80%] lg:w-[60%] m-auto bg-white my-20 rounded-[4.5rem] p-10 text-black md:text-xl text-3xl font-[500]">
         <p className="md:text-lg text-2xl font-[400] leading-6" dangerouslySetInnerHTML={{ __html: `<span>${data.intro}</span>` }}></p>
         <p className="font-[600] mt-4">{data.heading2}</p>
         {data.text2.map((item, index) => (

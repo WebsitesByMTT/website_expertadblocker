@@ -14,6 +14,9 @@ const Spotify = () => {
             bgColor: "bg-[#1AB26B]",
             headingColor: "text-[#FFCDD2]",
             textColor: "text-[#C3F0C8]",
+            HeadingFontSize:'text-[6rem]',
+            textFontSize:'text-[1.1rem]',
+            
             navbar: {
                 navLinks: [
                   {
@@ -30,11 +33,19 @@ const Spotify = () => {
                   }
                 ],
                 bgColor: "bg-[#1AB26B]",
-                logoColor: "black",
-                textColor: "text-black",
-                buttonColor: "bg-black",
-                buttonTextColor: "text-white"
+                logoColor: "white",
+                textColor: "text-white",
+                buttonColor: "bg-white",
+                buttonTextColor: "text-black",
+                MobileNavbgColor:'bg-black',
+                mobileNavTextColor:'text-white',
+                mobilebuttonBgColor:'bg-white',
+                mobilebuttonTextColor:'text-black'
               },
+              animationImages:{
+                image1:'/Hero/heroanimation.svg',
+                image2:'/Hero/spotifystand.svg'
+              }
         },
         section2: {
             heading: "all in one",
@@ -68,6 +79,12 @@ const Spotify = () => {
                     text: "Enjoy spotify no ads by using this extension for free"
                 }
             ],
+            icons: [
+                { src: '/Section3/spotifyicon1.svg', alt: "" },
+                { src: '/Section3/spotifyicon2.svg', alt: "" },
+                { src: '/Section3/spotifyicon3.svg', alt: "" },
+                { src: '/Section3/spotifyicon4.svg', alt: "" },
+              ],
             subFeaturesColor: "text-[#C3F0C8] ",
             subFeaturesBorderColor: "border-[#C3F0C8] ",
             subHoverBgFeaturesColor: "hover:bg-[#C3F0C8]",
@@ -99,24 +116,29 @@ const Spotify = () => {
             iconColor: "#C3F0C8",
             review: [
                 {
-                    name: "Anushka",
-                    text: "Now I can play my favorite music list without worrying about ads."
+                    name: "Balbindar",
+                    text: "Now I can play my favorite music list without worrying about ads.",
+                    reviewer:'/reviewer2.png'
                 },
                 {
-                    name: "Gursimar",
-                    text: "This is the best extension as it helps me to listen to my favorite songs without those irritating ads."
+                    name: "Kartik",
+                    text: "This is the best extension as it helps me to listen to my favorite songs without those irritating ads.",
+                    reviewer:'/reviewer4.png'
                 },
                 {
-                    name: "Rahul",
-                    text: "Now I can block spotify ads for free."
+                    name: "Roshni",
+                    text: "Now I can block spotify ads for free.",
+                    reviewer:'/reviewer1.png'
                 },
                 {
-                    name: "Gaurav",
-                    text: "Thanks to spotify adblocker as now with blocking ads I can keep my device safe by removing all the malware."
+                    name: "Komal",
+                    text: "Thanks to spotify adblocker as now with blocking ads I can keep my device safe by removing all the malware.",
+                    reviewer:'/reviewer5.png'
                 },
                 {
-                    name: "Ashish",
-                    text: "I have been using this for months now and I bet this is the best."
+                    name: "Raajveer",
+                    text: "I have been using this for months now and I bet this is the best.",
+                    reviewer:'/reviewer3.png'
                 },
             ]
         },
