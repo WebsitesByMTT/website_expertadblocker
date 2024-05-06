@@ -2,17 +2,11 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 const Section3 = ({ data }) => {
-    const icons = [
-        { src: '/Section3/icon1.svg', alt: "" },
-        { src: '/Section3/icon2.svg', alt: "" },
-        { src: '/Section3/icon3.svg', alt: "" },
-        { src: '/Section3/icon4.svg', alt: "" },
-    ]
+
     const [currentIndex, setCurrentIndex] = useState(0);
-    const hoverColorClass = `bg-${data.subHoverBgFeaturesColor}`;
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setCurrentIndex(prevIndex => (prevIndex === icons.length - 1 ? 0 : prevIndex + 1));
+            setCurrentIndex(prevIndex => (prevIndex === data?.icons.length - 1 ? 0 : prevIndex + 1));
         }, 3000);
 
         return () => clearInterval(intervalId);
@@ -24,8 +18,8 @@ const Section3 = ({ data }) => {
             <div className={` ${data.featureBgColor} md:w-[80%] lg:w-[50%] min-h-[45vh] md:min-h-[0hv] w-[90%] gap-5 m-auto my-[3rem] rounded-[6rem] flex-col md:flex-row p-16 md:p-0 md:pr-5 flex overflow-hidden`}>
                 <div className="w-[60%] md:bg-white md:w-[40%] p-2 md:rounded-[6rem] overflow-hidden flex justify-between">
                     <motion.img
-                        src={icons[currentIndex].src}
-                        alt={icons[currentIndex].alt}
+                        src={data?.icons[currentIndex].src}
+                        alt={data?.icons[currentIndex].alt}
                         key={`img-${currentIndex}`}
                         initial={{ opacity: 0, y: ["100%"] }}
                         animate={{ opacity: 1, y: 0 }}

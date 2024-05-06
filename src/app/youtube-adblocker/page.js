@@ -15,27 +15,37 @@ const Youtube = () => {
             bgColor: "bg-[#FF4A4A]",
             headingColor: "text-[#FFD7B3]",
             textColor: "text-[#430101]",
+            HeadingFontSize: 'text-[4.5rem]',
+            textFontSize: 'text-[1.1rem]',
             navbar: {
                 navLinks: [
-                  {
-                    title: "blogs",
-                    link: "/blogs"
-                  },
-                  {
-                    title: "about us",
-                    link: "/about-us"
-                  },
-                  {
-                    title: "contact us",
-                    link: "/contact-us"
-                  }
+                    {
+                        title: "blogs",
+                        link: "/blogs"
+                    },
+                    {
+                        title: "about us",
+                        link: "/about-us"
+                    },
+                    {
+                        title: "contact us",
+                        link: "/contact-us"
+                    }
                 ],
                 bgColor: "bg-[#FF4A4A]",
-                logoColor: "black",
-                textColor: "text-black",
-                buttonColor: "bg-black",
-                buttonTextColor: "text-white"
-              },
+                logoColor: "white",
+                textColor: "text-white",
+                buttonColor: "bg-white",
+                buttonTextColor: "text-black",
+                MobileNavbgColor: 'bg-black',
+                mobileNavTextColor: 'text-white',
+                mobilebuttonBgColor: 'bg-white',
+                mobilebuttonTextColor: 'text-black'
+            },
+            animationImages:{
+                image1:'/Hero/heroanimation.svg',
+                image2:'/Hero/youtubestand.svg'
+              }
         },
         section2: {
             heading: "all in one",
@@ -69,6 +79,12 @@ const Youtube = () => {
                     text: "Now you can block YouTube ads for free. So, what are you waiting for? Download the extension now!"
                 }
             ],
+            icons: [
+                { src: '/Section3/youtubeicon1.svg', alt: "" },
+                { src: '/Section3/youtubeicon2.svg', alt: "" },
+                { src: '/Section3/youtubeicon3.svg', alt: "" },
+                { src: '/Section3/youtubeicon4.svg', alt: "" },
+              ],
             subFeaturesColor: "text-[#FF0000] ",
             subFeaturesBorderColor: "border-[#FF0000] ",
             subHoverBgFeaturesColor: "hover:bg-[#FF0000]",
@@ -101,23 +117,28 @@ const Youtube = () => {
             review: [
                 {
                     name: "Anushka",
-                    text: "I have been using this extension for years now and it is the best."
+                    text: "I have been using this extension for years now and it is the best.",
+                    reviewer:'/reviewer5.png'
                 },
                 {
                     name: "Gursimar",
-                    text: "Now I can watch all my favorite videos without those irritating ads."
+                    text: "Now I can watch all my favorite videos without those irritating ads.",
+                    reviewer:'/reviewer1.png'
                 },
                 {
                     name: "Rahul",
-                    text: "This extension is free to use and smoothly runs in both Chrome and Firefox."
+                    text: "This extension is free to use and smoothly runs in both Chrome and Firefox.",
+                    reviewer:'/reviewer3.png' 
                 },
                 {
-                    name: "Gaurav",
-                    text: "Such a wonderful extension it is! It automatically removes all the ads and lets me stream freely."
+                    name: "Gurbindar",
+                    text: "Such a wonderful extension it is! It automatically removes all the ads and lets me stream freely.",
+                    reviewer:'/reviewer2.png'
                 },
                 {
-                    name: "Ashish",
-                    text: "The best part is it also protects your browser from all the dangerous websites."
+                    name: "Ritik",
+                    text: "The best part is it also protects your browser from all the dangerous websites.",
+                    reviewer:'/reviewer4.png'
                 },
             ]
         },

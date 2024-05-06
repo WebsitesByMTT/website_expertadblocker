@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Section4 = ({ data }) => {
     const components = [];
     for (let i = 0; i < 5; i++) {
@@ -26,7 +28,9 @@ const Section4 = ({ data }) => {
                     {data.review.map((item, index) => (
                         <div key={index} className="star flex md:flex-row flex-col justify-between hover:scale-105 transition-all duration-200 ease-in">
                             <div className="flex flex-1 md:justify-evenly py-6 items-center gap-10">
-                                <div className="w-12 h-12 rounded-[100%] bg-[#dfdfdf]"></div>
+                                <div className="w-12 h-12 rounded-[100%] bg-[#dfdfdf]">
+                                   <Image src={item?.reviewer} width={50} height={50} /> 
+                                </div>
                                 <div className="flex flex-col gap-2">
                                     <h3 className="font-semibold text-[2rem] md:text-2xl">{item.name}</h3>
                                     <div className="flex gap-2">{components}</div>

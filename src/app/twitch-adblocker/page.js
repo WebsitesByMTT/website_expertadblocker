@@ -17,6 +17,8 @@ const page = () => {
           bgColor: "bg-[#6441A5]",
           headingColor: "text-[#F1C02A]",
           textColor: "text-white",
+          HeadingFontSize:'text-[4rem]',
+          textFontSize:'text-[1.1rem]',
           navbar: {
             navLinks: [
               {
@@ -35,9 +37,17 @@ const page = () => {
             bgColor: "bg-[#6441A5]",
             logoColor: "white",
             textColor: "text-white",
-            buttonColor: "bg-black",
-            buttonTextColor: "text-white"
+            buttonColor: "bg-white",
+            buttonTextColor: "text-black",
+            MobileNavbgColor:'bg-black',
+            mobileNavTextColor:'text-white',
+            mobilebuttonBgColor:'bg-white',
+            mobilebuttonTextColor:'text-black'
           },
+          animationImages:{
+            image1:'/Hero/heroanimation.svg',
+            image2:'/Hero/twitchstand.svg'
+          }
         },
         section2: {
           heading: "all in one",
@@ -55,21 +65,27 @@ const page = () => {
           featureBgColor: "bg-[#F1C02A]",
           features: [
             {
-              heading: "Go ad-free with this adblock chrome",
-              text: "This is the free adblocker Chrome extension that blocks all the hidden ads from your browser."
+              heading: "Bid farewell to all the disturbing ads",
+              text: "By simply downloading the Twitch Adblock extension you can remove all the unnecessary ads and enjoy nonstop streaming."
             },
             {
-              heading: "Shield your privacy",
-              text: "It is the best extension that maintains and protects your privacy from all the harmful sites that may ruin your experience while streaming your favorite shows. So, keep your device safe by installing this adblock Chrome."
+              heading: "Protect privacy with Twitch Adblock Chrome",
+              text: "Keep data safe and protected by third-party trackers and all the dangerous websites."
             },
             {
-              heading: "Speed up your page loading with this free adblocker Chrome extension",
-              text: "Block all the annoying ads including pop-ups, banner ads, video ads, etc. It will also improve your page loading and give you a seamless experience. "
+              heading: "Save data usage and speed up page loading ",
+              text: "With this best adblock for Twitch, you can also save your data usage and speed up your loading. "
             },
             {
-              heading: "Parenting control",
-              text: "With Expert Adblocker, be the boss of your browser. You can restrict all the adult content that you don’t want to see while browsing."
+              heading: "Technical Assistance",
+              text: "Twitch is the best adblocker and has technical assistance where you can enjoy hassle-free streaming."
             }
+          ],
+          icons: [
+            { src: '/Section3/twitchicon1.svg', alt: "" },
+            { src: '/Section3/twitchicon2.svg', alt: "" },
+            { src: '/Section3/twitchicon3.svg', alt: "" },
+            { src: '/Section3/twitchicon4.svg', alt: "" },
           ],
           subFeaturesColor: "text-white",
           subHoverBgFeaturesColor:"hover:bg-[#6441A5]",
@@ -100,24 +116,29 @@ const page = () => {
           iconColor: "#fff",
           review: [
             {
-              name: "Anushka",
-              text: "By downloading this free adblocker Chrome extension, now I can block all the hidden ads that disturb me while browsing."
+              name: "Riya",
+              text: "This Twitch adblock is the best extension where you can block all the ads while streaming.",
+              reviewer:'/reviewer1.png'
             },
             {
-              name: "Gursimar",
-              text: "Yeah!! This is the best extension where I can stream all my favorite movies without those ads."
+              name: "Sonu",
+              text: "Such an amazing extension it is! Now I can stream non-stop and enjoy.",
+              reviewer:'/reviewer4.png' 
             },
             {
-              name: "Rahul",
-              text: "I have been using this extension for years now and this is the best extension."
+              name: "Anjali",
+              text: "Using this extension for years now and I can bet that it is the best extension for Twitch.",
+              reviewer:'/reviewer5.png'
             },
             {
-              name: "Gaurav",
-              text: "Such an amazing extension, as it eliminates all the ads in one go and lets you browse freely."
+              name: "Jogindar",
+              text: "Now I can stream all my favorite shows without those annoying ads.",
+              reviewer:'/reviewer2.png'
             },
             {
-              name: "Ashish",
-              text: "This is the best extension as it not only blocks ads but also protects your browser from all the malware."
+              name: "Abhay",
+              text: "Hurry up and download the extension as it is the best extension.",
+              reviewer:'/reviewer3.png'
             },
           ]
         },

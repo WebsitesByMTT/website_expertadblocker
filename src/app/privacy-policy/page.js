@@ -21,7 +21,11 @@ const PrivacyPolicy = () => {
       logoColor: "black",
       textColor: "text-black",
       buttonColor: "bg-black",
-      buttonTextColor: "text-white"
+      buttonTextColor: "text-white",
+      MobileNavbgColor: 'bg-white',
+      mobileNavTextColor: 'text-black',
+      mobilebuttonBgColor: 'bg-black',
+      mobilebuttonTextColor: 'text-white'
     },
     heading: "Privacy Policy",
     subHeadings: [
@@ -113,7 +117,7 @@ const PrivacyPolicy = () => {
         <Navbar data={data.navbar} />
         <h1 className="text-[4.5rem] text-center lg:text-left font-[800] px-10 lg:px-28 py-5 text-[#F74C04]">{data.heading}</h1>
       </div>
-      <div className="w-[90%] md:w-[80%] lg:w-[60%] m-auto bg-[#F1F1F1] my-20 rounded-[4.5rem] p-10 text-black md:text-xl text-3xl font-[500]">
+      <div className="w-[90%] md:w-[80%] lg:w-[60%] m-auto bg-white my-20 rounded-[4.5rem] p-10 text-black md:text-xl text-3xl font-[500]">
         {data.subHeadings.map((item, index) => (
           <div key={index}>
             <p className="font-[600] mt-4">{item.heading}</p>
