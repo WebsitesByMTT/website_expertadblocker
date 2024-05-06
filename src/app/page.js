@@ -15,6 +15,8 @@ export default function Home() {
       bgColor: "bg-black",
       headingColor: "text-[#F74C04]",
       textColor: "text-[#F1C02A]",
+      HeadingFontSize: 'text-[6.5rem]',
+      textFontSize: 'text-[1.2rem]',
       navbar: {
         navLinks: [
           {
@@ -31,11 +33,19 @@ export default function Home() {
           }
         ],
         logoColor: "#fff",
-        textColor: "white",
+        textColor: "text-white",
         buttonColor: "bg-white",
         buttonTextColor: "bg-black",
-        bgColor: "bg-black"
+        bgColor: "bg-black",
+        MobileNavbgColor: 'bg-black',
+        mobileNavTextColor: 'text-white',
+        mobilebuttonBgColor: 'bg-white',
+        mobilebuttonTextColor: 'text-black'
       },
+      animationImages: {
+        image1: '/Hero/heroanimation.svg',
+        image2: '/Hero/stand.svg'
+      }
     },
     section2: {
       heading: "all in one",
@@ -69,6 +79,12 @@ export default function Home() {
           text: "With Expert Adblocker, be the boss of your browser. You can restrict all the adult content that you don’t want to see while browsing."
         }
       ],
+      icons: [
+        { src: '/Section3/icon1.svg', alt: "" },
+        { src: '/Section3/icon2.svg', alt: "" },
+        { src: '/Section3/icon3.svg', alt: "" },
+        { src: '/Section3/icon4.svg', alt: "" },
+      ],
       subFeaturesColor: "text-white",
       subFeaturesBorderColor: "border-white ",
       subHoverBgFeaturesColor: "hover:bg-black",
@@ -100,23 +116,28 @@ export default function Home() {
       review: [
         {
           name: "Anushka",
-          text: "By downloading this free adblocker Chrome extension, now I can block all the hidden ads that disturb me while browsing."
+          text: "By downloading this free adblocker Chrome extension, now I can block all the hidden ads that disturb me while browsing.",
+          reviewer:'/reviewer1.png'
         },
         {
-          name: "Gursimar",
-          text: "Yeah!! This is the best extension where I can stream all my favorite movies without those ads."
+          name: "Rabindar Singh",
+          text: "Yeah!! This is the best extension where I can stream all my favorite movies without those ads.",
+          reviewer:'/reviewer2.png'
         },
         {
           name: "Rahul",
-          text: "I have been using this extension for years now and this is the best extension."
+          text: "I have been using this extension for years now and this is the best extension.",
+          reviewer:'/reviewer3.png'
         },
         {
           name: "Gaurav",
-          text: "Such an amazing extension, as it eliminates all the ads in one go and lets you browse freely."
+          text: "Such an amazing extension, as it eliminates all the ads in one go and lets you browse freely.",
+          reviewer:'/reviewer4.png'
         },
         {
-          name: "Ashish",
-          text: "This is the best extension as it not only blocks ads but also protects your browser from all the malware."
+          name: "Shivangi",
+          text: "This is the best extension as it not only blocks ads but also protects your browser from all the malware.",
+          reviewer:'/reviewer5.png'
         },
       ]
     },
