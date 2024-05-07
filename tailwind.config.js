@@ -7,6 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        slideDown: {
+          '0%': {
+            height: '0%'
+          },
+          '100%': {
+            height: '100%'
+          }
+        }
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -39,7 +39,7 @@ const page = () => {
             textColor: "text-white",
             buttonColor: "bg-white",
             buttonTextColor: "text-black",
-            MobileNavbgColor:'bg-black',
+            MobileNavbgColor:'bg-[#6441A5]',
             mobileNavTextColor:'text-white',
             mobilebuttonBgColor:'bg-white',
             mobilebuttonTextColor:'text-black'
@@ -114,6 +114,7 @@ const page = () => {
           textColor: "text-white",
           bgColor: "bg-[#6441A5]",
           iconColor: "#fff",
+          starColor: "#F1C02A",
           review: [
             {
               name: "Riya",

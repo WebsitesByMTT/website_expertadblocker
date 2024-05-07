@@ -4,25 +4,32 @@ import { useEffect, useState } from 'react';
 
 const Navbar = ({ data }) => {
     const [open, setOpen] = useState(false);
+    useEffect(() => {
+        if (open) {
+            document.body.classList.add('overflow-hidden');
+        } else {
+            document.body.classList.remove('overflow-hidden');
+        }
+    }, [open])
     const handleClick = () => {
         setOpen(prev => !prev);
     }
 
-    const mobileNavData=[
+    const mobileNavData = [
         {
-            text:'Blogs',
-            Link:'/blogs'
+            text: 'Blogs',
+            Link: '/blogs'
         },
         {
-            text:'About Us',
-            Link:'/about-us'
+            text: 'About Us',
+            Link: '/about-us'
         },
         {
-            text:'Contact Us',
-            Link:'/contact-us'
+            text: 'Contact Us',
+            Link: '/contact-us'
         }
     ]
-   
+
     return (
         <div className={`p-8 px-12 md:px-12 lg:px-28 md:pt-10 pb-3 flex justify-between items-center relative ${data.bgColor}`}>
             <a href="/">
@@ -45,19 +52,24 @@ const Navbar = ({ data }) => {
                 <div onClick={handleClick} className='z-[500] md:hidden'>{open ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill={data.textColor} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`lucide ${data.textColor} lucide-x`}><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg> : <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill={data.textColor} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`lucide ${data.textColor} lucide-align-justify`}><line x1="3" x2="21" y1="6" y2="6" /><line x1="3" x2="21" y1="12" y2="12" /><line x1="3" x2="21" y1="18" y2="18" /></svg>}</div>
             </div>
             {/* Mobile NavBar */}
-            <div className={`fixed md:hidden block top-0  ${open?'left-0':'-left-[100%]'} transition-all w-full h-screen ${data.MobileNavbgColor} z-50`}>
-               <ul className={` ${data.mobileNavTextColor} text-[2.5rem] pt-32 space-y-4 pl-20`}>
-                {
-                    mobileNavData.map((item,ind)=>(
-                        <Link key={ind} href={item.Link}><li>{item.text}</li></Link>
-                    ))
-                }
-               </ul> 
-               <div className='text-[2rem]  pl-20 pt-10'>
-                  <button className={`${data.mobilebuttonBgColor} ${data.mobilebuttonTextColor}  px-10 py-3 rounded-2xl`}>DOWNLOAD EXTENSION</button>
-               </div>
-            </div>
+            {open && <div className={`animate-slideDown ease-in-out w-full absolute top-[100%] left-0 backdrop-blur-[3px] bg-[#0e0d0d6b] z-[10] transition-all min-h-screen`}>
+                <div className={` absolute md:hidden left-0  rounded-br-2xl rounded-bl-2xl ${open ? 'top-[0]' : 'bottom-[100%]'} transition-all w-full mx-auto py-10 ${data.MobileNavbgColor} z-50`}>
+                    <ul className={` ${data.mobileNavTextColor} text-[2.5rem] pt-32 space-y-4 pl-20`}>
+                        {
+                            mobileNavData.map((item, ind) => (
+                                <Link key={ind} href={item.Link}><li>{item.text}</li></Link>
+                            ))
+                        }
+                    </ul>
+                    <div className='text-[2rem]  pl-20 pt-10'>
+                        <button className={`${data.mobilebuttonBgColor} ${data.mobilebuttonTextColor}  px-10 py-3 rounded-2xl`}>DOWNLOAD EXTENSION</button>
+                    </div>
+                </div>
+            </div>}
         </div>
+
+
+
     )
 }
 

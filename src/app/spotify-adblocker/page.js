@@ -37,7 +37,7 @@ const Spotify = () => {
                 textColor: "text-white",
                 buttonColor: "bg-white",
                 buttonTextColor: "text-black",
-                MobileNavbgColor:'bg-black',
+                MobileNavbgColor:'bg-[#1AB26B]',
                 mobileNavTextColor:'text-white',
                 mobilebuttonBgColor:'bg-white',
                 mobilebuttonTextColor:'text-black'
@@ -114,6 +114,7 @@ const Spotify = () => {
             textColor: "text-[#C3F0C8]",
             bgColor: "bg-[#1AB26B]",
             iconColor: "#C3F0C8",
+            starColor: "#2D46B9",
             review: [
                 {
                     name: "Balbindar",

@@ -38,7 +38,7 @@ const page = () => {
                 textColor: "text-black",
                 buttonColor: "bg-black",
                 buttonTextColor: "text-white",
-                MobileNavbgColor:'bg-white',
+                MobileNavbgColor:'bg-[#1DE783]',
                 mobileNavTextColor:'text-black',
                 mobilebuttonBgColor:'bg-black',
                 mobilebuttonTextColor:'text-white'
@@ -114,6 +114,7 @@ const page = () => {
             textColor: "text-[#012A84]",
             bgColor: "bg-[#1DE783]",
             iconColor: "#012A84",
+            starColor: "#F74C04",
             review: [
                 {
                     name: "Rajveer",

@@ -37,7 +37,7 @@ const Youtube = () => {
                 textColor: "text-white",
                 buttonColor: "bg-white",
                 buttonTextColor: "text-black",
-                MobileNavbgColor: 'bg-black',
+                MobileNavbgColor: 'bg-[#FF4A4A]',
                 mobileNavTextColor: 'text-white',
                 mobilebuttonBgColor: 'bg-white',
                 mobilebuttonTextColor: 'text-black'
@@ -114,6 +114,7 @@ const Youtube = () => {
             textColor: "text-[#FFD7B3]",
             bgColor: "bg-[#FF4A4A]",
             iconColor: "#FFD7B3",
+            starColor: "#D40000",
             review: [
                 {
                     name: "Anushka",

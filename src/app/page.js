@@ -113,6 +113,7 @@ export default function Home() {
       textColor: "text-white",
       bgColor: "bg-black",
       iconColor: "white",
+      starColor: "#F1C02A",
       review: [
         {
           name: "Anushka",
