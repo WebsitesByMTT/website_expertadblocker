@@ -7,6 +7,20 @@ import Section5 from '../components/Home/Section5'
 import Section6 from '../components/Home/Section6'
 import Footer from '../components/Footer'
 
+
+export const metadata = {
+    title: "Hulu ad blocker Chrome Extension - Free adblocker",
+    description: "Hulu ad blocker Chrome Extension is the best extension for Hulu where you can block all the disturbing ads that annoy you while watching your favorite movie.",
+    icons: {
+      icon: '/favicon.png',
+    },
+    openGraph: {
+      title: "Hulu ad blocker Chrome Extension - Free adblocker",
+      description: "Hulu ad blocker Chrome Extension is the best extension for Hulu where you can block all the disturbing ads that annoy you while watching your favorite movie.",
+      type: 'website',
+    }
+  };
+  
 const page = () => {
 
     const data = {
