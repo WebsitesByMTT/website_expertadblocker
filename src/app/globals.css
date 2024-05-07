@@ -65,21 +65,12 @@ body {
 }
 
 .slider {
-  height: 100px;
+  height: auto;
   margin: auto;
   overflow: hidden;
   position: relative;
   width: 100%;
   background-color: transparent;
-}
-
-.slider::before,
-.slider::after {
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
 }
 
 .slider::after {
@@ -100,6 +91,12 @@ body {
   width: calc(250px * 14);
 }
 
+@media screen and(max-width: 600px) {
+  .slider .slide-track {
+    width: calc(10% * 14);
+  }
+}
+
 .slider .slide {
   height: 170px;
   width: 250px;
@@ -110,31 +107,83 @@ body {
   color: white;
 }
 
-
 .animate {
-  animation: .5s animate linear infinite forwards;
+  animation: .5s animate linear forwards;
 }
 
 @keyframes animate {
   0% {
-    transform: translateY(0%);
+    transform: translateY(0%) scale(1);
   }
 
   100% {
-    transform: translateY(100%);
+    transform: translateY(150%) scale(0);
   }
 }
 
-@keyframes slideDown {
+.button {
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .5s;
+  border-radius: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.button span {
+  z-index: 10;
+}
+
+.button::before {
+  content: '';
+  background: conic-gradient(transparent 270deg, white, transparent);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate 4s linear infinite;
+}
+
+.button::after {
+  content: '';
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  z-index: -1;
+  inset: 1px;
+  height: calc(100% - 2 * 1px);
+  width: calc(100% - 2 * 1px);
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
+
+@keyframes scaleDown {
   0% {
-    height: 0%;
+    transform: translateY(0%) scale(1);
   }
 
   100% {
-    height: 100%;
+    transform: translateY(50%) scale(0.5);
   }
 }
 
-.animate-slideDown {
-  animation: slideDown 1s ease-in-out forwards;
+.animate-scale {
+  animation: .5s scaleDown linear forwards;
+}
+
+.aboutTag:hover :last-child {
+  color: black;
 }
