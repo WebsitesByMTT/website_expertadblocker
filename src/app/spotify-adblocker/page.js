@@ -6,6 +6,19 @@ import Section5 from '../components/Home/Section5'
 import Section6 from '../components/Home/Section6'
 import Footer from '../components/Footer'
 
+export const metadata = {
+    title: "Spotify ad blocker- Best adblocker for free",
+    description: "Spotify ad blocker is the extension that blocks all Spotify ads and lets you listen to your favorite music without any trouble.",
+    icons: {
+        icon: '/favicon.png',
+    },
+    openGraph: {
+        title: "Spotify ad blocker- Best adblocker for free",
+        description: "Spotify ad blocker is the extension that blocks all Spotify ads and lets you listen to your favorite music without any trouble.",
+        type: 'website',
+    }
+};
+
 const Spotify = () => {
     const data = {
         section1: {
@@ -14,38 +27,41 @@ const Spotify = () => {
             bgColor: "bg-[#1AB26B]",
             headingColor: "text-[#FFCDD2]",
             textColor: "text-[#C3F0C8]",
-            HeadingFontSize:'text-[6rem]',
-            textFontSize:'text-[1.1rem]',
-            
+            HeadingFontSize: 'text-[6rem]',
+            textFontSize: 'text-[1.1rem]',
+
             navbar: {
                 navLinks: [
-                  {
-                    title: "blogs",
-                    link: "/blogs"
-                  },
-                  {
-                    title: "about us",
-                    link: "/about-us"
-                  },
-                  {
-                    title: "contact us",
-                    link: "/contact-us"
-                  }
+                    {
+                        title: "blogs",
+                        link: "/blogs"
+                    },
+                    {
+                        title: "about us",
+                        link: "/about-us"
+                    },
+                    {
+                        title: "contact us",
+                        link: "/contact-us"
+                    }
                 ],
                 bgColor: "bg-[#1AB26B]",
                 logoColor: "white",
                 textColor: "text-white",
-                buttonColor: "bg-white",
-                buttonTextColor: "text-black",
-                MobileNavbgColor:'bg-black',
-                mobileNavTextColor:'text-white',
-                mobilebuttonBgColor:'bg-white',
-                mobilebuttonTextColor:'text-black'
-              },
-              animationImages:{
-                image1:'/Hero/heroanimation.svg',
-                image2:'/Hero/spotifystand.svg'
-              }
+                hoverColor: "hover:after:bg-[#FFCDD2]",
+                afterColor: "after:bg-[#252525]",
+                buttonColor: "bg-[#252525]",
+                buttonTextColor: "text-white",
+                borderColor: "border-white",
+                MobileNavbgColor: 'bg-[#1AB26B]',
+                mobileNavTextColor: 'text-white',
+                mobilebuttonBgColor: 'bg-white',
+                mobilebuttonTextColor: 'text-black'
+            },
+            animationImages: {
+                image1: '/Hero/heroanimation.svg',
+                image2: '/Hero/spotifystand.svg'
+            }
         },
         section2: {
             heading: "all in one",
@@ -84,7 +100,7 @@ const Spotify = () => {
                 { src: '/Section3/spotifyicon2.svg', alt: "" },
                 { src: '/Section3/spotifyicon3.svg', alt: "" },
                 { src: '/Section3/spotifyicon4.svg', alt: "" },
-              ],
+            ],
             subFeaturesColor: "text-[#C3F0C8] ",
             subFeaturesBorderColor: "border-[#C3F0C8] ",
             subHoverBgFeaturesColor: "hover:bg-[#C3F0C8]",
@@ -114,31 +130,32 @@ const Spotify = () => {
             textColor: "text-[#C3F0C8]",
             bgColor: "bg-[#1AB26B]",
             iconColor: "#C3F0C8",
+            starColor: "#2D46B9",
             review: [
                 {
                     name: "Balbindar",
                     text: "Now I can play my favorite music list without worrying about ads.",
-                    reviewer:'/reviewer2.png'
+                    reviewer: '/reviewer2.png'
                 },
                 {
                     name: "Kartik",
                     text: "This is the best extension as it helps me to listen to my favorite songs without those irritating ads.",
-                    reviewer:'/reviewer4.png'
+                    reviewer: '/reviewer4.png'
                 },
                 {
                     name: "Roshni",
                     text: "Now I can block spotify ads for free.",
-                    reviewer:'/reviewer1.png'
+                    reviewer: '/reviewer1.png'
                 },
                 {
                     name: "Komal",
                     text: "Thanks to spotify adblocker as now with blocking ads I can keep my device safe by removing all the malware.",
-                    reviewer:'/reviewer5.png'
+                    reviewer: '/reviewer5.png'
                 },
                 {
                     name: "Raajveer",
                     text: "I have been using this for months now and I bet this is the best.",
-                    reviewer:'/reviewer3.png'
+                    reviewer: '/reviewer3.png'
                 },
             ]
         },
@@ -183,10 +200,11 @@ const Spotify = () => {
             subheading: "Spotify Adblocker",
             textColor: "text-white",
             text: "Spotify is the most popular audio-streaming platform where there are huge variety of songs. Whether you are fond of old classic music or rap, you will get everything on Spotify. But while listening to our music some ads come in between and spoil our mood. But for that case, we have a spotify ad blocker that will block all those ads for free and let you enjoy your music without limits. Apart from removing ads, it will also speed up your page loading and protect you from all the malware that may ruin your browser. The best part is, that you don’t have to buy premium as this extension is free to use.",
-            subtext: "Tired of Spotify ads? ",
+            subtext: "Tired of ",
             subTextColor: "text-[#1AB26B]",
             subTextHoverColor: "hover:text-black",
             hoverColor: "hover:bg-[#1AB26B]",
+            tag2: "Spotify ads? ",
             tag: "Download the extension now",
             tagColor: "text-white",
         },
@@ -207,7 +225,7 @@ const Spotify = () => {
                     link: "/about-us"
                 },
                 {
-                    name: "Contact US",
+                    name: "Contact us",
                     link: "/contact-us"
                 },
                 {

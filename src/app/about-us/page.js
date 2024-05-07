@@ -2,7 +2,6 @@ import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import BannerAnimation from "../components/animate-bounce/BannerAnimation"
 
-
 const AboutUs = () => {
   const data = {
     navbar: {
@@ -20,14 +19,15 @@ const AboutUs = () => {
           link: "/contact-us"
         }
       ],
-      animationImages:{
-        image1:'/Hero/heroanimation.svg',
-        image2:'/Hero/stand.svg'
+      animationImages: {
+        image1: '/Hero/heroanimation.svg',
+        image2: '/Hero/stand.svg'
       },
       logoColor: "black",
       textColor: "text-black",
       buttonColor: "bg-black",
       buttonTextColor: "text-white",
+      borderColor: "border-black",
       MobileNavbgColor: 'bg-white',
       mobileNavTextColor: 'text-black',
       mobilebuttonBgColor: 'bg-black',
@@ -50,7 +50,7 @@ const AboutUs = () => {
           link: "/about-us"
         },
         {
-          name: "Contact US",
+          name: "Contact us",
           link: "/contact-us"
         },
         {
@@ -78,7 +78,7 @@ const AboutUs = () => {
       <div className="bg-white py-20 pt-40  md:py-40">
         <div className="grid grid-cols-12  px-5 md:px-0 space-y-10 md:space-y-0 items-center md:w-[95%] 2xl:w-[90%] mx-auto">
           <div className="col-span-12 md:col-span-6 flex justify-center">
-            <BannerAnimation images={data?.navbar.animationImages}/>
+            <BannerAnimation images={data?.navbar.animationImages} />
           </div>
           <div className="col-span-12 md:col-span-6 flex justify-center">
             <div className="space-y-8">
