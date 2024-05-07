@@ -7,6 +7,19 @@ import Section5 from '../components/Home/Section5'
 import Section6 from '../components/Home/Section6'
 import Footer from '../components/Footer'
 
+export const metadata = {
+    title: "Youtube Adblocker Chrome Extension- Free Adblocker",
+    description: "YouTube Adblocker Chrome extension is the best adblocker that blocks all YouTube ads in one go. So that you can enjoy all your favorite videos without those annoying ads.",
+    icons: {
+      icon: '/favicon.png',
+    },
+    openGraph: {
+      title: "Youtube Adblocker Chrome Extension- Free Adblocker",
+      description: "YouTube Adblocker Chrome extension is the best adblocker that blocks all YouTube ads in one go. So that you can enjoy all your favorite videos without those annoying ads.",
+      type: 'website',
+    }
+  };
+
 const Youtube = () => {
     const data = {
         section1: {

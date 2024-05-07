@@ -8,21 +8,21 @@ const Navbar = ({ data }) => {
         setOpen(prev => !prev);
     }
 
-    const mobileNavData=[
+    const mobileNavData = [
         {
-            text:'Blogs',
-            Link:'/blogs'
+            text: 'Blogs',
+            Link: '/blogs'
         },
         {
-            text:'About Us',
-            Link:'/about-us'
+            text: 'About Us',
+            Link: '/about-us'
         },
         {
-            text:'Contact Us',
-            Link:'/contact-us'
+            text: 'Contact Us',
+            Link: '/contact-us'
         }
     ]
-   
+
     return (
         <div className={`p-8 px-12 md:px-12 lg:px-28 md:pt-10 pb-3 flex justify-between items-center relative ${data.bgColor}`}>
             <a href="/">
@@ -41,21 +41,27 @@ const Navbar = ({ data }) => {
                         ))
                     }
                 </ul>
-                <a className={` md:block hidden ${data.buttonTextColor} ${data.buttonColor} uppercase text-xl font-[500] rounded-3xl border-2 px-4 py-1 hover:bg-[#F74C04] hover:text-white`}>DOWNLOAD EXTENSION</a>
-                <div onClick={handleClick} className='z-[500] md:hidden'>{open ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill={data.textColor} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`lucide ${data.textColor} lucide-x`}><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg> : <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill={data.textColor} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`lucide ${data.textColor} lucide-align-justify`}><line x1="3" x2="21" y1="6" y2="6" /><line x1="3" x2="21" y1="12" y2="12" /><line x1="3" x2="21" y1="18" y2="18" /></svg>}</div>
+                <button onClick={handleClick} className='z-[500] md:hidden'>{open ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill={data.textColor} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`lucide ${data.textColor} lucide-x`}><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg> : <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill={data.textColor} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`lucide ${data.textColor} lucide-align-justify`}><line x1="3" x2="21" y1="6" y2="6" /><line x1="3" x2="21" y1="12" y2="12" /><line x1="3" x2="21" y1="18" y2="18" /></svg>}</button>
+                <button className={` md:block hidden  ${data.buttonTextColor} ${data.buttonColor} uppercase text-xl font-[500]  border-2 px-4 py-2`}>
+                    DOWNLOAD EXTENSION
+                    <span ></span>
+                    <span ></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
             {/* Mobile NavBar */}
-            <div className={`fixed md:hidden block top-0  ${open?'left-0':'-left-[100%]'} transition-all w-full h-screen ${data.MobileNavbgColor} z-50`}>
-               <ul className={` ${data.mobileNavTextColor} text-[2.5rem] pt-32 space-y-4 pl-20`}>
-                {
-                    mobileNavData.map((item,ind)=>(
-                        <Link key={ind} href={item.Link}><li>{item.text}</li></Link>
-                    ))
-                }
-               </ul> 
-               <div className='text-[2rem]  pl-20 pt-10'>
-                  <button className={`${data.mobilebuttonBgColor} ${data.mobilebuttonTextColor}  px-10 py-3 rounded-2xl`}>DOWNLOAD EXTENSION</button>
-               </div>
+            <div className={`fixed md:hidden block top-0  ${open ? 'left-0' : '-left-[100%]'} transition-all w-full h-screen ${data.MobileNavbgColor} z-50`}>
+                <ul className={` ${data.mobileNavTextColor} text-[2.5rem] pt-32 space-y-4 pl-20`}>
+                    {
+                        mobileNavData.map((item, ind) => (
+                            <Link key={ind} href={item.Link}><li>{item.text}</li></Link>
+                        ))
+                    }
+                </ul>
+                <div className='text-[2rem]  pl-20 pt-10'>
+                    <button className={`${data.mobilebuttonBgColor} ${data.mobilebuttonTextColor}  px-10 py-3 rounded-2xl`}>DOWNLOAD EXTENSION</button>
+                </div>
             </div>
         </div>
     )
