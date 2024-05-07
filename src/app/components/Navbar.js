@@ -4,6 +4,13 @@ import { useEffect, useState } from 'react';
 
 const Navbar = ({ data }) => {
     const [open, setOpen] = useState(false);
+    useEffect(() => {
+        if (open) {
+            document.body.classList.add('overflow-hidden');
+        } else {
+            document.body.classList.remove('overflow-hidden');
+        }
+    }, [open])
     const handleClick = () => {
         setOpen(prev => !prev);
     }
@@ -35,34 +42,34 @@ const Navbar = ({ data }) => {
                 <ul className={`md:flex hidden text-xl`}>
                     {
                         data?.navLinks.map((item, index) => (
-                            <a key={index} href={item?.link} after={item.title} className={`nav after:text-center after:uppercase after:content-[attr(after)] after:text-[#F74C04] after:z-[10] after:absolute after:top-0 after:left-0 after:opacity-0 overflow-hidden hover:after:opacity-100 after:w-full after:h-full after:translate-y-[100%] hover:after:translate-y-[0] relative after:transition-all transition-all after:ease after:duration-500 duration-500  ${data.textColor} lg:px-8 md:px-4 border-r-2 border-${data.textColor} capitalize last:border-r-0`}>
+                            <a key={index} href={item?.link} after={item.title} className={`nav after:text-center after:uppercase after:content-[attr(after)] after:text-[#F74C04] after:z-[10] after:absolute after:top-0 after:left-0 after:opacity-0 overflow-hidden hover:after:opacity-100 after:w-full after:h-full after:translate-y-[100%] hover:after:translate-y-[0] relative after:transition-all transition-all after:ease after:duration-500 duration-500  ${data.textColor} lg:px-8 md:px-4 border-r-2 ${data.borderColor} capitalize last:border-r-0`}>
                                 <li>{item.title}</li>
                             </a>
                         ))
                     }
                 </ul>
                 <button onClick={handleClick} className='z-[500] md:hidden'>{open ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill={data.textColor} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`lucide ${data.textColor} lucide-x`}><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg> : <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill={data.textColor} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`lucide ${data.textColor} lucide-align-justify`}><line x1="3" x2="21" y1="6" y2="6" /><line x1="3" x2="21" y1="12" y2="12" /><line x1="3" x2="21" y1="18" y2="18" /></svg>}</button>
-                <button className={` md:block hidden  ${data.buttonTextColor} ${data.buttonColor} uppercase text-xl font-[500]  border-2 px-4 py-2`}>
-                    DOWNLOAD EXTENSION
-                    <span ></span>
-                    <span ></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            {/* Mobile NavBar */}
-            <div className={`fixed md:hidden block top-0  ${open ? 'left-0' : '-left-[100%]'} transition-all w-full h-screen ${data.MobileNavbgColor} z-50`}>
-                <ul className={` ${data.mobileNavTextColor} text-[2.5rem] pt-32 space-y-4 pl-20`}>
-                    {
-                        mobileNavData.map((item, ind) => (
-                            <Link key={ind} href={item.Link}><li>{item.text}</li></Link>
-                        ))
-                    }
-                </ul>
-                <div className='text-[2rem]  pl-20 pt-10'>
-                    <button className={`${data.mobilebuttonBgColor} ${data.mobilebuttonTextColor}  px-10 py-3 rounded-2xl`}>DOWNLOAD EXTENSION</button>
+                <div className='box'>
+                    <a href="https://chromewebstore.google.com/detail/expert-ad-blocker-free-ad/beecichmnnhnljafpeopjcfgedbeiion" className={`md:block hidden button ${data.afterColor} md:block hover:scale-95 ${data.hoverColor} ${data.buttonTextColor} ${data.buttonColor} uppercase text-xl font-[500]  border-2 px-4 py-2 `}>
+                        <span>DOWNLOAD EXTENSION</span>
+                    </a>
                 </div>
             </div>
+            {/* Mobile NavBar */}
+            {open && <div className={` ease-in-out w-full absolute top-[100%] left-0 backdrop-blur-[3px] bg-[#0e0d0d6b] z-[10] transition-all min-h-screen`}>
+                <div className={` absolute md:hidden left-0  rounded-br-2xl rounded-bl-2xl ${open ? 'top-[0]' : 'bottom-[100%]'} transition-all w-full mx-auto py-10 ${data.MobileNavbgColor} z-50`}>
+                    <ul className={` ${data.mobileNavTextColor} text-[2.5rem] pt-10 space-y-4 pl-20`}>
+                        {
+                            mobileNavData.map((item, ind) => (
+                                <Link key={ind} href={item.Link}><li>{item.text}</li></Link>
+                            ))
+                        }
+                    </ul>
+                    <div className='text-[2rem]  pl-20 pt-10'>
+                        <a href="https://chromewebstore.google.com/detail/expert-ad-blocker-free-ad/beecichmnnhnljafpeopjcfgedbeiion" className={`${data.mobilebuttonBgColor} ${data.mobilebuttonTextColor}  px-10 py-3 rounded-2xl`}>DOWNLOAD EXTENSION</a>
+                    </div>
+                </div>
+            </div>}
         </div>
     )
 }

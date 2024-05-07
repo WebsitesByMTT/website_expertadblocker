@@ -27,6 +27,7 @@ const Page = () => {
             textColor: "text-black",
             buttonColor: "bg-black",
             buttonTextColor: "text-white",
+            borderColor: "border-black",
             MobileNavbgColor: 'bg-white',
             mobileNavTextColor: 'text-black',
             mobilebuttonBgColor: 'bg-black',
@@ -49,7 +50,7 @@ const Page = () => {
                     link: "/about-us"
                 },
                 {
-                    name: "Contact US",
+                    name: "Contact us",
                     link: "/contact-us"
                 },
                 {

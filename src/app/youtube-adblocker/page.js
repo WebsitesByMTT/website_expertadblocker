@@ -11,14 +11,14 @@ export const metadata = {
     title: "Youtube Adblocker Chrome Extension- Free Adblocker",
     description: "YouTube Adblocker Chrome extension is the best adblocker that blocks all YouTube ads in one go. So that you can enjoy all your favorite videos without those annoying ads.",
     icons: {
-      icon: '/favicon.png',
+        icon: '/favicon.png',
     },
     openGraph: {
-      title: "Youtube Adblocker Chrome Extension- Free Adblocker",
-      description: "YouTube Adblocker Chrome extension is the best adblocker that blocks all YouTube ads in one go. So that you can enjoy all your favorite videos without those annoying ads.",
-      type: 'website',
+        title: "Youtube Adblocker Chrome Extension- Free Adblocker",
+        description: "YouTube Adblocker Chrome extension is the best adblocker that blocks all YouTube ads in one go. So that you can enjoy all your favorite videos without those annoying ads.",
+        type: 'website',
     }
-  };
+};
 
 const Youtube = () => {
     const data = {
@@ -48,17 +48,20 @@ const Youtube = () => {
                 bgColor: "bg-[#FF4A4A]",
                 logoColor: "white",
                 textColor: "text-white",
-                buttonColor: "bg-white",
-                buttonTextColor: "text-black",
-                MobileNavbgColor: 'bg-black',
+                buttonColor: "bg-[#252525]",
+                hoverColor: "hover:after:bg-[#FFD7B3]",
+                afterColor: "after:bg-[#252525]",
+                buttonTextColor: "text-white",
+                borderColor: "border-white",
+                MobileNavbgColor: 'bg-[#FF4A4A]',
                 mobileNavTextColor: 'text-white',
                 mobilebuttonBgColor: 'bg-white',
                 mobilebuttonTextColor: 'text-black'
             },
-            animationImages:{
-                image1:'/Hero/heroanimation.svg',
-                image2:'/Hero/youtubestand.svg'
-              }
+            animationImages: {
+                image1: '/Hero/heroanimation.svg',
+                image2: '/Hero/youtubestand.svg'
+            }
         },
         section2: {
             heading: "all in one",
@@ -97,7 +100,7 @@ const Youtube = () => {
                 { src: '/Section3/youtubeicon2.svg', alt: "" },
                 { src: '/Section3/youtubeicon3.svg', alt: "" },
                 { src: '/Section3/youtubeicon4.svg', alt: "" },
-              ],
+            ],
             subFeaturesColor: "text-[#FF0000] ",
             subFeaturesBorderColor: "border-[#FF0000] ",
             subHoverBgFeaturesColor: "hover:bg-[#FF0000]",
@@ -127,31 +130,32 @@ const Youtube = () => {
             textColor: "text-[#FFD7B3]",
             bgColor: "bg-[#FF4A4A]",
             iconColor: "#FFD7B3",
+            starColor: "#D40000",
             review: [
                 {
                     name: "Anushka",
                     text: "I have been using this extension for years now and it is the best.",
-                    reviewer:'/reviewer5.png'
+                    reviewer: '/reviewer5.png'
                 },
                 {
                     name: "Gursimar",
                     text: "Now I can watch all my favorite videos without those irritating ads.",
-                    reviewer:'/reviewer1.png'
+                    reviewer: '/reviewer1.png'
                 },
                 {
                     name: "Rahul",
                     text: "This extension is free to use and smoothly runs in both Chrome and Firefox.",
-                    reviewer:'/reviewer3.png' 
+                    reviewer: '/reviewer3.png'
                 },
                 {
                     name: "Gurbindar",
                     text: "Such a wonderful extension it is! It automatically removes all the ads and lets me stream freely.",
-                    reviewer:'/reviewer2.png'
+                    reviewer: '/reviewer2.png'
                 },
                 {
                     name: "Ritik",
                     text: "The best part is it also protects your browser from all the dangerous websites.",
-                    reviewer:'/reviewer4.png'
+                    reviewer: '/reviewer4.png'
                 },
             ]
         },
@@ -200,7 +204,8 @@ const Youtube = () => {
             subTextColor: "text-[#FF0000]",
             subTextHoverColor: "hover:text-black",
             hoverColor: "hover:bg-[#FF0000]",
-            tag: "YouTube ads now",
+            tag: " now",
+            tag2: "YOUTUBE ADS",
             tagColor: "text-white",
         },
         footer: {
@@ -220,7 +225,7 @@ const Youtube = () => {
                     link: "/about-us"
                 },
                 {
-                    name: "Contact US",
+                    name: "Contact us",
                     link: "/contact-us"
                 },
                 {

@@ -16,13 +16,12 @@ export const metadata = {
   },
   openGraph: {
     title: "Twitch Adblocker Chrome Extension- Best Adblocker",
-    description:"Download Twitch Adblocker Chrome Extension and eliminate all the disturbing ads that annoy you while streaming. It will also maintain your privacy.",
+    description: "Download Twitch Adblocker Chrome Extension and eliminate all the disturbing ads that annoy you while streaming. It will also maintain your privacy.",
     type: 'website',
   }
 };
 
 const page = () => {
-
   const data = {
     section1: {
       heading: "Block ads with the ultimate Twitch Adblocker Chrome Extension",
@@ -50,16 +49,19 @@ const page = () => {
         bgColor: "bg-[#6441A5]",
         logoColor: "white",
         textColor: "text-white",
-        buttonColor: "bg-[#492E7A]",
+        hoverColor: "hover:after:bg-[#F1C02A]",
+        afterColor: "after:bg-[#252525]",
+        buttonColor: "bg-[#252525]",
         buttonTextColor: "text-white",
-        MobileNavbgColor: 'bg-black',
+        borderColor: "border-white",
+        MobileNavbgColor: 'bg-[#6441A5]',
         mobileNavTextColor: 'text-white',
         mobilebuttonBgColor: 'bg-white',
         mobilebuttonTextColor: 'text-black'
-      },
-      animationImages: {
+      }, animationImages: {
         image1: '/Hero/heroanimation.svg',
         image2: '/Hero/twitchstand.svg'
+
       }
     },
     section2: {
@@ -127,6 +129,7 @@ const page = () => {
       textColor: "text-white",
       bgColor: "bg-[#6441A5]",
       iconColor: "#fff",
+      starColor: "#F1C02A",
       review: [
         {
           name: "Riya",
@@ -198,7 +201,7 @@ const page = () => {
       subtext: "Say goodbye to ",
       subTextColor: "text-[#F1C02A]",
       subTextHoverColor: "hover:text-black",
-      tag: "and Enjoy Streaming",
+      tag: " and Enjoy Streaming",
       tagColor: "[#F1C02A]",
       tag2: 'TWITCH ADS',
       borderColor: 'border-[#F1C02A]',
@@ -220,7 +223,7 @@ const page = () => {
           link: "/about-us"
         },
         {
-          name: "Contact US",
+          name: "Contact us",
           link: "/contact-us"
         },
         {

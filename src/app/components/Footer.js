@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = ({ data }) => {
     const webLinks = [
         { name: "Twitch adblocker", link: "/twitch-adblocker" },
-        { name: "Hulu adblocker", link: "/hulu" },
+        { name: "Hulu adblocker", link: "/hulu-adblocker" },
         { name: "Youtube adblocker", link: "/youtube-adblocker" },
         { name: "Spotify adblocker", link: "/spotify-adblocker" }
 
@@ -40,17 +40,17 @@ const Footer = ({ data }) => {
             <p className={`md:w-[60%] w-[90%] m-auto text-xl md:text-lg font-normal ${data.textColor} text-center`}>{data.keywords}</p>
             <div className='md:w-[50%] w-[80%] m-auto flex-wrap gap-2 gap-y-5 flex justify-evenly pt-20'>
                 {webLinks.map((item, index) => (
-                    <a key={index} href={item.link} className={`px-4 py-2 text-2xl md:text-xl font-normal ${data.textColor} rounded-3xl bg-white`}>{item.name}</a>
+                    <a key={index} href={item.link} className={` hover:scale-90 transition-all ease-in-out px-4 py-2 text-2xl md:text-xl font-normal ${data.textColor} rounded-3xl bg-white`}>{item.name}</a>
                 ))}
             </div>
             <div className='md:w-[50%] w-[70%] m-auto flex flex-wrap gap-2 gap-y-4 justify-evenly py-16 md:py-10'>
                 {data.links.map((item, index) => (
-                    <a key={index} href={item.link} className={`px-4 py-2 md:text-xl text-2xl font-normal ${data.textlinkColor} rounded-3xl ${data.linksBg}`}>{item.name}</a>
+                    <a key={index} href={item.link} className={` hover:scale-90 transition-all ease-in-out px-4 py-2 md:text-xl text-2xl font-normal ${data.textlinkColor} rounded-3xl ${data.linksBg}`}>{item.name}</a>
                 ))}
             </div>
             <div className='w-[70%] md:w-[30%]  m-auto flex-wrap gap-5 flex justify-evenly pb-5'>
                 {socialLinks.map((item, index) => (
-                    <a key={index} href={item.link} className='py-2 min-w-[8rem] md:min-w-[0rem] text-xl w-[20%] '>{item.icon}</a>
+                    <a key={index} href={item.link} className=' hover:scale-90 transition-all ease-in-out  py-2 min-w-[8rem] md:min-w-[0rem] text-xl w-[20%] '>{item.icon}</a>
                 ))}
             </div>
             <p className={`${data.textColor} text-center font-lg md:font-md font-normal p-2`}>copyright © 2024 expertadblocker. All rights reserved.</p>

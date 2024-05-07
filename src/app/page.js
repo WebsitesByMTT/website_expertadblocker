@@ -34,13 +34,16 @@ export default function Home() {
         ],
         logoColor: "#fff",
         textColor: "text-white",
-        buttonColor: "bg-white",
-        buttonTextColor: "bg-black",
+        buttonColor: "bg-[#252525]",
+        hoverColor: "hover:after:bg-[#F74C04]",
+        buttonTextColor: "text-white",
+        borderColor: "border-white",
         bgColor: "bg-black",
         MobileNavbgColor: 'bg-black',
         mobileNavTextColor: 'text-white',
         mobilebuttonBgColor: 'bg-white',
-        mobilebuttonTextColor: 'text-black'
+        mobilebuttonTextColor: 'text-black',
+        afterColor: "after:bg-[#252525]"
       },
       animationImages: {
         image1: '/Hero/heroanimation.svg',
@@ -113,31 +116,32 @@ export default function Home() {
       textColor: "text-white",
       bgColor: "bg-black",
       iconColor: "white",
+      starColor: "#F1C02A",
       review: [
         {
           name: "Anushka",
           text: "By downloading this free adblocker Chrome extension, now I can block all the hidden ads that disturb me while browsing.",
-          reviewer:'/reviewer1.png'
+          reviewer: '/reviewer1.png'
         },
         {
           name: "Rabindar Singh",
           text: "Yeah!! This is the best extension where I can stream all my favorite movies without those ads.",
-          reviewer:'/reviewer2.png'
+          reviewer: '/reviewer2.png'
         },
         {
           name: "Rahul",
           text: "I have been using this extension for years now and this is the best extension.",
-          reviewer:'/reviewer3.png'
+          reviewer: '/reviewer3.png'
         },
         {
           name: "Gaurav",
           text: "Such an amazing extension, as it eliminates all the ads in one go and lets you browse freely.",
-          reviewer:'/reviewer4.png'
+          reviewer: '/reviewer4.png'
         },
         {
           name: "Shivangi",
           text: "This is the best extension as it not only blocks ads but also protects your browser from all the malware.",
-          reviewer:'/reviewer5.png'
+          reviewer: '/reviewer5.png'
         },
       ]
     },
@@ -186,7 +190,7 @@ export default function Home() {
       subTextColor: "text-[#F74C04]",
       hoverColor: "hover:bg-[#F74C04]",
       subTextHoverColor: "hover:text-black",
-      tag: "Expert adblocker",
+      tag2: "EXPERT ADBLOCKER",
       tagColor: "text-white",
     },
     footer: {
@@ -206,7 +210,7 @@ export default function Home() {
           link: "/about-us"
         },
         {
-          name: "Contact US",
+          name: "Contact us",
           link: "/contact-us"
         },
         {
