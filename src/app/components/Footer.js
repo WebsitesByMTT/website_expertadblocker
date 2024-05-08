@@ -33,28 +33,30 @@ const Footer = ({ data }) => {
 
 
     ]
+
+
     return (
         <div className={`${data.wrapperColor}`}>
-        <div className={`${data.bgColor} rounded-tl-[6.5rem]  pt-10 rounded-tr-[6.5rem]`}>
-            <h3 className={`md:text-2xl text-[2.2rem] font-semibold ${data.headingColor} text-center mb-8`}>{data.heading}</h3>
-            <p className={`md:w-[60%] w-[90%] m-auto text-xl md:text-lg font-normal ${data.textColor} text-center`}>{data.keywords}</p>
-            <div className='md:w-[50%] w-[80%] m-auto flex-wrap gap-2 gap-y-5 flex justify-evenly pt-20'>
-                {webLinks.map((item, index) => (
-                    <a key={index} href={item.link} className={` hover:scale-90 transition-all ease-in-out px-4 py-2 text-2xl md:text-xl font-normal ${data.textColor} rounded-3xl bg-white`}>{item.name}</a>
-                ))}
+            <div className={`${data.bgColor} rounded-tl-[6.5rem]  pt-10 rounded-tr-[6.5rem]`}>
+                <h3 className={`md:text-2xl text-[2.2rem] font-semibold ${data.headingColor} text-center mb-8`}>{data.heading}</h3>
+                <p className={`md:w-[60%] w-[90%] m-auto text-[1.8rem] md:text-lg font-normal ${data.textColor} text-center`} dangerouslySetInnerHTML={{ __html: `<span>${data?.keywords}</span>` }}></p>
+                <div className='md:w-[50%] w-[80%] m-auto flex-wrap gap-2 gap-y-5 flex justify-evenly pt-10'>
+                    {webLinks.map((item, index) => (
+                        <a key={index} href={item.link} className={` hover:scale-90 transition-all ease-in-out px-4 py-2 text-[2rem] md:text-xl font-normal ${data.textColor} rounded-3xl bg-white`}>{item.name}</a>
+                    ))}
+                </div>
+                <div className='md:w-[50%] w-[70%] m-auto flex flex-wrap gap-2 gap-y-4 justify-evenly py-16 md:py-8'>
+                    {data.links.map((item, index) => (
+                        <a key={index} href={item.link} className={` hover:scale-90 transition-all ease-in-out px-4 py-2 md:text-xl text-[2rem] font-normal ${data.textlinkColor} rounded-3xl ${data.linksBg}`}>{item.name}</a>
+                    ))}
+                </div>
+                <div className='w-[70%] md:w-[30%]  m-auto flex-wrap gap-5 flex justify-evenly pb-5'>
+                    {socialLinks.map((item, index) => (
+                        <a key={index} href={item.link} className=' hover:scale-90 transition-all ease-in-out  py-2 min-w-[8rem] md:min-w-[0rem] text-[2rem] w-[20%] '>{item.icon}</a>
+                    ))}
+                </div>
+                <p className={`${data.textColor} text-center md:font-md font-normal p-2`}>copyright © 2024 expertadblocker. All rights reserved.</p>
             </div>
-            <div className='md:w-[50%] w-[70%] m-auto flex flex-wrap gap-2 gap-y-4 justify-evenly py-16 md:py-10'>
-                {data.links.map((item, index) => (
-                    <a key={index} href={item.link} className={` hover:scale-90 transition-all ease-in-out px-4 py-2 md:text-xl text-2xl font-normal ${data.textlinkColor} rounded-3xl ${data.linksBg}`}>{item.name}</a>
-                ))}
-            </div>
-            <div className='w-[70%] md:w-[30%]  m-auto flex-wrap gap-5 flex justify-evenly pb-5'>
-                {socialLinks.map((item, index) => (
-                    <a key={index} href={item.link} className=' hover:scale-90 transition-all ease-in-out  py-2 min-w-[8rem] md:min-w-[0rem] text-xl w-[20%] '>{item.icon}</a>
-                ))}
-            </div>
-            <p className={`${data.textColor} text-center font-lg md:font-md font-normal p-2`}>copyright © 2024 expertadblocker. All rights reserved.</p>
-        </div>
         </div>
     )
 }

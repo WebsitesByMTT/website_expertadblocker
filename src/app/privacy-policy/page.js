@@ -1,6 +1,22 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
+export const metadata = {
+  title: "Privacy policy - Expert adblocker",
+  description: "Privacy policy - Expert Adblocker is the free Adblocker Chrome extension that not only blocks unwanted ads or pop-ups",
+  icons: {
+    icon: '/favicon.png',
+  },
+  openGraph: {
+    title: "Privacy policy",
+    description: "Privacy policy - Expert adblocker is the free Adblocker Chrome extension that not only blocks unwanted ads or pop-ups",
+    type: 'website',
+    siteName: "Expert adblocker",
+    url: 'https://expertadblocker.com/terms',
+    images: "https://experadblocker.com/favicon.png",
+  }
+};
+
 const PrivacyPolicy = () => {
   const data = {
     navbar: {
@@ -32,7 +48,7 @@ const PrivacyPolicy = () => {
     subHeadings: [
       {
         heading: "Personal Information",
-        text: "It applies the collection and use of personal data for users by Expert Adblocker. We ask for personal information like your name, contact number, email ID, etc. We do not disclose our customer's information without their knowledge. We also collect information about the device from where you have access including the IP address."
+        text: "It applies the collection and use of personal data for users by <a href='/'>Expert Adblocker</a>. We ask for personal information like your name, contact number, email ID, etc. We do not disclose our customer's information without their knowledge. We also collect information about the device from where you have access including the IP address."
       },
       {
         heading: "Personal information about your children",
@@ -122,7 +138,7 @@ const PrivacyPolicy = () => {
         {data.subHeadings.map((item, index) => (
           <div key={index}>
             <p className="font-[600] mt-4">{item.heading}</p>
-            <p className="md:text-lg text-2xl font-[400] leading-6">{item.text}</p>
+            <p className="md:text-lg text-2xl font-[400] leading-6" dangerouslySetInnerHTML={{ __html: `<span>${item?.text}</span>` }} ></p>
           </div>
         ))}
         {data.cookies.map((item, index) => (

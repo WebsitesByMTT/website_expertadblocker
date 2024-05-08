@@ -18,6 +18,9 @@ export const metadata = {
         title: "Hulu ad blocker Chrome Extension - Free adblocker",
         description: "Hulu ad blocker Chrome Extension is the best extension for Hulu where you can block all the disturbing ads that annoy you while watching your favorite movie.",
         type: 'website',
+        siteName: "Hulu adblocker",
+        url: 'https://expertadblocker.com/hulu-adblocker',
+        images: "https://experadblocker.com/favicon.png",
     }
 };
 
@@ -26,7 +29,7 @@ const page = () => {
     const data = {
         section1: {
             heading: "Surf safely with the Hulu adblocker Chrome extension",
-            text: "Download the Hulu Adblocker Chrome extension and enjoy ad-free Hulu. It is the best extension that will not only remove ads from your screen but also keep your device safe from all the malware.",
+            text: "Download the <a href='/hulu-adblocker'>Hulu Adblocker Chrome extension</a> and enjoy ad-free Hulu. It is the best extension that will not only remove ads from your screen but also keep your device safe from all the malware.",
             bgColor: "bg-[#1DE783]",
             headingColor: "text-[#142C38]",
             textColor: "text-[#012A84]",
@@ -47,6 +50,7 @@ const page = () => {
                         link: "/contact-us"
                     }
                 ],
+                logoUrl: "/hulu-adblocker",
                 bgColor: "bg-[#1DE783]",
                 logoColor: "black",
                 textColor: "text-black",
@@ -134,29 +138,29 @@ const page = () => {
             starColor: "#F74C04",
             review: [
                 {
-                    name: "Rajveer",
+                    name: "Ayami",
                     text: "Hulu adblocker is the best extension that lets you watch all your favorite movies without ads.",
-                    reviewer: '/reviewer2.png'
+                    reviewer: '/Section4/reviewer2.png'
                 },
                 {
-                    name: "Gursimar",
+                    name: "Cathenna",
                     text: "I have been using this extension for years now and it is the best extension to block ads.",
-                    reviewer: '/reviewer1.png'
+                    reviewer: '/Section4/reviewer1.png'
                 },
                 {
-                    name: "Rahul",
+                    name: "Chiyo",
                     text: "This is an amazing extension where you can remove all the ads and enjoy unlimited movies.",
-                    reviewer: '/reviewer4.png'
+                    reviewer: '/Section4/reviewer4.png'
                 },
                 {
-                    name: "Shama",
+                    name: "Elena",
                     text: "It is the best extension as now I can watch all the latest shows without those spoiling ads.",
-                    reviewer: '/reviewer5.png'
+                    reviewer: '/Section4/reviewer5.png'
                 },
                 {
-                    name: "Neeraj",
+                    name: "Francesca",
                     text: "Have a great online experience with this extension.",
-                    reviewer: '/reviewer3.png'
+                    reviewer: '/Section4/reviewer3.png'
                 },
             ]
         },
@@ -199,7 +203,7 @@ const page = () => {
             headingColor: "text-white",
             subheading: "HULU ADS?",
             textColor: "text-white",
-            text: "Hulu is the most famous online platform among people where you can binge all the latest movies and series. But when you stream your favorite content some ads ruin your moment. For that, the Hulu Adblock Chrome extension blocks all types of ads in one go. The best part is it is free to use and not only blocks ads but also protects your data and privacy.",
+            text: "Hulu is the most famous online platform among people where you can binge all the latest movies and series. But when you stream your favorite content some ads ruin your moment. For that, the Hulu <a href='/'>Adblock Chrome extension</a> blocks all types of ads in one go. The best part is it is free to use and not only blocks ads but also protects your data and privacy.",
             subtext: "Worry About HULU ADS? Download ",
             subTextColor: "text-[#00D9D9]",
             subTextHoverColor: "hover:text-black",

@@ -9,7 +9,7 @@ const Section1 = ({ data }) => {
 
                     <div className="col-span-12 pb-[6rem] md:pb-[5rem] order-2 md:order-1 md:col-span-6 space-y-10 md::space-y-0 text-center md:text-left">
                         <h1 className={`${data.headingColor} ${data.HeadingFontSize} font-[800]  leading-tight capitalize`}>{data?.heading}</h1>
-                        <p className={`${data.textColor} ${data.textFontSize}  font-[400] md:font-[400] tracking-wide  w-full`}>{data?.text}</p>
+                        <p className={`${data.textColor} ${data.textFontSize}  font-[400] md:font-[400] tracking-wide  w-full`} dangerouslySetInnerHTML={{ __html: `<span>${data?.text}</span>` }}></p>
                     </div>
                     <div className='col-span-12  order-1 md:order-2 md:col-span-6 flex justify-center'>
                         <BannerAnimation images={data.animationImages} />
