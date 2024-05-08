@@ -12,6 +12,7 @@ export const metadata = {
     title: "About us - Expert adblocker",
     description: "About us - Expert adblocker is the free Adblocker Chrome extension that not only blocks unwanted ads or pop-ups",
     type: 'website',
+    siteName: "Expert adblocker",
     url: 'https://expertadblocker.com/about-us',
     images: "https://experadblocker.com/favicon.png",
   }

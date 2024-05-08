@@ -16,6 +16,7 @@ export const metadata = {
         title: "Spotify ad blocker- Best adblocker for free",
         description: "Spotify ad blocker is the extension that blocks all Spotify ads and lets you listen to your favorite music without any trouble.",
         type: 'website',
+        siteName: "Spotify adblocker",
         url: 'https://expertadblocker.com/spotify-adblocker',
         images: "https://experadblocker.com/favicon.png",
     }
