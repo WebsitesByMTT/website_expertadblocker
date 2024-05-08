@@ -18,6 +18,7 @@ export const metadata = {
     title: "Twitch Adblocker Chrome Extension- Best Adblocker",
     description: "Download Twitch Adblocker Chrome Extension and eliminate all the disturbing ads that annoy you while streaming. It will also maintain your privacy.",
     type: 'website',
+    siteName: "Twitch adblocker",
     url: 'https://expertadblocker.com/twitch-adblocker',
     images: "https://experadblocker.com/favicon.png",
   }

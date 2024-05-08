@@ -17,6 +17,7 @@ export const metadata = {
         title: "Youtube Adblocker Chrome Extension- Free Adblocker",
         description: "YouTube Adblocker Chrome extension is the best adblocker that blocks all YouTube ads in one go. So that you can enjoy all your favorite videos without those annoying ads.",
         type: 'website',
+        siteName: "Youtube adblocker",
         url: 'https://expertadblocker.com/youtube-adblocker',
         images: "https://experadblocker.com/favicon.png",
     }

@@ -11,6 +11,7 @@ export const metadata = {
     title: "Privacy policy",
     description: "Privacy policy - Expert adblocker is the free Adblocker Chrome extension that not only blocks unwanted ads or pop-ups",
     type: 'website',
+    siteName: "Expert adblocker",
     url: 'https://expertadblocker.com/terms',
     images: "https://experadblocker.com/favicon.png",
   }

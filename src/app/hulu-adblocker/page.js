@@ -18,6 +18,7 @@ export const metadata = {
         title: "Hulu ad blocker Chrome Extension - Free adblocker",
         description: "Hulu ad blocker Chrome Extension is the best extension for Hulu where you can block all the disturbing ads that annoy you while watching your favorite movie.",
         type: 'website',
+        siteName: "Hulu adblocker",
         url: 'https://expertadblocker.com/hulu-adblocker',
         images: "https://experadblocker.com/favicon.png",
     }
