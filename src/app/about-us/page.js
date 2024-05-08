@@ -91,9 +91,9 @@ const AboutUs = () => {
         <Navbar data={data.navbar} />
         <div className="text-[4.5rem] text-center lg:text-left font-[800] px-10 lg:px-28 py-5 text-[#F74C04]">About Us</div>
       </div>
-      <div className="bg-white py-20 pt-40  md:py-40">
-        <div className="grid grid-cols-12  px-5 md:px-0 space-y-10 md:space-y-0 items-center md:w-[95%] 2xl:w-[90%] mx-auto">
-          <div className="col-span-12 md:col-span-6 md:flex justify-center hidden">
+      <div className="bg-white py-20  md:pb-20 md:py-5">
+        <div className="grid grid-cols-12  px-5 md:px-0 space-y-5 md:space-y-0 items-center md:w-[95%] 2xl:w-[90%] mx-auto">
+          <div className="col-span-12 md:col-span-6 md:flex justify-center hidden w-[75%]">
             <BannerAnimation images={data?.navbar.animationImages} />
           </div>
           <div className="col-span-12 md:col-span-6 flex justify-center">
