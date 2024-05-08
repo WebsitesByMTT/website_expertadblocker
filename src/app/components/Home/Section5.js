@@ -10,7 +10,7 @@ const Section5 = ({ data }) => {
                     {data.faq.map((item, index) => (
                         <div key={index} className={`border-b-2 ${data.borderColor} ${data.faqTextColor}`}>
                             <div onClick={() => setOpenIndex(openIndex === index ? null : index)} className='flex justify-between px-5 py-4 transition-all duration-300 ease-in-out'>
-                                <p className="text-[2.2rem] md:text-[1.9rem] font-semibold md:my-auto">{item.ques}</p>
+                                <p className="text-[2.2rem] md:text-[1.9rem] font-semibold md:my-auto w-[80%]">{item.ques}</p>
                                 <div className={openIndex === index ? 'transform rotate-180 transition-transform duration-300 min-w-[3rem] w-[4rem] h-fit ease' : 'min-w-[3rem] w-[4rem] transition-transform h-fit duration-300 ease'}>
                                     <svg width="100%" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path opacity="0.2" d="M42 24C42 27.5601 40.9443 31.0402 38.9664 34.0003C36.9886 36.9604 34.1774 39.2675 30.8883 40.6298C27.5992 41.9922 23.98 42.3487 20.4884 41.6541C16.9967 40.9596 13.7894 39.2453 11.2721 36.7279C8.75473 34.2106 7.04039 31.0033 6.34586 27.5116C5.65132 24.02 6.00778 20.4008 7.37016 17.1117C8.73254 13.8226 11.0396 11.0114 13.9997 9.03355C16.9598 7.05568 20.4399 6 24 6C28.7739 6 33.3523 7.89642 36.7279 11.2721C40.1036 14.6477 42 19.2261 42 24Z" fill={data.svgIconColor} />

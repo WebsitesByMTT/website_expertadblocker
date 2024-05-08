@@ -8,10 +8,11 @@ import Section6 from "./components/Home/Section6";
 import Footer from "./components/Footer";
 
 export default function Home() {
+
   const data = {
     section1: {
       heading: "Block Ads not your privacy",
-      text: "Expert Adblocker is the ultimate extension that not only blocks all the annoying ads from your browser but also protects your privacy. So, download this ad blocker in Chrome now and enjoy an ad-free experience.",
+      text: "<a href='/'>Expert Adblocker</a> is the ultimate extension that not only blocks all the annoying ads from your browser but also protects your privacy. So, download this ad blocker in Chrome now and enjoy an ad-free experience.",
       bgColor: "bg-black",
       headingColor: "text-[#F74C04]",
       textColor: "text-[#F1C02A]",
@@ -32,6 +33,7 @@ export default function Home() {
             link: "/contact-us"
           }
         ],
+        logoUrl: "/",
         logoColor: "#fff",
         textColor: "text-white",
         buttonColor: "bg-[#252525]",
@@ -119,29 +121,29 @@ export default function Home() {
       starColor: "#F1C02A",
       review: [
         {
-          name: "Anushka",
+          name: "Jack",
           text: "By downloading this free adblocker Chrome extension, now I can block all the hidden ads that disturb me while browsing.",
-          reviewer: '/reviewer1.png'
+          reviewer: '/Section4/reviewer1.png'
         },
         {
-          name: "Rabindar Singh",
+          name: "Alexei",
           text: "Yeah!! This is the best extension where I can stream all my favorite movies without those ads.",
-          reviewer: '/reviewer2.png'
+          reviewer: '/Section4/reviewer2.png'
         },
         {
-          name: "Rahul",
+          name: "Brayden",
           text: "I have been using this extension for years now and this is the best extension.",
-          reviewer: '/reviewer3.png'
+          reviewer: '/Section4/reviewer3.png'
         },
         {
-          name: "Gaurav",
+          name: "Driss",
           text: "Such an amazing extension, as it eliminates all the ads in one go and lets you browse freely.",
-          reviewer: '/reviewer4.png'
+          reviewer: '/Section4/reviewer4.png'
         },
         {
-          name: "Shivangi",
+          name: "Ethan",
           text: "This is the best extension as it not only blocks ads but also protects your browser from all the malware.",
-          reviewer: '/reviewer5.png'
+          reviewer: '/Section4/reviewer5.png'
         },
       ]
     },
@@ -203,7 +205,7 @@ export default function Home() {
       webLinksBg: "bg-white",
       socialLinksBg: "#F1C02A",
       linksBg: "bg-[#F1C02A]",
-      keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free",
+      keywords: "Expert adblocker chrome extension, <a href='/hulu-adblocker'>Hulu adblock</a>, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, <a href='/spotify-adblocker'>Spotify adblocker</a>, twitch adblock extension, ad free hulu, ad blocker free, twitch ad blocker, adblock for twitch, <a href='/youtube-adblocker'>Youtube Adblocker</a>",
       links: [
         {
           name: "About us",
