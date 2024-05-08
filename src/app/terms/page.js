@@ -1,6 +1,21 @@
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 
+export const metadata = {
+  title: " Eula & Terms of Service - Expert adblocker",
+  description: "Eula & Terms of Service - Expert Adblocker is the free Adblocker Chrome extension that not only blocks unwanted ads or pop-ups",
+  icons: {
+    icon: '/favicon.png',
+  },
+  openGraph: {
+    title: "Eula & Terms of Service",
+    description: "Eula & Terms of Service - Expert adblocker is the free Adblocker Chrome extension that not only blocks unwanted ads or pop-ups",
+    type: 'website',
+    url: 'https://expertadblocker.com/terms',
+    images: "https://experadblocker.com/favicon.png",
+  }
+};
+
 const Terms = () => {
   const data = {
     navbar: {
