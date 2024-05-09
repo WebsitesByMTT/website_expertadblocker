@@ -26,7 +26,7 @@ const Section2 = ({ data }) => {
                     <div className="slide-track">
                         {duplicatedItems.map((icon, index) => (
                             <div key={index} className="slide">
-                                <Image src={icon.src} height={180} width={180} alt={icon.alt} className='h-auto w-auto'/>
+                                <Image src={icon.src} height={180} width={100} alt={icon.alt} className='h-auto w-[90%]'/>
                             </div>
                         ))}
                     </div>

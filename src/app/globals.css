@@ -75,17 +75,6 @@ body {
   background-color: transparent;
 }
 
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-
-.slider::before {
-  left: 0;
-  top: 0;
-}
-
 .slider .slide-track {
   animation: scroll 40s linear infinite;
   display: flex;
