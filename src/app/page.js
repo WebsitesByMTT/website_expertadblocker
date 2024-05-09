@@ -194,6 +194,7 @@ export default function Home() {
       subTextHoverColor: "hover:text-black",
       tag2: "EXPERT ADBLOCKER",
       tagColor: "text-white",
+      afterHoverBgColor: "hover:after:bg-[#F74C04]"
     },
     footer: {
       heading: "Popular Searches",
@@ -205,7 +206,7 @@ export default function Home() {
       webLinksBg: "bg-white",
       socialLinksBg: "#F1C02A",
       linksBg: "bg-[#F1C02A]",
-      keywords: "Expert adblocker chrome extension, <a href='/hulu-adblocker'>Hulu adblock</a>, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, <a href='/spotify-adblocker'>Spotify adblocker</a>, twitch adblock extension, ad free hulu, ad blocker free, twitch ad blocker, adblock for twitch, <a href='/youtube-adblocker'>Youtube Adblocker</a>",
+      keywords: "Expert adblocker chrome extension, <a href='/hulu-adblocker'>Hulu adblock</a>, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, <a href='/spotify-adblocker'>Spotify adblocker</a>, twitch adblock extension, ad free hulu, ad blocker free, <a href='/twitch-adblocker'>twitch adblocker</a>, adblock for twitch, <a href='/youtube-adblocker'>Youtube Adblocker</a>",
       links: [
         {
           name: "About us",

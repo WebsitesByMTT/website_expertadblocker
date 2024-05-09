@@ -12,6 +12,7 @@ export const metadata = {
     icons: {
         icon: '/favicon.png',
     },
+    keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, Youtube Adblocker, blockthespot, does spotify have ads, spotify without ads",
     openGraph: {
         title: "Spotify ad blocker- Best adblocker for free",
         description: "Spotify ad blocker is the extension that blocks all Spotify ads and lets you listen to your favorite music without any trouble.",
@@ -211,6 +212,7 @@ const Spotify = () => {
             tag2: "Spotify ads? ",
             tag: "Download the extension now",
             tagColor: "text-white",
+            afterHoverBgColor: "hover:after:bg-[#1AB26B]"
         },
         footer: {
             heading: "Popular Searches",
@@ -222,7 +224,7 @@ const Spotify = () => {
             webLinksBg: "bg-[#C3F0C8]",
             socialLinksBg: "#C3F0C8",
             linksBg: "bg-[#C3F0C8]",
-            keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, <a href='/youtube-adblocker'>Youtube Adblocker</a>, blockthespot, does spotify have ads, spotify without ads",
+            keywords: "Expert adblocker chrome extension, <a href='/hulu-adblocker'>Hulu adblock</a>, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, <a href='/twitch-adblocker'>twitch adblock extension</a>, <a href='/youtube-adblocker'>Youtube Adblocker</a>, blockthespot, does spotify have ads, spotify without ads",
             links: [
                 {
                     name: "About us",
