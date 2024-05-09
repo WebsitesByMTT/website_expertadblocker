@@ -14,6 +14,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.png',
   },
+  keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free, ublock origin twitch, block twitch ad",
   openGraph: {
     title: "Twitch Adblocker Chrome Extension- Best Adblocker",
     description: "Download Twitch Adblocker Chrome Extension and eliminate all the disturbing ads that annoy you while streaming. It will also maintain your privacy.",
@@ -209,7 +210,8 @@ const page = () => {
       tagColor: "[#F1C02A]",
       tag2: 'TWITCH ADS',
       borderColor: 'border-[#F1C02A]',
-      hoverColor: 'hover:bg-[#F1C02A]'
+      hoverColor: 'hover:bg-[#F1C02A]',
+      afterHoverBgColor: "hover:after:bg-[#F1C02A]"
     },
     footer: {
       heading: "Popular Searches",
@@ -220,7 +222,7 @@ const page = () => {
       webLinksBg: "white",
       socialLinksBg: "#F1C02A",
       linksBg: "bg-[#F1C02A]",
-      keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free, ublock origin twitch, block twitch ads, how to block twitch ads, twitch adblock 2023",
+      keywords: "Expert adblocker chrome extension, <a href='/hulu-adblocker'>Hulu adblock</a>, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, <a href='/spotify-ablocker'>Spotify adblocker</a>, twitch adblock extension, ad free hulu, ad blocker free, ublock origin twitch, block twitch ads, how to block twitch ads, twitch adblock 2023, <a href='/youtube-adblocker'>Youtube Adblocker</a>",
       links: [
         {
           name: "About us",

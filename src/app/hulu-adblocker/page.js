@@ -14,6 +14,7 @@ export const metadata = {
     icons: {
         icon: '/favicon.png',
     },
+    keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, Youtube Adblocker, hulu without ads, why does hulu have ads, hulu commercial free",
     openGraph: {
         title: "Hulu ad blocker Chrome Extension - Free adblocker",
         description: "Hulu ad blocker Chrome Extension is the best extension for Hulu where you can block all the disturbing ads that annoy you while watching your favorite movie.",
@@ -211,7 +212,8 @@ const page = () => {
             tagColor: "[#F1C02A]",
             tag2: 'HULU ADBLOCKER',
             borderColor: 'border-[#00D9D9]',
-            hoverColor: 'hover:bg-[#00D9D9]'
+            hoverColor: 'hover:bg-[#00D9D9]',
+            afterHoverBgColor: "hover:after:bg-[#00D9D9]"
         },
         footer: {
             heading: "Popular Searches",
@@ -223,7 +225,7 @@ const page = () => {
             socialLinksBg: "#012A84",
             textlinkColor: 'text-white',
             linksBg: "bg-[#012A84]",
-            keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free",
+            keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, <a href='/spotify-adblocker'>Spotify adblocker</a>, <a href='/twitch-adblocker'>twitch adblock</a> extension, ad free hulu, <a href='/youtube-adblocker'>Youtube Adblocker</a>, hulu without ads, why does hulu have ads, hulu commercial free",
             links: [
                 {
                     name: "About us",

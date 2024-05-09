@@ -13,6 +13,7 @@ export const metadata = {
     icons: {
         icon: '/favicon.png',
     },
+    keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, Youtube Adblocker, adblock for youtube, youtube adblock reddit, best free ad blocker",
     openGraph: {
         title: "Youtube Adblocker Chrome Extension- Free Adblocker",
         description: "YouTube Adblocker Chrome extension is the best adblocker that blocks all YouTube ads in one go. So that you can enjoy all your favorite videos without those annoying ads.",
@@ -211,6 +212,7 @@ const Youtube = () => {
             tag: " now",
             tag2: "YOUTUBE ADS",
             tagColor: "text-white",
+            afterHoverBgColor: "hover:after:bg-[#FF0000]"
         },
         footer: {
             heading: "Popular Searches",
@@ -222,7 +224,7 @@ const Youtube = () => {
             webLinksBg: "bg-[#C3F0C8]",
             socialLinksBg: "#FFD7B3",
             linksBg: "bg-[#FFD7B3]",
-            keywords: "Expert adblocker chrome extension, <a href='/hulu-adblocker>Hulu adblock</a>, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, <a href='/twitch-adblocker>twitch adblock extension</a>, Youtube Adblocker, adblock for youtube, youtube adblock reddit, best free ad blocker",
+            keywords: "Expert adblocker chrome extension, <a href='/hulu-adblocker'>Hulu adblock</a>, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, <a href='/spotify-adblocker'>Spotify adblocker</a>, <a href='/twitch-adblocker'>twitch adblock extension</a>, Youtube Adblocker, adblock for youtube, youtube adblock reddit, best free ad blocker",
             links: [
                 {
                     name: "About us",
