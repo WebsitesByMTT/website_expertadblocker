@@ -11,7 +11,7 @@ export default function NotFound() {
         setState(true);
         const route = setTimeout(() => {
             router.push('/');
-        }, 150);
+        }, 300);
         return () => clearTimeout(route);
     };
 
@@ -24,8 +24,9 @@ export default function NotFound() {
                     <div className="text-[#F1C02A] text-[1.6rem] text-center md:text-[1.2rem]">The link you followed is probably broken or the page does not exist</div>
                 </div>
                 <div className="w-full flex flex-col items-center justify-center">
-                    <Image src={'/404/returntohome.png'} onClick={handelclick} className={`${state && 'animate'} cursor-pointer mx-auto w-[25%] md:w-[8%] lg:w-[10%]`} width={170} height={170} />
-                    <Image src={'/404/404.svg'} className="mx-auto w-full md:w-[60%] lg:w-[45%]" width={150} height={150} />
+                    <Image alt="404" src={'/404/returntohome.png'} onClick={handelclick} className={`${state && 'animate'} 404Image animate-bounce cursor-pointer mx-auto w-[25%] md:w-[8%] lg:w-[10%]`} width={170} height={170} />
+                    <Image alt="404" src={'/404/element.svg'} className={`${state && 'animate-scale'} absolute animate-bounce w-[30%] bottom-[10%]`} width={300} height={300} />
+                    <Image alt="404" src={'/404/404.svg'} className="mx-auto w-full md:w-[60%] lg:w-[40%]" width={150} height={150} />
                 </div>
             </div>
         </main>

@@ -12,42 +12,32 @@ export const metadata = {
     title: "Hulu ad blocker Chrome Extension - Free adblocker",
     description: "Hulu ad blocker Chrome Extension is the best extension for Hulu where you can block all the disturbing ads that annoy you while watching your favorite movie.",
     icons: {
-      icon: '/favicon.png',
+        icon: '/favicon.png',
     },
+    keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, Youtube Adblocker, hulu without ads, why does hulu have ads, hulu commercial free",
     openGraph: {
-      title: "Hulu ad blocker Chrome Extension - Free adblocker",
-      description: "Hulu ad blocker Chrome Extension is the best extension for Hulu where you can block all the disturbing ads that annoy you while watching your favorite movie.",
-      type: 'website',
+        title: "Hulu ad blocker Chrome Extension - Free adblocker",
+        description: "Hulu ad blocker Chrome Extension is the best extension for Hulu where you can block all the disturbing ads that annoy you while watching your favorite movie.",
+        type: 'website',
+        siteName: "Hulu adblocker",
+        url: 'https://expertadblocker.com/hulu-adblocker',
+        images: "https://experadblocker.com/favicon.png",
     }
-  };
-  
+};
+
 const page = () => {
 
     const data = {
         section1: {
             heading: "Surf safely with the Hulu adblocker Chrome extension",
-            text: "Download the Hulu Adblocker Chrome extension and enjoy ad-free Hulu. It is the best extension that will not only remove ads from your screen but also keep your device safe from all the malware.",
+            text: "Download the <a href='/hulu-adblocker'>Hulu Adblocker Chrome extension</a> and enjoy ad-free Hulu. It is the best extension that will not only remove ads from your screen but also keep your device safe from all the malware.",
             bgColor: "bg-[#1DE783]",
             headingColor: "text-[#142C38]",
             textColor: "text-[#012A84]",
-            HeadingFontSize:'text-[4rem]',
-            textFontSize:'text-[1.1rem]',
+            HeadingFontSize: 'text-[4rem]',
+            textFontSize: 'text-[1.1rem]',
             navbar: {
                 navLinks: [
-<<<<<<< Updated upstream:src/app/hulu/page.js
-                  {
-                    title: "blogs",
-                    link: "/blogs"
-                  },
-                  {
-                    title: "about us",
-                    link: "/about-us"
-                  },
-                  {
-                    title: "contact us",
-                    link: "/contact-us"
-                  }
-=======
                     {
                         title: "blogs",
                         link: "/blogs"
@@ -59,27 +49,26 @@ const page = () => {
                     {
                         title: "contact us",
                         link: "/contact-us"
-                    },
-                    {
-                        title: "Features",
-                        link: "/features"
                     }
->>>>>>> Stashed changes:src/app/hulu-adblocker/page.js
                 ],
+                logoUrl: "/hulu-adblocker",
                 bgColor: "bg-[#1DE783]",
                 logoColor: "black",
                 textColor: "text-black",
-                buttonColor: "bg-black",
+                buttonColor: "bg-[#252525]",
                 buttonTextColor: "text-white",
-                MobileNavbgColor:'bg-white',
-                mobileNavTextColor:'text-black',
-                mobilebuttonBgColor:'bg-black',
-                mobilebuttonTextColor:'text-white'
-              },
-              animationImages:{
-                image1:'/Hero/heroanimation.svg',
-                image2:'/Hero/hulustand.svg'
-              }
+                borderColor: "border-black",
+                hoverColor: "hover:after:bg-[#142C38]",
+                afterColor: "after:bg-[#252525]",
+                MobileNavbgColor: 'bg-[#1DE783]',
+                mobileNavTextColor: 'text-black',
+                mobilebuttonBgColor: 'bg-black',
+                mobilebuttonTextColor: 'text-white'
+            },
+            animationImages: {
+                image1: '/Hero/heroanimation.svg',
+                image2: '/Hero/hulustand.svg'
+            }
         },
         section2: {
             heading: "all in one",
@@ -118,7 +107,7 @@ const page = () => {
                 { src: '/Section3/huluicon2.svg', alt: "" },
                 { src: '/Section3/huluicon3.svg', alt: "" },
                 { src: '/Section3/huluicon4.svg', alt: "" },
-              ],
+            ],
             subFeaturesColor: "text-[#012A84]",
             subFeaturesBorderColor: "border-[#012A84]",
             subHoverBgFeaturesColor: "hover:bg-[#1DE783]",
@@ -147,31 +136,32 @@ const page = () => {
             textColor: "text-[#012A84]",
             bgColor: "bg-[#1DE783]",
             iconColor: "#012A84",
+            starColor: "#F74C04",
             review: [
                 {
-                    name: "Rajveer",
+                    name: "Ayami",
                     text: "Hulu adblocker is the best extension that lets you watch all your favorite movies without ads.",
-                    reviewer:'/reviewer2.png'
+                    reviewer: '/Section4/reviewer2.png'
                 },
                 {
-                    name: "Gursimar",
+                    name: "Cathenna",
                     text: "I have been using this extension for years now and it is the best extension to block ads.",
-                    reviewer:'/reviewer1.png'
+                    reviewer: '/Section4/reviewer1.png'
                 },
                 {
-                    name: "Rahul",
+                    name: "Chiyo",
                     text: "This is an amazing extension where you can remove all the ads and enjoy unlimited movies.",
-                    reviewer:'/reviewer4.png'
+                    reviewer: '/Section4/reviewer4.png'
                 },
                 {
-                    name: "Shama",
+                    name: "Elena",
                     text: "It is the best extension as now I can watch all the latest shows without those spoiling ads.",
-                    reviewer:'/reviewer5.png'
+                    reviewer: '/Section4/reviewer5.png'
                 },
                 {
-                    name: "Neeraj",
+                    name: "Francesca",
                     text: "Have a great online experience with this extension.",
-                    reviewer:'/reviewer3.png'
+                    reviewer: '/Section4/reviewer3.png'
                 },
             ]
         },
@@ -214,15 +204,16 @@ const page = () => {
             headingColor: "text-white",
             subheading: "HULU ADS?",
             textColor: "text-white",
-            text: "Hulu is the most famous online platform among people where you can binge all the latest movies and series. But when you stream your favorite content some ads ruin your moment. For that, the Hulu Adblock Chrome extension blocks all types of ads in one go. The best part is it is free to use and not only blocks ads but also protects your data and privacy.",
-            subtext: "Wory About ",
+            text: "Hulu is the most famous online platform among people where you can binge all the latest movies and series. But when you stream your favorite content some ads ruin your moment. For that, the Hulu <a href='/'>Adblock Chrome extension</a> blocks all types of ads in one go. The best part is it is free to use and not only blocks ads but also protects your data and privacy.",
+            subtext: "Worry About HULU ADS? Download ",
             subTextColor: "text-[#00D9D9]",
             subTextHoverColor: "hover:text-black",
-            tag: "Download Hulu Adblocker Now",
+            tag: " now",
             tagColor: "[#F1C02A]",
             tag2: 'HULU ADBLOCKER',
             borderColor: 'border-[#00D9D9]',
-            hoverColor: 'hover:bg-[#00D9D9]'
+            hoverColor: 'hover:bg-[#00D9D9]',
+            afterHoverBgColor: "hover:after:bg-[#00D9D9]"
         },
         footer: {
             heading: "Popular Searches",
@@ -234,14 +225,14 @@ const page = () => {
             socialLinksBg: "#012A84",
             textlinkColor: 'text-white',
             linksBg: "bg-[#012A84]",
-            keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free",
+            keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, <a href='/spotify-adblocker'>Spotify adblocker</a>, <a href='/twitch-adblocker'>twitch adblock</a> extension, ad free hulu, <a href='/youtube-adblocker'>Youtube Adblocker</a>, hulu without ads, why does hulu have ads, hulu commercial free",
             links: [
                 {
                     name: "About us",
                     link: "/about-us"
                 },
                 {
-                    name: "Contact US",
+                    name: "Contact us",
                     link: "/contact-us"
                 },
                 {
@@ -256,13 +247,6 @@ const page = () => {
                     name: "Privacy Policy",
                     link: "/privacy-policy"
                 },
-            ],
-            webLinks :[
-                { name: "Twitch adblocker", link: "/twitch-adblocker" },
-                { name: "Hulu adblocker", link: "/hulu-adblocker" },
-                { name: "Youtube adblocker", link: "/youtube-adblocker" },
-                { name: "Spotify adblocker", link: "/spotify-adblocker" }
-        
             ]
         }
     }

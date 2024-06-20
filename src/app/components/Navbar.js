@@ -5,6 +5,13 @@ import { useEffect, useState } from 'react';
 const Navbar = ({ data }) => {
     console.log('home page navbar')
     const [open, setOpen] = useState(false);
+    useEffect(() => {
+        if (open) {
+            document.body.classList.add('overflow-hidden');
+        } else {
+            document.body.classList.remove('overflow-hidden');
+        }
+    }, [open])
     const handleClick = () => {
         setOpen(prev => !prev);
     }
@@ -57,13 +64,11 @@ const Navbar = ({ data }) => {
                 </ul>
 <<<<<<< Updated upstream
                 <button onClick={handleClick} className='z-[500] md:hidden'>{open ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill={data.textColor} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`lucide ${data.textColor} lucide-x`}><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg> : <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill={data.textColor} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`lucide ${data.textColor} lucide-align-justify`}><line x1="3" x2="21" y1="6" y2="6" /><line x1="3" x2="21" y1="12" y2="12" /><line x1="3" x2="21" y1="18" y2="18" /></svg>}</button>
-                <button className={` md:block hidden  ${data.buttonTextColor} ${data.buttonColor} uppercase text-xl font-[500]  border-2 px-4 py-2`}>
-                    DOWNLOAD EXTENSION
-                    <span ></span>
-                    <span ></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <div className='box'>
+                    <a href="https://chromewebstore.google.com/detail/expert-ad-blocker-free-ad/beecichmnnhnljafpeopjcfgedbeiion" target="_blank" className={`md:block hidden button ${data.afterColor} md:block hover:scale-95 ${data.hoverColor} ${data.buttonTextColor} ${data.buttonColor} uppercase text-xl font-[500]  border-2 px-4 py-2 `}>
+                        <span>Add to Chrome it&apos;s free</span>
+                    </a>
+                </div>
             </div>
             {/* Mobile NavBar */}
             <div className={`fixed md:hidden block top-0  ${open ? 'left-0' : '-left-[100%]'} transition-all w-full h-screen ${data.MobileNavbgColor} z-50`}>
@@ -99,7 +104,7 @@ const Navbar = ({ data }) => {
                     </div>
 >>>>>>> Stashed changes
                 </div>
-            </div>
+            </div>}
         </div>
     )
 }

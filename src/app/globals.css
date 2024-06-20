@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -9,6 +10,7 @@ body {
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
   overflow-x: hidden;
+  font-family: 'Epilogue', sans-serif;
 }
 
 @layer utilities {
@@ -19,10 +21,6 @@ body {
 
 .animate-bounce {
   animation: bounce 2s infinite;
-}
-
-.star:hover svg path {
-  fill: #F1C02A;
 }
 
 ::-webkit-scrollbar {
@@ -59,13 +57,18 @@ body {
 }
 
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-250px * 7)); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
 
 <<<<<<< Updated upstream
 .slider {
-  height: 100px;
+  height: auto;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -73,31 +76,17 @@ body {
   background-color: transparent;
 }
 
-.slider::before,
-.slider::after {
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-}
-
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-
-.slider::before {
-  left: 0;
-  top: 0;
-}
-
 .slider .slide-track {
   animation: scroll 40s linear infinite;
   display: flex;
   align-items: center;
   width: calc(250px * 14);
+}
+
+@media screen and(max-width: 600px) {
+  .slider .slide-track {
+    width: calc(10% * 14);
+  }
 }
 
 .slider .slide {
@@ -112,105 +101,81 @@ body {
   color: white;
 }
 
-
-.animate{
-  animation: .3s animate linear forwards;
+.animate {
+  animation: .5s animate linear forwards;
 }
 
 @keyframes animate {
-  0%{
-    transform: translateY(0%);
+  0% {
+    transform: translateY(0%) scale(1);
   }
 
-  100%{
-    transform: translateY(100%);
+  100% {
+    transform: translateY(150%) scale(0);
   }
 }
 
-button{
+.button {
   border-style: none;
-  color:#fff;
   outline: none;
   cursor: pointer;
-  position: relative;
-  padding: 0px;
   overflow: hidden;
   transition: all .5s;
   border-radius: 2rem;
+  position: relative;
+  z-index: 2;
 }
-button span{
+
+.button span {
+  z-index: 10;
+}
+
+.button::before {
+  content: '';
+  background: conic-gradient(transparent 270deg, white, transparent);
   position: absolute;
-  display: block;
-}
-button span:nth-child(1){
-  height: 3px;
-  width:200px;
-  top:0px;
-  left:-200px;
-  background: linear-gradient(to right, rgba(0,0,0,0), #fff);
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  animation: span1 4s linear infinite;
-  animation-delay: 1s;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate 4s linear infinite;
 }
 
-@keyframes span1{
-  0%{
-      left:-200px
-  }
-  100%{
-      left:200px;
-  }
+.button::after {
+  content: '';
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  z-index: -1;
+  inset: 1px;
+  height: calc(100% - 2 * 1px);
+  width: calc(100% - 2 * 1px);
 }
-button span:nth-child(2){
-  height: 70px;
-  width: 3px;
-  top:-70px;
-  right:0px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0), #fff);
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  animation: span2 2s linear infinite;
-  animation-delay: 2s;
-}
-@keyframes span2{
-  0%{
-      top:-70px;
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
   }
-  100%{
-      top:70px;
-  }
-}
-button span:nth-child(3){
-  height:3px;
-  width:200px;
-  right:-200px;
-  bottom: 0px;
-  background: linear-gradient(to left, rgba(0,0,0,0), #fff);
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-  animation: span3 2s linear infinite;
-  animation-delay: 3s;
-}
-@keyframes span3{
-  0%{
-      right:-200px;
-  }
-  100%{
-      right: 200px;
+
+  to {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
   }
 }
 
-button span:nth-child(4){
-  height:70px;
-  width:3px;
-  bottom:-70px;
-  left:0px;
-  background: linear-gradient(to top, rgba(0,0,0,0), #fff);
-  border-top-right-radius: 2rem;
-  border-top-left-radius: 2rem;
-  animation: span4 2s linear infinite;
-  animation-delay: 4s;
+@keyframes scaleDown {
+  0% {
+    transform: translateY(0%) scale(1);
+  }
+
+  100% {
+    transform: translateY(50%) scale(0.5);
+  }
+}
+
+.animate-scale {
+  animation: .5s scaleDown linear forwards;
 }
 @keyframes span4{
   0%{
