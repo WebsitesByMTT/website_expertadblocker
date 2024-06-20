@@ -33,7 +33,11 @@ const AboutUs = () => {
         {
           title: "contact us",
           link: "/contact-us"
-        }
+        },
+        {
+          title: 'Features',
+          link: '/features'
+      }
       ],
       animationImages: {
         image1: '/Hero/heroanimation.svg',
@@ -81,7 +85,14 @@ const AboutUs = () => {
           name: "Privacy Policy",
           link: "/privacy-policy"
         },
-      ]
+      ],
+      webLinks :[
+        { name: "Twitch adblocker", link: "/twitch-adblocker" },
+        { name: "Hulu adblocker", link: "/hulu-adblocker" },
+        { name: "Youtube adblocker", link: "/youtube-adblocker" },
+        { name: "Spotify adblocker", link: "/spotify-adblocker" }
+
+    ]
     }
   }
 
