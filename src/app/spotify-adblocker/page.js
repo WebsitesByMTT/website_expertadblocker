@@ -32,6 +32,7 @@ const Spotify = () => {
             
             navbar: {
                 navLinks: [
+<<<<<<< Updated upstream
                   {
                     title: "blogs",
                     link: "/blogs"
@@ -44,6 +45,24 @@ const Spotify = () => {
                     title: "contact us",
                     link: "/contact-us"
                   }
+=======
+                    {
+                        title: "blogs",
+                        link: "/blogs"
+                    },
+                    {
+                        title: "about us",
+                        link: "/about-us"
+                    },
+                    {
+                        title: "contact us",
+                        link: "/contact-us"
+                    },
+                    {
+                        title: "Features",
+                        link: "/features"
+                    }
+>>>>>>> Stashed changes
                 ],
                 bgColor: "bg-[#1AB26B]",
                 logoColor: "white",
@@ -235,6 +254,13 @@ const Spotify = () => {
                     name: "Privacy Policy",
                     link: "/privacy-policy"
                 },
+            ],
+            webLinks :[
+                { name: "Twitch adblocker", link: "/twitch-adblocker" },
+                { name: "Hulu adblocker", link: "/hulu-adblocker" },
+                { name: "Youtube adblocker", link: "/youtube-adblocker" },
+                { name: "Spotify adblocker", link: "/spotify-adblocker" }
+        
             ]
         }
     }

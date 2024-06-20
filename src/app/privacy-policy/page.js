@@ -16,7 +16,11 @@ const PrivacyPolicy = () => {
         {
           title: "contact us",
           link: "/contact-us"
-        }
+        },
+        {
+          title: "Features",
+          link: "/features"
+      }
       ],
       logoColor: "black",
       textColor: "text-black",
@@ -108,7 +112,14 @@ const PrivacyPolicy = () => {
           name: "Privacy Policy",
           link: "/privacy-policy"
         },
-      ]
+      ],
+      webLinks :[
+        { name: "Twitch adblocker", link: "/twitch-adblocker" },
+        { name: "Hulu adblocker", link: "/hulu-adblocker" },
+        { name: "Youtube adblocker", link: "/youtube-adblocker" },
+        { name: "Spotify adblocker", link: "/spotify-adblocker" }
+
+    ]
     }
   }
   return (

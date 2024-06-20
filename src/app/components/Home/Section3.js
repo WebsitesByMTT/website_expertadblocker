@@ -6,7 +6,7 @@ const Section3 = ({ data }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setCurrentIndex(prevIndex => (prevIndex === data?.icons.length - 1 ? 0 : prevIndex + 1));
+            setCurrentIndex(prevIndex => (prevIndex === data?.icons?.length - 1 ? 0 : prevIndex + 1));
         }, 3000);
 
         return () => clearInterval(intervalId);

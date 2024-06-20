@@ -34,6 +34,7 @@ const page = () => {
             textFontSize:'text-[1.1rem]',
             navbar: {
                 navLinks: [
+<<<<<<< Updated upstream:src/app/hulu/page.js
                   {
                     title: "blogs",
                     link: "/blogs"
@@ -46,6 +47,24 @@ const page = () => {
                     title: "contact us",
                     link: "/contact-us"
                   }
+=======
+                    {
+                        title: "blogs",
+                        link: "/blogs"
+                    },
+                    {
+                        title: "about us",
+                        link: "/about-us"
+                    },
+                    {
+                        title: "contact us",
+                        link: "/contact-us"
+                    },
+                    {
+                        title: "Features",
+                        link: "/features"
+                    }
+>>>>>>> Stashed changes:src/app/hulu-adblocker/page.js
                 ],
                 bgColor: "bg-[#1DE783]",
                 logoColor: "black",
@@ -237,6 +256,13 @@ const page = () => {
                     name: "Privacy Policy",
                     link: "/privacy-policy"
                 },
+            ],
+            webLinks :[
+                { name: "Twitch adblocker", link: "/twitch-adblocker" },
+                { name: "Hulu adblocker", link: "/hulu-adblocker" },
+                { name: "Youtube adblocker", link: "/youtube-adblocker" },
+                { name: "Spotify adblocker", link: "/spotify-adblocker" }
+        
             ]
         }
     }
