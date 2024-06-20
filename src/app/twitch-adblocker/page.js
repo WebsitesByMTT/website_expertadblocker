@@ -48,7 +48,11 @@ const page = () => {
           {
             title: "contact us",
             link: "/contact-us"
-          }
+          },
+          {
+            title: "Features",
+            link: "/features"
+        }
         ],
         logoUrl: "/twitch-adblocker",
         bgColor: "bg-[#6441A5]",
@@ -244,7 +248,14 @@ const page = () => {
           name: "Privacy Policy",
           link: "/privacy-policy"
         },
-      ]
+      ],
+      webLinks :[
+        { name: "Twitch adblocker", link: "/twitch-adblocker" },
+        { name: "Hulu adblocker", link: "/hulu-adblocker" },
+        { name: "Youtube adblocker", link: "/youtube-adblocker" },
+        { name: "Spotify adblocker", link: "/spotify-adblocker" }
+
+    ]
     }
   }
 

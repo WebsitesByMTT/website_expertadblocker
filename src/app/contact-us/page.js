@@ -20,6 +20,68 @@ export const metadata = {
 };
 
 const page = () => {
+<<<<<<< Updated upstream
+
+    const data = {
+        navbar: {
+            navLinks: [
+              {
+                title: "blogs",
+                link: "/blogs"
+              },
+              {
+                title: "about us",
+                link: "/about-us"
+              },
+              {
+                title: "contact us",
+                link: "/contact-us"
+              }
+            ],
+            logoColor: "black",
+            textColor: "text-black",
+            buttonColor: "bg-black",
+            buttonTextColor: "text-white",
+            MobileNavbgColor:'bg-white',
+            mobileNavTextColor:'text-black',
+            mobilebuttonBgColor:'bg-black',
+            mobilebuttonTextColor:'text-white'
+          },
+          footer: {
+            heading: "Popular Searches",
+            wrapperColor: "bg-transparent",
+            headingColor: "text-black",
+            bgColor: "bg-[#F74C04]",
+            textColor: "text-black",
+            textlinkColor: "text-black",
+            webLinksBg: "bg-white",
+            socialLinksBg: "#F1C02A",
+            linksBg: "bg-[#F1C02A]",
+            keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free",
+            links: [
+              {
+                name: "About us",
+                link: "/about-us"
+              },
+              {
+                name: "Contact US",
+                link: "/contact-us"
+              },
+              {
+                name: "Eula",
+                link: "/terms"
+              },
+              {
+                name: "Terms of services",
+                link: "/terms"
+              },
+              {
+                name: "Privacy Policy",
+                link: "/privacy-policy"
+              },
+            ]
+          }
+=======
   const data = {
     navbar: {
       navLinks: [
@@ -34,7 +96,11 @@ const page = () => {
         {
           title: "contact us",
           link: "/contact-us"
-        }
+        },
+        {
+          title: 'Features',
+          link: '/features'
+      }
       ],
       logoColor: "black",
       textColor: "text-black",
@@ -78,9 +144,16 @@ const page = () => {
           name: "Privacy Policy",
           link: "/privacy-policy"
         },
-      ]
+      ],
+      webLinks :[
+        { name: "Twitch adblocker", link: "/twitch-adblocker" },
+        { name: "Hulu adblocker", link: "/hulu-adblocker" },
+        { name: "Youtube adblocker", link: "/youtube-adblocker" },
+        { name: "Spotify adblocker", link: "/spotify-adblocker" }
+
+    ]
+>>>>>>> Stashed changes
     }
-  }
 
   return (
     <div className="bg-[#F1C02A]">
