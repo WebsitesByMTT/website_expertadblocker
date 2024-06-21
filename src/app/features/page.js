@@ -228,7 +228,7 @@ export default function page() {
             webLinksBg: "bg-white",
             socialLinksBg: "#F1C02A",
             linksBg: "bg-[#F1C02A]",
-            keywords: "Expert adblocker chrome extension, <a href='/hulu-adblocker'>Hulu adblock</a>, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, <a href='/spotify-adblocker'>Spotify adblocker</a>, twitch adblock extension, ad free hulu, ad blocker free, <a href='/twitch-adblocker'>twitch adblocker</a>, adblock for twitch, <a href='/youtube-adblocker'>Youtube Adblocker</a>",
+            keywords: "Expert adblocker chrome extension, <a href='/hulu-adblocker'>Hulu adblock</a>,Twitch adblocker,youtube adblocker, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, <a href='/spotify-adblocker'>Spotify adblocker</a>, twitch adblock extension, ad free hulu, ad blocker free, <a href='/twitch-adblocker'>twitch adblocker</a>, adblock for twitch, <a href='/youtube-adblocker'>Youtube Adblocker</a>",
             links: [
                 {
                     name: "About us",

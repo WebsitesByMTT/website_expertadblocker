@@ -12,7 +12,7 @@ export const metadata = {
     icons: {
         icon: '/favicon.png',
     },
-    keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, Youtube Adblocker, blockthespot, does spotify have ads, spotify without ads",
+    keywords: "Expert adblocker chrome extension, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, extension, Youtubdblocker, blockthespot, does spotify have ads, spotify without ads.",
     openGraph: {
         title: "Spotify ad blocker- Best adblocker for free",
         description: "Spotify ad blocker is the extension that blocks all Spotify ads and lets you listen to your favorite music without any trouble.",
@@ -53,7 +53,7 @@ const Spotify = () => {
                         link: "/features"
                     }
                 ],
-                logoUrl: "/spotify-adblocker",
+                logoUrl: "/",
                 bgColor: "bg-[#1AB26B]",
                 logoColor: "white",
                 textColor: "text-white",
@@ -76,8 +76,7 @@ const Spotify = () => {
             heading: "all in one",
             headingColor: "text-[#2D46B9]",
             textColor: "text-[#0B1418]",
-            text: "As compared to all the adblockers including abp plus chrome, adb plus chrome and fair adblocker, it is the only extension that has a separate Hulu adblock, adblocker for Twitch, YouTube adblock, and Spotify Adblock that will work smoothly on these platforms.",
-
+            text: "As compared to all the adblockers including abp plus chrome, adb plus chrome and fair adblocker, it is the only extension that has a separate adblocker for spotify, Hulu, Twitch, and youtube that will work smoothly on these platforms.",
         },
         section3: {
             bgColor: "bg-[#2D46B9]",
@@ -153,7 +152,7 @@ const Spotify = () => {
                 },
                 {
                     name: "Lucia",
-                    text: "Now I can block spotify ads for free.",
+                    text: "Thanks to adblock extension for spotify as now with blocking ads I can keep my device safe by removing all the malware",
                     reviewer: '/Section4/reviewer1.png'
                 },
                 {
@@ -163,7 +162,7 @@ const Spotify = () => {
                 },
                 {
                     name: "Alex",
-                    text: "I have been using this for months now and I bet this is the best.",
+                    text: "I have been using adblock spotify extension for months now and I bet this is the best.",
                     reviewer: '/Section4/reviewer3.png'
                 },
             ]
@@ -208,7 +207,7 @@ const Spotify = () => {
             headingColor: "text-white",
             subheading: "Spotify Adblocker",
             textColor: "text-white",
-            text: "Spotify is the most popular audio-streaming platform where there are huge variety of songs. Whether you are fond of old classic music or rap, you will get everything on Spotify. But while listening to our music some ads come in between and spoil our mood. But for that case, we have a spotify <a href='/'>ad blocker chrome extension</a> that will block all those ads for free and let you enjoy your music without limits. Apart from removing ads, it will also speed up your page loading and protect you from all the malware that may ruin your browser. The best part is, that you don’t have to buy premium as this extension is free to use.",
+            text: "Spotify is the most popular audio-streaming platform where there are huge variety of songs. Whether you are fond of old classic music or rap, you will get everything on Spotify. But while listening to our music some ads come in between and spoil our mood. But for that case, we have a Spotify ad blocker Chrome extension that will block all those ads for free and let you enjoy your music without limits. Apart from removing ads, it will also speed up your page loading and protect you from all the malware that may ruin your browser. The best part is, that you dont have to buy premium as this extension is free to use.",
             subtext: "Tired of ",
             subTextColor: "text-[#1AB26B]",
             subTextHoverColor: "hover:text-black",
@@ -228,7 +227,7 @@ const Spotify = () => {
             webLinksBg: "bg-[#C3F0C8]",
             socialLinksBg: "#C3F0C8",
             linksBg: "bg-[#C3F0C8]",
-            keywords: "Expert adblocker chrome extension, <a href='/hulu-adblocker'>Hulu adblock</a>, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, <a href='/twitch-adblocker'>twitch adblock extension</a>, <a href='/youtube-adblocker'>Youtube Adblocker</a>, blockthespot, does spotify have ads, spotify without ads",
+            keywords: "<span><a href='https://www.expertadblocker.com'>Expert adblocker chrome extension</a>,adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker,blockthespot, does spotify have ads, spotify without ads, spotify ad blocker, spotify ads blocker on windows, no ads spotify extension, spotify ad blocker extension chrome</span>",
             links: [
                 {
                     name: "About us",
