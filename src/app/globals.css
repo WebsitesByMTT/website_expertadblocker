@@ -66,36 +66,6 @@ body {
   }
 }
 
-<<<<<<< Updated upstream
-.slider {
-  height: auto;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  background-color: transparent;
-}
-
-.slider .slide-track {
-  animation: scroll 40s linear infinite;
-  display: flex;
-  align-items: center;
-  width: calc(250px * 14);
-}
-
-@media screen and(max-width: 600px) {
-  .slider .slide-track {
-    width: calc(10% * 14);
-  }
-}
-
-.slider .slide {
-  height: 170px;
-  width: 250px;
-}
-
-=======
->>>>>>> Stashed changes
 .nav::after {
   content: var(--after-content);
   color: white;
@@ -177,20 +147,6 @@ body {
 .animate-scale {
   animation: .5s scaleDown linear forwards;
 }
-@keyframes span4{
-  0%{
-      bottom: -70px;
-  }
-  100%{
-      bottom:70px;
-  }
-}
-<<<<<<< Updated upstream
-=======
-
-.animate-scale {
-  animation: .5s scaleDown linear forwards;
-}
 
 .aboutTag:hover :last-child {
   color: black;
@@ -224,4 +180,3 @@ body {
 }
 
 
->>>>>>> Stashed changes
