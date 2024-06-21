@@ -14,7 +14,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.png',
   },
-  keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free, ublock origin twitch, block twitch ad",
+  keywords: "Expert adblocker chrome extension, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, twitch adblock extension, ad blocker free, ublock origin twitch, block twitch ad.",
   openGraph: {
     title: "Twitch Adblocker Chrome Extension- Best Adblocker",
     description: "Download Twitch Adblocker Chrome Extension and eliminate all the disturbing ads that annoy you while streaming. It will also maintain your privacy.",
@@ -54,7 +54,7 @@ const page = () => {
             link: "/features"
         }
         ],
-        logoUrl: "/twitch-adblocker",
+        logoUrl: "/",
         bgColor: "bg-[#6441A5]",
         logoColor: "white",
         textColor: "text-white",
@@ -101,8 +101,8 @@ const page = () => {
           text: "With this best adblock for Twitch, you can also save your data usage and speed up your loading. "
         },
         {
-          heading: "Technical Assistance",
-          text: "Twitch is the best adblocker and has technical assistance where you can enjoy hassle-free streaming."
+          heading: "Save your browser from hackers",
+          text: "Twitch adblock extension not only works for blocking ads but also protects your browser from hackers that may steal your personal data."
         }
       ],
       icons: [
@@ -226,7 +226,7 @@ const page = () => {
       webLinksBg: "white",
       socialLinksBg: "#F1C02A",
       linksBg: "bg-[#F1C02A]",
-      keywords: "Expert adblocker chrome extension, <a href='/hulu-adblocker'>Hulu adblock</a>, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, <a href='/spotify-ablocker'>Spotify adblocker</a>, twitch adblock extension, ad free hulu, ad blocker free, ublock origin twitch, block twitch ads, how to block twitch ads, twitch adblock 2023, <a href='/youtube-adblocker'>Youtube Adblocker</a>",
+      keywords: "<span><a href='https://www.expertadblocker.com'>Expert adblocker chrome extension</a>, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, ad blocker free, ublock origin twitch, block twitch ads, how to block twitch ads, twitch adblock 2023, twitch ad block extension, adblock twitch extension, chrome extension twitch adblock, extension twitch adblock, twitch ad block chrome extension, twitch adblock extension chrome, twitch ads extension,twitch no ads extension</span>",
       links: [
         {
           name: "About us",

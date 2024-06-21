@@ -13,7 +13,7 @@ export const metadata = {
     icons: {
         icon: '/favicon.png',
     },
-    keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, Youtube Adblocker, adblock for youtube, youtube adblock reddit, best free ad blocker",
+    keywords: "Expert adblocker chrome extension, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome,Youtube Adblocker, adblock for youtube, youtube adblock reddit, best free ad blocker.",
     openGraph: {
         title: "Youtube Adblocker Chrome Extension- Free Adblocker",
         description: "YouTube Adblocker Chrome extension is the best adblocker that blocks all YouTube ads in one go. So that you can enjoy all your favorite videos without those annoying ads.",
@@ -27,8 +27,8 @@ export const metadata = {
 const Youtube = () => {
     const data = {
         section1: {
-            heading: "Tired of ads? Don’t worry download YouTube Adblocker",
-            text: "YouTube is a platform that is loved by many as there is a huge variety of videos. But while watching these videos some ads come in between which can frustrate us. For that, we have <a href='/youtube-adblocker'>Youtube Adblocker</a>. This amazing extension is easy to use and download, within just a few clicks you can say a final goodbye to all those ads that ruined your moment. Download the extension and enjoy YouTube no ads.",
+            heading: "Tired of ads? Dont worry download YouTube Adblocker",
+            text: "YouTube is a platform that is loved by many as there is a huge variety of videos. But while watching these videos some ads come in between which can frustrate us. For that, we have YouTube Adblocker. This amazing extension is easy to use and download, within just a few clicks you can say a final goodbye to all those ads that ruined your moment. Download the extension and enjoy YouTube no ads.",
             bgColor: "bg-[#FF4A4A]",
             headingColor: "text-[#FFD7B3]",
             textColor: "text-[#430101]",
@@ -53,7 +53,7 @@ const Youtube = () => {
                         link: "/features"
                     }
                 ],
-                logoUrl: "/youtube-adblocker",
+                logoUrl: "/",
                 bgColor: "bg-[#FF4A4A]",
                 logoColor: "white",
                 textColor: "text-white",
@@ -76,8 +76,7 @@ const Youtube = () => {
             heading: "all in one",
             headingColor: "text-[#FF0000]",
             textColor: "text-[#0B1418]",
-            text: "As compared to all the adblockers including abp plus chrome, adb plus chrome and fair adblocker, it is the only extension that has a separate Hulu adblock, adblocker for Twitch, YouTube adblock, and Spotify Adblock that will work smoothly on these platforms.",
-
+            text: "As compared to all the adblockers including abp plus chrome, adb plus chrome and fair adblocker, it is the only extension that has a separate YouTube adblock, Hulu, Twitch and Spotify that will work smoothly on these platforms.",
         },
         section3: {
             bgColor: "bg-[#DBDBDB]",
@@ -121,7 +120,7 @@ const Youtube = () => {
                 },
                 {
                     heading: "Protect Your Browser",
-                    text: "Thanks to the YouTube ad blocker that will remove all the elements that may harm your browser. It will give you a seamless experience where you can stream hassle-free."
+                    text: "Thanks to the YouTube ad blocker that will remove all the elements that may harm your browser. Adblock for youtube ads will give you a seamless experience where you can stream hassle-free."
                 },
                 {
                     heading: "It is very simple to use",
@@ -143,7 +142,7 @@ const Youtube = () => {
             review: [
                 {
                     name: "Marielia",
-                    text: "I have been using this extension for years now and it is the best.",
+                    text: "I have been using this adblock for youtube chrome for years now and it is the best.",
                     reviewer: '/Section4/reviewer5.png'
                 },
                 {
@@ -163,7 +162,7 @@ const Youtube = () => {
                 },
                 {
                     name: "Luca",
-                    text: "The best part is it also protects your browser from all the dangerous websites.",
+                    text: "The best part is adblocker for you tube also protects your browser from all the dangerous websites.",
                     reviewer: '/Section4/reviewer4.png'
                 },
             ]
@@ -206,9 +205,9 @@ const Youtube = () => {
             borderColor: "border-[#FF0000]",
             subHeadingColor: "text-[#FF0000]",
             headingColor: "text-white",
-            subheading: "Youtube Adblocker",
+            subheading: "Youtube Adblocker Chrome extention",
             textColor: "text-white",
-            text: "YouTube is the most popular streaming website among people and they love to watch videos on it. Most of the time when we stream our favorite content some ads are so annoying to watch. But don’t worry about that now as there is a YouTube <a href='/'>adblocker Chrome extension</a> that blocks all those ads that come in between while streaming. By removing those ads, you can also browse faster on YouTube. It will also block all those dangerous websites that may harm your browser. So, download the extension now and block ads for free.",
+            text: "YouTube is the most popular streaming website among people and they love to watch videos on it. Most of the time when we stream our favorite content some ads are so annoying to watch. But don’t worry about that now as there is a YouTube adblocker Chrome extension that blocks all those ads that come in between while streaming. By removing those ads, you can also browse faster on YouTube. It will also block all those dangerous websites that may harm your browser. So, download the extension now and block ads for free.",
             subtext: "Get rid of ",
             subTextColor: "text-[#FF0000]",
             subTextHoverColor: "hover:text-black",
@@ -228,7 +227,7 @@ const Youtube = () => {
             webLinksBg: "bg-[#C3F0C8]",
             socialLinksBg: "#FFD7B3",
             linksBg: "bg-[#FFD7B3]",
-            keywords: "Expert adblocker chrome extension, <a href='/hulu-adblocker'>Hulu adblock</a>, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, <a href='/spotify-adblocker'>Spotify adblocker</a>, <a href='/twitch-adblocker'>twitch adblock extension</a>, Youtube Adblocker, adblock for youtube, youtube adblock reddit, best free ad blocker",
+            keywords: "<span><a href='https://www.expertadblocker.com/'>Expert adblocker chrome extension</a>,adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Youtube Adblocker, adblock for youtube, youtube adblock reddit, best free ad blocker, youtube ad blocks, youtube block adblock, ad blockers youtube, adblock for youtube firefox, ad block chrome youtube, ad block for youtube chrome, chrome ad blocker for youtube, chrome addon youtube ad blocker, chrome plugin youtube, ad blocker chrome youtube adblocker, mozilla youtube ad blocker</span>",
             links: [
                 {
                     name: "About us",

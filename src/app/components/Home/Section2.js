@@ -5,8 +5,8 @@ import Link from 'next/link';
 const initialItems = [
     { src: '/Section2/spotify.svg', alt: 'spotify',link:'/spotify-adblocker'},
     { src: '/Section2/youtube.svg', alt: 'youtube',link:'/youtube-adblocker'},
-    { src: '/Section2/twitch.png', alt: 'twitch',link:'/twitch-adblocker'},
-    { src: '/Section2/hulu.png', alt: 'hulu',link:'/hulu-adblocker'}
+    { src: '/Section2/twitch.svg', alt: 'twitch',link:'/twitch-adblocker'},
+    { src: '/Section2/hulu.svg', alt: 'hulu',link:'/hulu-adblocker'}
 ];
 
 const Section2 = ({ data }) => {

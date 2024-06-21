@@ -11,7 +11,7 @@ export default function Home() {
 
   const data = {
     section1: {
-      heading: "Block Ads not your privacy",
+      heading: "Block Ads And Protect Your Privacy",
       text: "<a href='/'>Expert Adblocker</a> is the ultimate extension that not only blocks all the annoying ads from your browser but also protects your privacy. So, download this ad blocker in Chrome now and enjoy an ad-free experience.",
       bgColor: "bg-black",
       headingColor: "text-[#F74C04]",

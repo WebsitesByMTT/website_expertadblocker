@@ -40,6 +40,7 @@ const page = () => {
           link: '/features'
       }
       ],
+      logoUrl: "/",
       logoColor: "black",
       textColor: "text-black",
       buttonColor: "bg-black",

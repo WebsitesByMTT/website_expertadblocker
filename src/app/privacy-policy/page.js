@@ -38,6 +38,7 @@ const PrivacyPolicy = () => {
           link: "/features"
       }
       ],
+      logoUrl: "/",
       logoColor: "black",
       textColor: "text-black",
       buttonColor: "bg-black",
@@ -52,7 +53,7 @@ const PrivacyPolicy = () => {
     subHeadings: [
       {
         heading: "Personal Information",
-        text: "It applies the collection and use of personal data for users by <a href='/'>Expert Adblocker</a>. We ask for personal information like your name, contact number, email ID, etc. We do not disclose our customer's information without their knowledge. We also collect information about the device from where you have access including the IP address."
+        text: "It applies the collection and use of personal data for users by <a href='/' class='text-blue-500'>Expert Adblocker</a>. We ask for personal information like your name, contact number, email ID, etc. We do not disclose our customer's information without their knowledge. We also collect information about the device from where you have access including the IP address."
       },
       {
         heading: "Personal information about your children",
