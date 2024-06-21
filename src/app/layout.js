@@ -8,14 +8,14 @@ const epilogue = Epilogue({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Expert adblocker- Best and free adblocker Chrome extension",
-  description: "Expert Adblocker is the free Adblocker Chrome extension that not only blocks unwanted ads or pop-ups but it also protects your browser from dangerous websites.",
+  description: "Expert Adblocker is the free Adblocker Chrome extension that not only blocks unwanted ads or pop-ups but it also protects your browser.",
   icons: {
     icon: '/favicon.png',
   },
   keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, ad blocker free, twitch ad blocker, adblock for twitch, Youtube Adblocker, hulu without ads, why does hulu have ads, hulu commercial free",
   openGraph: {
     title: "Expert adblocker- Best and free adblocker Chrome extension",
-    description: "Expert Adblocker is the free Adblocker Chrome extension that not only blocks unwanted ads or pop-ups but it also protects your browser from dangerous websites.",
+    description: "Expert Adblocker is the free Adblocker Chrome extension that not only blocks unwanted ads or pop-ups but it also protects your browser.",
     type: 'website',
     siteName: "Expert adblocker",
     url: 'https://expertadblocker.com/',

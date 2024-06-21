@@ -43,6 +43,7 @@ const AboutUs = () => {
         image1: '/Hero/heroanimation.svg',
         image2: '/Hero/stand.svg'
       },
+      logoUrl: "/",
       logoColor: "black",
       textColor: "text-black",
       buttonColor: "bg-black",
@@ -86,13 +87,7 @@ const AboutUs = () => {
           link: "/privacy-policy"
         },
       ],
-      webLinks :[
-        { name: "Twitch adblocker", link: "/twitch-adblocker" },
-        { name: "Hulu adblocker", link: "/hulu-adblocker" },
-        { name: "Youtube adblocker", link: "/youtube-adblocker" },
-        { name: "Spotify adblocker", link: "/spotify-adblocker" }
-
-    ]
+      webLinks :[]
     }
   }
 
@@ -111,11 +106,11 @@ const AboutUs = () => {
             <div className="space-y-8">
               <div className="bg-[#F3F3F3] border-[2px] border-transparent group hover:border-black md:w-[90%] 2xl:w-[70%] p-5 rounded-[1.5rem]">
                 <div className="text-black group-hover:text-[#F74C04] text-[2.4rem] font-bold md:text-[2rem] 2xl:text-[2.5rem]">What is an <a href="/">Expert AdBlocker</a>?</div>
-                <p className="text-black text-[1.6rem] md:text-sm">It is the browser extension that blocks all the unnecessary ads and protects you from third-party trackers. It also saves your data usage. By simply downloading the extension, you can have the best internet experience and it also speeds up your page loading. The best part is it not only removes ads but also protects your privacy. It is very simple to use and it&apos;s customizable which will improve your online experience.</p>
+                <p className="text-black text-[1.6rem] md:text-sm">It is the <a href="https://www.expertadblocker.com/">browser extension</a> that blocks all the unnecessary ads and protects you from third-party trackers. It also saves your data usage. By simply downloading the extension, you can have the best internet experience and it also speeds up your page loading. The best part is it not only removes ads but also protects your privacy. It is very simple to use and it&apos;s customizable which will improve your online experience.</p>
               </div>
               <div className="bg-[#F3F3F3] border-[2px] border-transparent group hover:border-black  md:w-[90%] md:text-[2rem] 2xl:w-[70%] p-5 rounded-[1.5rem]">
                 <div className="text-black group-hover:text-[#F1C02A] md:text-[2rem] text-[2.4rem] font-bold 2xl:text-[2.5rem]">Adblocker for all</div>
-                <p className="text-black text-[1.6rem] py-4 md:text-sm">We have a separate extension for YouTube where you can block all the disturbing ads on YouTube. As Youtube is the most visited website around the globe and everyone loves to watch videos on it. By blocking these ads with YouTube adblocker you can enjoy all your favorite videos without Ads.</p>
+                <p className="text-black text-[1.6rem] py-4 md:text-sm">We have a separate extension for YouTube where you can block all the disturbing ads on YouTube. As Youtube is the most visited website around the globe and everyone loves to watch videos on it. By blocking these ads with <a href="/youtube-adblocker">YouTube adblocker</a> you can enjoy all your favorite videos without Ads.</p>
                 <p className="text-black text-[1.6rem] md:text-sm">For game streaming, we have a separate <a href="/twitch-adblocker">Twitch ad blocker</a>, <a href="/hulu-adblocker">Hulu adblocker</a>, and <a href="/spotify-adblocker">Spotify adblocker</a> where you can remove all those ads that can ruin your streaming. It works both on Google Chrome and Firefox. It is easy to install and has been helping people for the last ten years. So, what are you waiting for? Hurry up and download the extension now and enjoy your content freely.</p>
               </div>
             </div>

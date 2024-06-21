@@ -14,7 +14,7 @@ export const metadata = {
     icons: {
         icon: '/favicon.png',
     },
-    keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, Spotify adblocker, twitch adblock extension, ad free hulu, Youtube Adblocker, hulu without ads, why does hulu have ads, hulu commercial free",
+    keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, ad free hulu, Youtube Adblocker, hulu without ads, why does hulu have ads, hulu commercial free",
     openGraph: {
         title: "Hulu ad blocker Chrome Extension - Free adblocker",
         description: "Hulu ad blocker Chrome Extension is the best extension for Hulu where you can block all the disturbing ads that annoy you while watching your favorite movie.",
@@ -55,7 +55,7 @@ const page = () => {
                         link: "/features"
                     }
                 ],
-                logoUrl: "/hulu-adblocker",
+                logoUrl: "/",
                 bgColor: "bg-[#1DE783]",
                 logoColor: "black",
                 textColor: "text-black",
@@ -78,7 +78,7 @@ const page = () => {
             heading: "all in one",
             headingColor: "[#F1C02A]",
             textColor: "black",
-            text: "As compared to all the adblockers including abp plus chrome, adb plus chrome and fair adblocker, it is the only extension that has a separate Hulu adblock, adblocker for Twitch, YouTube adblock, and Spotify Adblock that will work smoothly on these platforms.",
+            text: "As compared to all the adblockers including abp plus chrome, adb plus chrome and fair adblocker, it is the only extension that has a separate Hulu adblock, Twitch, YouTube, and Spotify Adblock that will work smoothly on these platforms.",
 
         },
         section3: {
@@ -102,7 +102,7 @@ const page = () => {
                     text: "It has the best web assistance where you can enjoy Hulu no ads."
                 },
                 {
-                    heading: "TechnicaMaintain your privacyl Assistance",
+                    heading: "Maintain your privacy",
                     text: "It also protects your data and speeds up your web page loading."
                 }
             ],
@@ -180,7 +180,7 @@ const page = () => {
             faq: [
                 {
                     ques: "Why does Hulu have ads?",
-                    answer: "Hulu has a huge number of ads in its library that pop up during streaming. But to get rid of these ads download Hulu Adblocker Chrome extension and say goodbye to Hulu ads.                    "
+                    answer: "Hulu has a huge number of ads in its library that pop up during streaming. But to get rid of these ads download Hulu Adblocker Chrome extension and say goodbye to Hulu ads."
                 },
                 {
                     ques: "How to get rid of ads on Hulu?",
@@ -229,7 +229,7 @@ const page = () => {
             socialLinksBg: "#012A84",
             textlinkColor: 'text-white',
             linksBg: "bg-[#012A84]",
-            keywords: "Expert adblocker chrome extension, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in chrome, adb plus chrome, adblock browser chrome, <a href='/spotify-adblocker'>Spotify adblocker</a>, <a href='/twitch-adblocker'>twitch adblock</a> extension, ad free hulu, <a href='/youtube-adblocker'>Youtube Adblocker</a>, hulu without ads, why does hulu have ads, hulu commercial free",
+            keywords: "<span><a href='https://www.expertadblocker.com/'>Expert adblocker chrome extension</a>, Hulu adblock, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome, ad free hulu, hulu without ads, why does hulu have ads, hulu commercial free, ad blocker for hulu chrome, adblocker for hulu,  block hulu ads chrome</span>",
             links: [
                 {
                     name: "About us",
