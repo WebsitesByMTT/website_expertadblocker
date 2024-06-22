@@ -3,4 +3,5 @@ User-agent: *
 Disallow:/terms
 Disallow: /privacy-policy
 Disallow: /contact-us
+
 Sitemap: https://www.expertadblocker.com/sitemal.xml
