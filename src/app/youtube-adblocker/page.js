@@ -9,14 +9,14 @@ import Footer from '../components/Footer'
 
 export const metadata = {
     title: "Youtube Adblocker Chrome Extension- Free Adblocker",
-    description: "YouTube Adblocker Chrome extension is the best adblocker that blocks all YouTube ads in one go. So that you can enjoy all your favorite videos without those annoying ads.",
+    description: "YouTube Adblocker Chrome extension is the best adblocker that blocks all YouTube ads in one go. So that you can enjoy all your favorite videos without ads.",
     icons: {
         icon: '/favicon.png',
     },
     keywords: "Expert adblocker chrome extension, adblock chrome, adblock plus chrome, adblocker google chrome, advertisement blocker chrome, blocker chrome, abp plus chrome, ad blocker in Chrome, adb plus chrome, adblock browser chrome,Youtube Adblocker, adblock for youtube, youtube adblock reddit, best free ad blocker.",
     openGraph: {
         title: "Youtube Adblocker Chrome Extension- Free Adblocker",
-        description: "YouTube Adblocker Chrome extension is the best adblocker that blocks all YouTube ads in one go. So that you can enjoy all your favorite videos without those annoying ads.",
+        description: "YouTube Adblocker Chrome extension is the best adblocker that blocks all YouTube ads in one go. So that you can enjoy all your favorite videos without ads.",
         type: 'website',
         siteName: "Youtube adblocker",
         url: 'https://expertadblocker.com/youtube-adblocker',
@@ -250,13 +250,7 @@ const Youtube = () => {
                     link: "/privacy-policy"
                 },
             ],
-            webLinks :[
-                { name: "Twitch adblocker", link: "/twitch-adblocker" },
-                { name: "Hulu adblocker", link: "/hulu-adblocker" },
-                { name: "Youtube adblocker", link: "/youtube-adblocker" },
-                { name: "Spotify adblocker", link: "/spotify-adblocker" }
-        
-            ]
+            webLinks :[]
         }
     }
     return (

@@ -87,7 +87,7 @@ const Page = () => {
         <div className="bg-white">
             <div className=' bg-[#F3F3F3] rounded-bl-[4rem] rounded-br-[4rem] lg:rounded-bl-[6.5rem] lg:rounded-br-[6.5rem]' style={{ backgroundImage: 'url(./bg.png)' }}>
                 <Navbar data={Data.navbar} />
-                <div className="text-[4.5rem] text-center lg:text-left font-[800] px-10 lg:px-28 py-5 text-[#F74C04]">Blogs</div>
+                <h1 className="text-[4.5rem] text-center lg:text-left font-[800] px-10 lg:px-28 py-5 text-[#F74C04]">Blogs</h1>
             </div>
                 <div className='bg-white pb-12 md:pt-12 w-[80%] mx-auto md:pb-20'>
                     <div>
