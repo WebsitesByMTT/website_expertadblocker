@@ -1,53 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://www.expertadblocker.com/</loc>
-<lastmod>2024-05-09T04:22:37+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://www.expertadblocker.com/</loc>
+  <lastmod>2024-06-22T10:40:16+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://www.expertadblocker.com/blogs</loc>
-<lastmod>2024-05-09T04:22:37+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.expertadblocker.com/blogs</loc>
+  <lastmod>2024-06-22T10:40:16+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.expertadblocker.com/about-us</loc>
-<lastmod>2024-05-09T04:22:37+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.expertadblocker.com/about-us</loc>
+  <lastmod>2024-06-22T10:40:16+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.expertadblocker.com/contact-us</loc>
-<lastmod>2024-05-09T04:22:37+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.expertadblocker.com/features</loc>
+  <lastmod>2024-06-22T10:40:16+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.expertadblocker.com/hulu-adblocker</loc>
-<lastmod>2024-05-09T04:22:37+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.expertadblocker.com/spotify-adblocker</loc>
+  <lastmod>2024-06-22T10:40:16+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.expertadblocker.com/spotify-adblocker</loc>
-<lastmod>2024-05-09T04:22:37+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.expertadblocker.com/youtube-adblocker</loc>
+  <lastmod>2024-06-22T10:40:16+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.expertadblocker.com/youtube-adblocker</loc>
-<lastmod>2024-05-09T04:22:37+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.expertadblocker.com/twitch-adblocker</loc>
+  <lastmod>2024-06-22T10:40:16+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.expertadblocker.com/twitch-adblocker</loc>
-<lastmod>2024-05-09T04:22:37+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.expertadblocker.com/hulu-adblocker</loc>
+  <lastmod>2024-06-22T10:40:16+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.expertadblocker.com/terms</loc>
-<lastmod>2024-05-09T04:22:37+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.expertadblocker.com/terms</loc>
+  <lastmod>2024-06-22T10:40:16+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.expertadblocker.com/privacy-policy</loc>
-<lastmod>2024-05-09T04:22:37+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.expertadblocker.com/blogs/How-to-Block-Ads-on-Twitch-Using-Expert-Adblocker</loc>
+  <lastmod>2024-06-22T10:40:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
+<url>
+  <loc>https://www.expertadblocker.com/blogs/Exploring-Adblockers-Different-Types-and-How-They-Work</loc>
+  <lastmod>2024-06-22T10:40:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.expertadblocker.com/blogs/Understanding-the-Mechanics-of-Ad-Blocking</loc>
+  <lastmod>2024-06-22T10:40:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
