@@ -3,6 +3,7 @@ import "./globals.css";
 import Image from "next/image";
 import Schema from "./Schema";
 import Script from "next/script";
+import Noscript from "./components/Noscript";
 
 const epilogue = Epilogue({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export const metadata = {
   },
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en-us">
@@ -34,19 +36,27 @@ export default function RootLayout({ children }) {
         <meta name="google-site-verification" content="Ns38yDUiSF5RmKWMUj4CdjFgdOKSgSHMTUwQ6osp-BQ" />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-WYB7DP3G18%22%3E" />
         <Script
-          id="gtm-script"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-WYB7DP3G18');
-            `,
-          }}
-        />
+  id="gtm-script"
+  dangerouslySetInnerHTML={{
+    __html: `
+      (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WK6TLBF5');
+    `,
+  }}
+/>
+
+            
       </head>
       <body className={epilogue.className}>
-        <Schema />
+    <Noscript/>
+     
         <Image src="/bg.png" className="fixed -z-10 top-0 left-0 w-full h-full" width={500} height={500} alt="background" />
         {children}
       </body>
